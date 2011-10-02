@@ -4,19 +4,15 @@
  * will probably just be kept in their own libraries.
  */
 
-#include "WindSense.h"
+#include <WindSense.h>
 
-
+WindSense testInstance;
 
 void setup() {
+	Serial.begin(9600);
+
 }
 
 void loop() {
-	my_values test;
-	test = test_function(test);
 }
 
-my_values test_function(my_values diffName) {
-	diffName.x = 4;
-	diffName.y = 5;
-}
