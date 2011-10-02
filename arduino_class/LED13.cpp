@@ -1,7 +1,9 @@
-#include "LED13.h" ///< Brings in the header file we just wrote
+#include "LED13.h" 
 
 /** Setup the Pin Constant, but note that it is stored in a byte. */
 const byte LED_PIN = 13;
+
+int test_var = 2;
 
 /** This function is the constructor for the class, so it isn't actually
  * able to return everything.

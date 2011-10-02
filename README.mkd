@@ -9,3 +9,10 @@ reading from the sensors and controlling the servo motors.
 
 All of the logic will either be within another set of functions, or through serial
 communication with another computer running a Python interpreter.
+
+# Library Functions
+
+The main Advantage comes from the use of library's to encapsulate objects. They 
+are found in their own folders under the API and are meant to be included locally 
+from the SailcodeAPI folder, not the Arduino library path.
+

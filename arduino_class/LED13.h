@@ -8,7 +8,7 @@
 #ifndef LED13_H
 #define LED13_H
 
-#include <WProgram.h> ///< This brings in the Arduino Standard Functions
+#include <WProgram.h> // This brings in the Arduino Standard Functions
 
 /** Basic class to control a single pin.
  * Allows it to call some functions, which turn pin 13 on or off, and blink
@@ -17,6 +17,7 @@
  */
 class LED13 {
 public:
+	int test_var;
 	LED13();
 	~LED13();
 	void on();
