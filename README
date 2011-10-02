@@ -1,0 +1,11 @@
+Queen's Mostly Autonomous Sailboat
+==================================
+
+# The Software API
+
+The point of this repo is to create a software library for controlling the Arduino
+Microcontroller to take care of the basic functions of the sailboat. This includes
+reading from the sensors and controlling the servo motors.
+
+All of the logic will either be within another set of functions, or through serial
+communication with another computer running a Python interpreter.
