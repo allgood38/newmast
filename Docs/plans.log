@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2011.8.6)  2 OCT 2011 12:34
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2011.8.6)  2 OCT 2011 15:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -136,38 +136,34 @@ e
 <mindmap_test/overview.pdf, id=1, 297.11pt x 329.23pt>
 File: mindmap_test/overview.pdf Graphic file (type pdf)
 
-<use mindmap_test/overview.pdf>
-
-LaTeX Warning: Reference `fig:overview' on page 1 undefined on input line 28.
-
-[1
+<use mindmap_test/overview.pdf> [1
 
 {/usr/share/texlive/2010/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./mindm
-ap_test/overview.pdf>] [2] (./plans.aux)
+ap_test/overview.pdf>]
+<maps/WindSerial.pdf, id=22, 676.5275pt x 197.73875pt>
+File: maps/WindSerial.pdf Graphic file (type pdf)
 
-LaTeX Warning: There were undefined references.
-
+<use maps/WindSerial.pdf> [2 <./maps/WindSerial.pdf>] (./plans.aux)
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 1301 strings out of 493747
- 18612 string characters out of 3143547
- 71077 words of memory out of 3000000
- 4611 multiletter control sequences out of 15000+200000
- 5067 words of font info for 19 fonts, out of 3000000 for 9000
+ 1307 strings out of 493747
+ 18745 string characters out of 3143547
+ 71093 words of memory out of 3000000
+ 4616 multiletter control sequences out of 15000+200000
+ 4759 words of font info for 18 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
  37i,5n,23p,459b,206s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/share/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-></usr/share/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-</usr/share/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
-usr/share/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></u
-sr/share/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on plans.pdf (2 pages, 71509 bytes).
+</usr/share/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+></usr/share/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><
+/usr/share/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></
+usr/share/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on plans.pdf (2 pages, 79052 bytes).
 PDF statistics:
- 44 PDF objects out of 1000 (max. 8388607)
- 31 compressed objects within 1 object stream
+ 53 PDF objects out of 1000 (max. 8388607)
+ 38 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

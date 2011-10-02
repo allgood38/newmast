@@ -25,7 +25,7 @@ The new API is going to contain as much code which has already been written in a
 	\centering
 	\includegraphics[width=0.8\linewidth]{mindmap_test/overview.pdf}
 	\caption{Rough overview of software location}
-	\ref{fig:overview}
+	\label{fig:overview}
 \end{figure}
 
 % section The Sailcode Application Interface (end)
@@ -38,5 +38,23 @@ Although Arduino is written in C, it is possible to create classes with some lim
 You cannot use the \verb:new: keyword in C, but if you really need to declare an object off the heap, you can use the relloc and malloc functions which can do the same thing. Though these would be pretty dangerous if there ever to be a memory leak.
 
 % section Classes in Arduino (end)
+
+\section{The Wind Sensor} % (fold)
+\label{sec:The Wind Sensor}
+
+Will be contained in its own class and carry all of its own supporting variables.
+
+The sensor will just keep sending serial data at intervals rather than waiting for a command, so we have to have a way to keep the most recent value stored. This could mean having it update every-single time it gets a new string, then have the values ready for when a function is called, or it could ignore all messages until a function is called which requests an update of the variables.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\linewidth]{maps/WindSerial.pdf}
+	\caption{Wind Sensor to Memory path}
+	\label{fig:WindSensorMap}
+\end{figure}
+
+
+
+% section The Wind Sensor (end)
 
 \end{document}

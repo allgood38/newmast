@@ -12,7 +12,8 @@ communication with another computer running a Python interpreter.
 
 # Library Functions
 
-The main Advantage comes from the use of library's to encapsulate objects. They 
-are found in their own folders under the API and are meant to be included locally 
-from the SailcodeAPI folder, not the Arduino library path.
+The main Advantage comes from the use of library's to encapsulate objects as classes.
+To compile this software, you need to set your Arduino IDE's sketchbook location to
+this folder so that it looks in the right plac to find the libraries. Which in this
+case is the 'libraries' folder.
 

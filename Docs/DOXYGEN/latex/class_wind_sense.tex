@@ -1,0 +1,87 @@
+\hypertarget{class_wind_sense}{
+\section{\-Wind\-Sense \-Class \-Reference}
+\label{class_wind_sense}\index{\-Wind\-Sense@{\-Wind\-Sense}}
+}
+
+
+{\ttfamily \#include $<$\-Wind\-Sense.\-h$>$}
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wind_sense_a40d10f65ae75a23e52bb26a474cb56a8}{\-Wind\-Sense} ()
+\item 
+\hyperlink{class_wind_sense_aed9a633a0c61003ec570bbd55f9182d7}{$\sim$\-Wind\-Sense} ()
+\item 
+int \hyperlink{class_wind_sense_a95edaccd85dc748d2b7f9ae5dcd0c0a2}{get\-G\-P\-S\-Position} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Class to control the \-Wind \-Sensor in an encapsulated way.
+
+\begin{DoxyParagraph}{}
+\-Once this class is complete, a unit test function will be written to make sure that it always has valid input and outputs. \-In an effort to eliminate the use of global variables, the only way to get output out of this should be through functions, all variables should remain private. 
+\end{DoxyParagraph}
+
+
+\-Definition at line 16 of file \-Wind\-Sense.\-h.
+
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_wind_sense_a40d10f65ae75a23e52bb26a474cb56a8}{
+\index{\-Wind\-Sense@{\-Wind\-Sense}!\-Wind\-Sense@{\-Wind\-Sense}}
+\index{\-Wind\-Sense@{\-Wind\-Sense}!WindSense@{\-Wind\-Sense}}
+\subsubsection[{\-Wind\-Sense}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Wind\-Sense} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_wind_sense_a40d10f65ae75a23e52bb26a474cb56a8}
+
+
+\-Definition at line 3 of file \-Wind\-Sense.\-cpp.
+
+\hypertarget{class_wind_sense_aed9a633a0c61003ec570bbd55f9182d7}{
+\index{\-Wind\-Sense@{\-Wind\-Sense}!$\sim$\-Wind\-Sense@{$\sim$\-Wind\-Sense}}
+\index{$\sim$\-Wind\-Sense@{$\sim$\-Wind\-Sense}!WindSense@{\-Wind\-Sense}}
+\subsubsection[{$\sim$\-Wind\-Sense}]{\setlength{\rightskip}{0pt plus 5cm}$\sim${\bf \-Wind\-Sense} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_wind_sense_aed9a633a0c61003ec570bbd55f9182d7}
+
+
+\-Definition at line 6 of file \-Wind\-Sense.\-cpp.
+
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_wind_sense_a95edaccd85dc748d2b7f9ae5dcd0c0a2}{
+\index{\-Wind\-Sense@{\-Wind\-Sense}!get\-G\-P\-S\-Position@{get\-G\-P\-S\-Position}}
+\index{get\-G\-P\-S\-Position@{get\-G\-P\-S\-Position}!WindSense@{\-Wind\-Sense}}
+\subsubsection[{get\-G\-P\-S\-Position}]{\setlength{\rightskip}{0pt plus 5cm}int get\-G\-P\-S\-Position (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_wind_sense_a95edaccd85dc748d2b7f9ae5dcd0c0a2}
+\-Check the boats current co-\/ordinates..
+
+\-Simply takes the value which has been updated during the class. \-Also, it might be worth getting it to keep track of when it was last updated so that it can update the memory values if necessary.
+
+\begin{DoxyReturn}{\-Returns}
+int$\ast$ \-The current co-\/ordinates 
+\end{DoxyReturn}
+
+
+\-Definition at line 9 of file \-Wind\-Sense.\-cpp.
+
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_wind_sense_8h}{\-Wind\-Sense.\-h}\item 
+\hyperlink{_wind_sense_8cpp}{\-Wind\-Sense.\-cpp}\end{DoxyCompactItemize}
