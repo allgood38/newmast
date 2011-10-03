@@ -53,9 +53,12 @@ class WindSense {
 	 * buffer, since the buffer may never empty depending on the frequency of the
 	 * wind sensor
 	 *
-	 * @return int Zero if successful, >0 otherwise
+	 * @return int Zero if successful, greater than 0 otherwise
 	 */
 	int updateGPSData();
+
+	/** Dumps WindSesnor Variables to the console for debugging purposes. */
+	int dumpToScreen();
 
 };
 
