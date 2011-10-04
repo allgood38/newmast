@@ -44,3 +44,7 @@ int WindSense::dumpToScreen() {
 	Serial.print("Fix_age...");
 	Serial.println(fix_age);
 }
+
+int WindSense::validateSentence(char* NMEA) {
+	
+}

@@ -60,6 +60,17 @@ class WindSense {
 	/** Dumps WindSesnor Variables to the console for debugging purposes. */
 	int dumpToScreen();
 
+	/** Validates the checksum on the sentence.
+	 *
+	 * Performs the checksum using a case-switch and a loop. 
+	 *
+	 * @param NMEA [in] The complete NMEA String, no parsing required yet though
+	 * it does need to be a single sentence
+	 *
+	 * @return 0 if successful, greater than 0 if there are errors or eny kind of
+	 * complication which will need to be handled. 
+	 */
+	int validateSentence(char* NMEA);
 };
 
 #endif
