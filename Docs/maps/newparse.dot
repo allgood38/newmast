@@ -1,0 +1,15 @@
+graph newparse {
+	fontname = "Helvetica"
+	rankdir = TD
+	node [shape=ellipse port=n,s,e]; "Raw NMEA"; pullNMEA; validateNMEA; parseNMEA; storeNMEA;
+	node [shape=box];
+
+	"Raw NMEA" -- pullNMEA -- validateNMEA;
+	validateNMEA -- parseNMEA -- storeNMEA;
+
+	pullNMEA -- "Drop individual characters until a $ is found,\n then return the string at *+2";
+	validateNMEA -- "Performs a checksum on the string";
+	parseNMEA -- "Parse the string into an array of values which\n is returned.";
+	storeNMEA -- "Store the parsed values in the corresponding\n variables.";
+}
+	

@@ -39,3 +39,11 @@ char convertASCIItoHex (char ch) {
 		return ((ch - 'A') + 65);    // subtract ASCII A value then add 10 to get the hex value
     }
 }
+
+/** The goal is to parse the insides of the sentence and the checksum
+ * so that they may be fed into the checksum validation function.
+ *
+ * @param [in] nm is the complete NMEA sentence
+ */
+int parseNMEA(char* nm) {
+
