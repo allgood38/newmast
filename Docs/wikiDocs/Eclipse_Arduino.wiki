@@ -1,0 +1,3 @@
+= Eclipse with Arduino =
+
+Its possible to get the Arduino to wokring completely with the Eclipse environment if you follow the guide given by Arduino at [http://www.arduino.cc/playground/Code/Eclipse]. 
