@@ -53,7 +53,20 @@ The sensor will just keep sending serial data at intervals rather than waiting f
 	\label{fig:WindSensorMap}
 \end{figure}
 
+When the wind sensor is asked to update its values from the sensor, it will call the series of functions in Figure \ref{fig:newparse} in order to get the values. It just breaks up everything required to get the data from the serial buffer, isolate an NMEA sentence, parse it into values and update the local object variables.
 
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\linewidth]{maps/newparse.pdf}
+	\caption{Wind sensor algorithm}
+	\label{fig:newparse}
+\end{figure}
+
+The wind sense object is going to have a variable which will store a partially completed sentence, which will continue to be completed by the pullNMEA function. Once the partial sentence is complete, it will raise a flag, and allow the validateNMEA function to operate on it. If it is valid the sentence will be passed on to the parse function, which will return an array of strings containing the isloated values. If there are two comma's, then a null value will be stored to that location. That way when the array is given to the storage function, it will be able to figure out why there are null values, and put something appropriate in its place. 
+
+Pulling the individual characters is done by calling the \verb:grabNMEAChar: function, which accepts a single character and stores it in the \verb:partSentence: variable, but only if it starts with a \$ or if it has already started adding characters to a string. If it encounters anything else, it simply doesn't store the character. If it were reading from the serial buffer, this would also remove it from the serial buffer. 
+
+Once the function reaches an asterisk, it stops after two more characters so that it can include the given checksum. In this manner, we have isolated an NMEA sentence which can be sent through to the next function. 
 
 % section The Wind Sensor (end)
 
