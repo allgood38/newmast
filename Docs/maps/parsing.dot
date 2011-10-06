@@ -1,0 +1,18 @@
+graph parsing {
+	labeljust  = "l"
+	node [shape=box];
+	n00 [label="Is char at inputIndex a ','?" shape=ellipse];
+	n01 [label="NO", shape=diamond];
+	n02 [label="YES", shape=diamond];
+	n03 [label="NO", shape=diamond];
+	n04 [label="YES", shape=diamond];
+	n05 [label="Is char at inputIndex a '*'?" shape=ellipse];
+	n06 [label="Storing newValue to stringArray", shape=box];
+
+	n00 -- n01 -- "- Store char to newValue\n- inc newValueIndex";
+	n00 -- n02 -- "- Store newValue array to stringArray\n- resetnewValueIndex" -- n06 -- "- Make a deep copy of the newValueArray\n- Count the number of digits\n- Create a string of that length\n- Set ever char of newValue to the new temp array\n- Set the stringArray to the tempArray\n- Increment the stringArrayIndex";
+
+	n05 -- n03 -- "Don't exit the loop";
+	n05 -- n04 -- "Append a null character or a unique\nchar to the stringArray";
+
+}

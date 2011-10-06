@@ -14,16 +14,20 @@ int dummyIdx = 0;
 char dummyRead();
 int grabChar(char input);
 int validateNMEA(char* input);
-
+char* parseNMEA(char* input);
 
 int main(int argc, const char *argv[])
 {
+	// Getting the input and running the checksum
 	int worked = 0;
 	while (!grabChar(dummyRead())) {
 	}
 
 	worked = validateNMEA(partSentence);
 	printf("The checksum is... %d\n", worked);
+
+	// Now we will test the parsing requirements 
+	parseNMEA("test,test2*");
 
 	return 0;
 }
@@ -84,3 +88,33 @@ int validateNMEA(char* input) {
 
 	return (givenChecksum == calculatedChecksum);
 }
+
+/** Returns an array of strings (char arrays) containing parsed values.
+ *
+ */
+char* parseNMEA(char* input) {
+	// Start at one to skip the $
+	int inputIndex = 1;
+	//
+	// An array to hold up to 40 strings
+	char* valueArray[40];
+	int arrayIndex = 0;
+	// An array to hold a value with up to 20 digits
+	char newValue[20];
+	int newValueIndex = 0;
+
+	while (input[inputIndex] != '*') {
+
+		if( input[inputIndex] == ',' ) {
+			
+			
+		} else {
+			newValue[newValueIndex] = input[inputIndex];
+			newValueIndex++;
+		}
+
+		inputIndex++;
+	}
+	
+	printf("%s\n", newValue);
+}	

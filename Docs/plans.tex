@@ -62,11 +62,35 @@ When the wind sensor is asked to update its values from the sensor, it will call
 	\label{fig:newparse}
 \end{figure}
 
-The wind sense object is going to have a variable which will store a partially completed sentence, which will continue to be completed by the pullNMEA function. Once the partial sentence is complete, it will raise a flag, and allow the validateNMEA function to operate on it. If it is valid the sentence will be passed on to the parse function, which will return an array of strings containing the isloated values. If there are two comma's, then a null value will be stored to that location. That way when the array is given to the storage function, it will be able to figure out why there are null values, and put something appropriate in its place. 
+The wind sense object is going to have a variable which will store a partially completed sentence, which will continue to be completed by the pullNMEA function. Once the partial sentence is complete, it will raise a flag, and allow the validateNMEA function to operate on it. If it is valid the sentence will be passed on to the parse function, which will return an array of strings containing the isolated values. If there are two comma's, then a null value will be stored to that location. That way when the array is given to the storage function, it will be able to figure out why there are null values, and put something appropriate in its place. 
 
 Pulling the individual characters is done by calling the \verb:grabNMEAChar: function, which accepts a single character and stores it in the \verb:partSentence: variable, but only if it starts with a \$ or if it has already started adding characters to a string. If it encounters anything else, it simply doesn't store the character. If it were reading from the serial buffer, this would also remove it from the serial buffer. 
 
 Once the function reaches an asterisk, it stops after two more characters so that it can include the given checksum. In this manner, we have isolated an NMEA sentence which can be sent through to the next function. 
+
+\subsection{NMEA Parsing} % (fold)
+\label{sub:NMEA Parsing}
+
+Rather than using a built-in function, the sentences will be parsed one character at a time. The built-in strtok function has the advantage in that it is so flexible, whereas this function will only be able to parse NMEA sentences. At the same time, it should be able to parse any NMEA style sentence, since all it is going to do is break the sentence into an array of character-array strings, which will be converted into the correct values in the next function, storeNMEA.
+
+The function starts with an array of arbitrary size, which should be greater than the maximum number of possible values included in an NMEA sentence. There are three strings involved and three index variables to keep track of their progress. The first is the index for the input NMEA sentence, which be incremented with every iteration until an asterisk character is reached and the function will stop. The second string is for building a new value and also has an index to keep track of how many digits have been added to it. The third string is actually an array of strings. This is what the function will return once it has finished. The array also has an index, but this is to keep track of the number of strings which has been added to it.
+
+Assigning a new value which has been built to the string array is a little tricky since we need to be able to pass it a string of the correct size.
+
+The diagram in Figure \ref{fig:parsingTree} illustrates the decisions being made with every iteration of the lop within the parsing function. 
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\linewidth]{maps/parsing.pdf}
+	\caption{Parsing decision tree}
+	\label{fig:parsingTree}
+	% TODO this diagram really sucks, but we should use something like it.
+	% No detailed description will be given until a new one is made
+\end{figure}
+
+
+
+% subsection NMEA Parsing (end)
 
 % section The Wind Sensor (end)
 
