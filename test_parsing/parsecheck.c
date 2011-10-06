@@ -7,6 +7,7 @@ int i;
 int partCount = 0;
 char partSentence[100];
 
+
 // Counters for dummy read
 int dummyIdx = 0;
 
@@ -27,7 +28,7 @@ int main(int argc, const char *argv[])
 	printf("The checksum is... %d\n", worked);
 
 	// Now we will test the parsing requirements 
-	parseNMEA("test,test2*");
+	parseNMEA(partSentence);
 
 	return 0;
 }
@@ -91,30 +92,44 @@ int validateNMEA(char* input) {
 
 /** Returns an array of strings (char arrays) containing parsed values.
  *
+ * Uses a two dimensional array of fixed size in order to store the values
+ *
+ *
  */
 char* parseNMEA(char* input) {
-	// Start at one to skip the $
-	int inputIndex = 1;
-	//
-	// An array to hold up to 40 strings
-	char* valueArray[40];
-	int arrayIndex = 0;
-	// An array to hold a value with up to 20 digits
-	char newValue[20];
-	int newValueIndex = 0;
+	int inputIdx = 1;
 
-	while (input[inputIndex] != '*') {
+	char stringArray[40][15];
+	int stringArrayIdx = 0;
 
-		if( input[inputIndex] == ',' ) {
+	char newValue[15];
+	int newValueIdx = 0;
+
+	while(inputIdx <= 1 || input[inputIdx - 1] != '*') {
+		printf("Input buffer progress... %c\n", input[inputIdx]);
+
+		if (input[inputIdx] == ',' || input[inputIdx] == '*') {
+
+			printf("Adding %s to string array\n", newValue);
+
+			for (int i = 0; i < newValueIdx; i++) {
+				stringArray[stringArrayIdx][i] = newValue[i];
+			}
+			stringArray[stringArrayIdx++][newValueIdx] = '\0';
+			newValueIdx=0;
 			
-			
+		// No comma, then store the value in the newValue array
 		} else {
-			newValue[newValueIndex] = input[inputIndex];
-			newValueIndex++;
+			newValue[newValueIdx++] = input[inputIdx];
+			newValue[newValueIdx] = '\0';
+			printf("newValue Buffer progress... %s\n", newValue);
 		}
 
-		inputIndex++;
+		inputIdx++;
 	}
-	
-	printf("%s\n", newValue);
-}	
+
+	for (int i = 0; i < stringArrayIdx; i++) {
+		printf("%s\n", stringArray[i]);
+	}
+	return stringArray;
+}
