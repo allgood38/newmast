@@ -46,4 +46,4 @@ char convertASCIItoHex (char ch) {
  * @param [in] nm is the complete NMEA sentence
  */
 int parseNMEA(char* nm) {
-
+	
