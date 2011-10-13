@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2011.8.6)  7 OCT 2011 12:05
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2011.8.6)  13 OCT 2011 10:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -155,31 +155,31 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: maps/parsing.pdf Graphic file (type pdf)
  <use maps/parsing.pdf>
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 102.
+(Font)              <7> on input line 104.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 102.
+(Font)              <5> on input line 104.
 
-[4 <./maps/parsing.pdf>] (./plans.aux)
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: `h' float specifier changed to `ht'.
 
- ) 
+[4 <./maps/parsing.pdf>] [5] (./plans.aux) ) 
 Here is how much of TeX's memory you used:
- 1325 strings out of 493747
- 19074 string characters out of 3143547
- 73135 words of memory out of 3000000
- 4632 multiletter control sequences out of 15000+200000
+ 1327 strings out of 493747
+ 19095 string characters out of 3143547
+ 73153 words of memory out of 3000000
+ 4634 multiletter control sequences out of 15000+200000
  5364 words of font info for 20 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 37i,6n,23p,756b,206s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/share/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
-></usr/share/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><
-/usr/share/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></
-usr/share/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on plans.pdf (4 pages, 127166 bytes).
+ 37i,7n,23p,756b,206s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/share/texlive/2010/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/2010/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/2010/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/2010/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on plans.pdf (5 pages, 127889 bytes).
 PDF statistics:
- 85 PDF objects out of 1000 (max. 8388607)
- 62 compressed objects within 1 object stream
+ 88 PDF objects out of 1000 (max. 8388607)
+ 64 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

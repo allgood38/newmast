@@ -92,6 +92,8 @@ Once an array of strings is created, they should contain both the identification
 
 It would definitely be less memory intensive to isolate each of the string values, then update the corresponding variable in the object, but this method lends itself to being more modular. If memory does become an issue, we can switch to the other method.
 
+The while loop which makes up the core of this function has a weird condition. It loops as long as the input index is less than or equal to 1 or if the character just before the index does not equal the '*' character. This was done to allow the loop to execute once even after the asterisk was encountered. The first condition was included to prevent the second condition from accessing a negative index value from the input string on its first iteration. This is nice because if the first condition is true, then the compiler doesn't check the second condition.
+
 % subsection NMEA Parsing (end)
 
 \subsection{Interfacing the Hardware} % (fold)
@@ -99,11 +101,16 @@ It would definitely be less memory intensive to isolate each of the string value
 
 The wind sensor is connected to the Arduino through Serial port 3, which runs through the power board.
 
-\begin{tabular}{c|c}
-	\hline
-	Data Rate 	& 	4800 BPS 	\\
-	Commmand 	& 	\$PAMTC,EN,RMC,0,10 \\
-\end{tabular}
+\begin{table}[h]
+	\centering
+	\begin{tabular}{c|c}
+		\hline
+		Data Rate 	& 	4800 BPS 	\\
+		Commmand 	& 	\$PAMTC,EN,RMC,0,10 \\
+	\end{tabular}
+	\caption{Useful Specs}
+	\label{tbl:windspecs}
+\end{table}
 
 % subsection Interfacing the Hardware (end)
 

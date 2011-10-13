@@ -1,12 +1,16 @@
 #include <stdio.h>
 
 
+// A NMEA String for testing
 char nm[] = {"askdjfhalkjha$GPGSV,2,1,08,01,40,083,46,02,17,308,41,12,07,344,39,14,22,228,45*75asdf"};
 
-int i;
-int partCount = 0;
-char partSentence[100];
+int i; // This will need to be removed, global indexes are the worst
 
+int partCount = 0;        //!< index for partSentence
+char partSentence[100];   //!< buffer for incoming NMEA for grabChar function
+
+char stringArray[40][15]; //!< Array of strings for parseNMEA
+int stringArrayIdx = 0;   //!< index for the array of strings
 
 // Counters for dummy read
 int dummyIdx = 0;
@@ -15,7 +19,7 @@ int dummyIdx = 0;
 char dummyRead();
 int grabChar(char input);
 int validateNMEA(char* input);
-char* parseNMEA(char* input);
+int parseNMEA(char* input);
 
 int main(int argc, const char *argv[])
 {
@@ -92,29 +96,38 @@ int validateNMEA(char* input) {
 
 /** Returns an array of strings (char arrays) containing parsed values.
  *
- * Uses a two dimensional array of fixed size in order to store the values
+ * This function relies on three different strings. Each string is just an
+ * array of characters, so each string needs an index variables to keep
+ * track of our progress within the string.
  *
+ * The first string is simply the valid input sentence. The stringArray
+ * is to store all the values from the input string. The newValue string
+ * is a temporary buffer to hold on to a new value before it is stored in
+ * the string array.
  *
+ * The loop will place each input character into the new value string until
+ * a comma or asterisk is encountered. Then it stores it to the array of
+ * strings, resets the newValue and increments the index for stringArray.
+ *
+ * If there is a situation where there are two commas, indicating a null
+ * value from the NMEA sentence, a null character will be stored in the
+ * string array, rather than just skipping over it.
  */
-char* parseNMEA(char* input) {
+int parseNMEA(char* input) {
 	int inputIdx = 1;
-
-	char stringArray[40][15];
-	int stringArrayIdx = 0;
 
 	char newValue[15];
 	int newValueIdx = 0;
 
+	// For an explanation of the conditions of this loop, see the pdf
+	// documentation.
 	while(inputIdx <= 1 || input[inputIdx - 1] != '*') {
-		printf("Input buffer progress... %c\n", input[inputIdx]);
 
 		if (input[inputIdx] == ',' || input[inputIdx] == '*') {
-
-			printf("Adding %s to string array\n", newValue);
-
 			for (int i = 0; i < newValueIdx; i++) {
 				stringArray[stringArrayIdx][i] = newValue[i];
 			}
+
 			stringArray[stringArrayIdx++][newValueIdx] = '\0';
 			newValueIdx=0;
 			
@@ -122,14 +135,22 @@ char* parseNMEA(char* input) {
 		} else {
 			newValue[newValueIdx++] = input[inputIdx];
 			newValue[newValueIdx] = '\0';
-			printf("newValue Buffer progress... %s\n", newValue);
 		}
 
+		// Move to the next character in the input string
 		inputIdx++;
 	}
 
 	for (int i = 0; i < stringArrayIdx; i++) {
 		printf("%s\n", stringArray[i]);
 	}
-	return stringArray;
+	return 1;
+}
+
+/** Updates the values of within the object.
+ *
+ * Requires the global variables stringArray and stringArrayIdx.
+ */ 
+int storeNMEA() {
+
 }
