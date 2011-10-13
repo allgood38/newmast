@@ -17,15 +17,12 @@
 #define WindSense_H
 
 #include <WProgram.h>
-#include "TinyGPS.h"
 
 class WindSense {
 	private:
-		long lat, lon;
-		unsigned long fix_age, time, date, speed, course;
-		unsigned long chars;
-		unsigned short sentences, failed_checksum;
-		TinyGPS gps;
+	int partCount = 0; //!< Used in the grabChar function
+	char partSentence[100]; //!< Used in the grabChar function
+
 	public:
 	WindSense();
 	
