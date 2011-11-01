@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <stdlib.h>
 
 // A NMEA String for testing
 char nm[] = {"askdjfhalkjha$GPGSV,2,1,08,01,40,083,46,02,17,308,41,12,07,344,39,14,22,228,45*75asdf"};
@@ -85,7 +85,7 @@ int validateNMEA(char* input) {
 	rawGivenChecksum[0] = partSentence[partCount-2];
 	rawGivenChecksum[1] = partSentence[partCount-1];
 
-	char parserChar;
+	char* parserChar;
 	givenChecksum = (int)strtol(rawGivenChecksum, &parserChar, 16);
 
 	// Another possible method
