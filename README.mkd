@@ -3,19 +3,23 @@ Queen's Mostly Autonomous Sailboat
 
 # The Software API
 
-The point of this repo is to create a software library for controlling the Arduino
-Microcontroller to take care of the basic functions of the sailboat. This includes
-reading from the sensors and controlling the servo motors.
+The point of this repo is to create a software library for controlling
+the Arduino Micro controller to take care of the basic functions of the
+sailboat. This includes reading from the sensors and controlling the
+servo motors.
 
-All of the logic will either be within another set of functions, or through serial
-communication with another computer running a Python interpreter.
+All of the logic will either be within another set of functions, or
+through serial communication with another computer running a Python
+interpreter.
 
 # Library Functions
 
-The main Advantage comes from the use of library's to encapsulate objects as classes.
-To compile this software, you need to set your Arduino IDE's sketchbook location to
-this folder so that it looks in the right place to find the libraries. Which in this
-case is the 'libraries' folder.
+Previously libraries needed to be kept in a special directory to comply
+with the Arduino file structure. Now the root of this repo is the root
+of all the source files.
 
-The first class created is the WindSense, which also contains the TinyGPS class.
+WindSense, is the class to contain all the functionality required from
+the wind sensor.
 
+DummyClass, is going to contain some of the common functions Arduino
+usually calls so that I can test the code using the standard output.
