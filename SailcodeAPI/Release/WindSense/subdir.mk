@@ -4,12 +4,15 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
+../WindSense/ParseToStruct.cpp \
 ../WindSense/WindSense.cpp 
 
 OBJS += \
+./WindSense/ParseToStruct.o \
 ./WindSense/WindSense.o 
 
 CPP_DEPS += \
+./WindSense/ParseToStruct.d \
 ./WindSense/WindSense.d 
 
 

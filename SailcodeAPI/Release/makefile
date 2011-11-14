@@ -59,7 +59,7 @@ all: SailcodeAPI.elf secondary-outputs
 SailcodeAPI.elf: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: AVR C++ Linker'
-	avr-g++ -s -Os -Wl,--gc-sections -o"SailcodeAPI.elf" $(OBJS) $(USER_OBJS) $(LIBS) -lm -Wl,-Map,SailcodeAPI.map,--cref -L../../ArduinoCore/Release/ -mmcu=atmega328p
+	avr-g++ -s -Os -Wl,--gc-sections -o"SailcodeAPI.elf" $(OBJS) $(USER_OBJS) $(LIBS) -lm -Wl,-Map,SailcodeAPI.map,--cref -lm -L../../ArduinoCore/Release/ -mmcu=atmega328p
 	@echo 'Finished building target: $@'
 	@echo ' '
 

@@ -86,7 +86,7 @@ int WindSense::validateInternalNMEA() {
  * value from the NMEA sentence, a null character will be stored in the
  * string array, rather than just skipping over it.
  */
-int WindSense::parseNMEA(char* input) {
+int WindSense::splitNMEA(char* input) {
     int inputIdx = 1;
 
     char newValue[15];
@@ -117,8 +117,8 @@ int WindSense::parseNMEA(char* input) {
     return 1;
 }
 
-int WindSense::parseInternalNMEA() {
-    return parseNMEA(partSentence);
+int WindSense::splitInternalNMEA() {
+    return splitNMEA(partSentence);
 }
 
 void WindSense::resetInternalNMEA() {

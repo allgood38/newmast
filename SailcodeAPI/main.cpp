@@ -45,13 +45,21 @@ void dump() {
 	Serial.println(airman.validateInternalNMEA());
 
 	// Separating the NMEA into sub-strings
-	airman.parseInternalNMEA();
+	airman.splitInternalNMEA();
 	for (int i = 0; i < airman.stringArrayIdx; i++) {
 		Serial.print("String ");
 		Serial.print(i);
 		Serial.print(" ");
 		Serial.println(airman.stringArray[i]);
 	}
+
+	airman.parseInternalNMEA(airman.stringArray[0]);
+
+	// Dump the degrees and minutes to see if it worked
+	Serial.print("The degrees lattitude are ");
+	Serial.println(airman.GPS_GPGLL.degreeLatitude);
+	Serial.print("The minutes lattitude are ");
+	Serial.println(airman.GPS_GPGLL.minuteLatitude);
 
 	// Reseting the internal variables
 	airman.resetInternalNMEA();
