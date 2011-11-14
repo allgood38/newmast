@@ -1,12 +1,14 @@
 #include <WProgram.h>
 #include <arduino.h>
+#include "WindSense/WindSense.h"
 
 /*
-  Blink
-  Turns on an LED on for one second, then off for one second, repeatedly.
 
-  This example code is in the public domain.
  */
+// Variables
+WindSense airman;
+// Prototypes
+void dump();
 
 int main(void) {
     init();
@@ -20,14 +22,37 @@ int main(void) {
 }
 
 void setup() {
-    // initialize the digital pin as an output.
+    // Initialise the digital pin as an output.
     // Pin 13 has an LED connected on most Arduino boards:
     pinMode(13, OUTPUT);
+    Serial.begin(9600);
+    Serial.println("Ready and awaiting input");
 }
 
 void loop() {
-    digitalWrite(13, HIGH);   // set the LED on
-    delay(1000);              // wait for a second
-    digitalWrite(13, LOW);    // set the LED off
-    delay(1000);              // wait for a second
+	while(Serial.available()) {
+		if (airman.grabChar(Serial.read())) {
+			dump();
+		}
+	}
+}
+
+void dump() {
+	// Information about what is in the partSentence Buffer
+	Serial.println("NMEA Detected");
+	Serial.println(airman.partSentence);
+	Serial.print("Valid?...");
+	Serial.println(airman.validateInternalNMEA());
+
+	// Separating the NMEA into sub-strings
+	airman.parseInternalNMEA();
+	for (int i = 0; i < airman.stringArrayIdx; i++) {
+		Serial.print("String ");
+		Serial.print(i);
+		Serial.print(" ");
+		Serial.println(airman.stringArray[i]);
+	}
+
+	// Reseting the internal variables
+	airman.resetInternalNMEA();
 }
