@@ -1,0 +1,9 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classWindSense.html#a857d644e8150797a2ffc626e8e39e4a2" title="Adds a character to the partial sentence string." alt="" coords="135,5,284,35"/>
+<area shape="rect" id="node5" href="$functionTest_8cpp.html#a9b237b141b8e5beb59c15cdd7178a37a" title="dummyRead" alt="" coords="161,59,257,88"/>
+<area shape="rect" id="node7" href="$classWindSense.html#abc6881989101175595efce5f59587ac9" title="Returns true if the checksum matches at the end." alt="" coords="119,112,300,141"/>
+<area shape="rect" id="node9" href="$classWindSense.html#a3bda1198330c913cadd51eb5bf9652a8" title="Contains all of the parsing functions parseToStruct.cpp." alt="" coords="104,165,315,195"/>
+<area shape="rect" id="node11" href="$classWindSense.html#a1d7be6f9e3ed9964a1661df7bf44df9d" title="Update the GPS Data Struct by parsing." alt="" coords="373,112,587,141"/>
+<area shape="rect" id="node13" href="$classWindSense.html#aef8efeb056b1f79b42fed46c00ed991a" title="Update the Wind Data Struct by Parsing." alt="" coords="365,165,595,195"/>
+<area shape="rect" id="node15" href="$classWindSense.html#aa7fb078bc8798b983103688d83c69f1d" title="Update the Speet Data Struct by Parsing." alt="" coords="363,219,597,248"/>
+</map>

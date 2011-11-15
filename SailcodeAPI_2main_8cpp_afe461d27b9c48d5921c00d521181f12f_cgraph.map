@@ -1,0 +1,20 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$classHardwareSerial.html#a60e2bb4a3f40cfaf94601cd4e3333f43" title="HardwareSerial::available" alt="" coords="101,5,272,35"/>
+<area shape="rect" id="node5" href="$classWindSense.html#a857d644e8150797a2ffc626e8e39e4a2" title="Adds a character to the partial sentence string." alt="" coords="112,59,261,88"/>
+<area shape="rect" id="node7" href="$classHardwareSerial.html#a760f254188b4687f5a8a74f4ddd3c83d" title="HardwareSerial::read" alt="" coords="115,112,259,141"/>
+<area shape="rect" id="node9" href="$SailcodeAPI_2main_8cpp.html#accd2600060dbaee3a3b41aed4034c63c" title="dump" alt="" coords="160,165,213,195"/>
+<area shape="rect" id="node11" href="$classPrint.html#abeb8bc6c2d103469679b88c1a966a21f" title="Print::println" alt="" coords="387,35,477,64"/>
+<area shape="rect" id="node13" href="$classPrint.html#a6c1f2f9a1988fe2d4ed593b3ac0185c7" title="Print::print" alt="" coords="875,35,957,64"/>
+<area shape="rect" id="node23" href="$classWindSense.html#ae588f066429fc69c55347b460ca8de77" title="WindSense::validateInternalNMEA" alt="" coords="320,139,544,168"/>
+<area shape="rect" id="node27" href="$classWindSense.html#ac8702e5aace56e4c8818088551d309dd" title="WindSense::splitInternalNMEA" alt="" coords="331,192,533,221"/>
+<area shape="rect" id="node31" href="$classWindSense.html#a3bda1198330c913cadd51eb5bf9652a8" title="Contains all of the parsing functions parseToStruct.cpp." alt="" coords="327,245,537,275"/>
+<area shape="rect" id="node39" href="$classWindSense.html#abdf66a848c8a169d145443073727c2f6" title="WindSense::resetInternalNMEA" alt="" coords="328,299,536,328"/>
+<area shape="rect" id="node19" href="$classPrint.html#a525b37c566658ff8113a067f6e8d5bf1" title="Print::println" alt="" coords="664,35,755,64"/>
+<area shape="rect" id="node15" href="$classString.html#a61d8c8330af43b5f6ccbf11a92457b44" title="String::length" alt="" coords="1005,8,1104,37"/>
+<area shape="rect" id="node17" href="$classPrint.html#ad9393033793cfc17f3e37202ba244892" title="Print::write" alt="" coords="1012,61,1097,91"/>
+<area shape="rect" id="node25" href="$classWindSense.html#abc6881989101175595efce5f59587ac9" title="Returns true if the checksum matches at the end." alt="" coords="619,139,800,168"/>
+<area shape="rect" id="node29" href="$classWindSense.html#a1f5f29fd81c464d38de6703f48f1ae6f" title="Returns an array of strings (char arrays) containing parsed values." alt="" coords="629,192,789,221"/>
+<area shape="rect" id="node33" href="$classWindSense.html#a1d7be6f9e3ed9964a1661df7bf44df9d" title="Update the GPS Data Struct by parsing." alt="" coords="603,245,816,275"/>
+<area shape="rect" id="node35" href="$classWindSense.html#aef8efeb056b1f79b42fed46c00ed991a" title="Update the Wind Data Struct by Parsing." alt="" coords="595,299,824,328"/>
+<area shape="rect" id="node37" href="$classWindSense.html#aa7fb078bc8798b983103688d83c69f1d" title="Update the Speet Data Struct by Parsing." alt="" coords="592,352,827,381"/>
+</map>
