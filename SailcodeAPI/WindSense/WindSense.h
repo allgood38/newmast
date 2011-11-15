@@ -1,14 +1,17 @@
 #ifndef WindSense_H
 #define WindSense_H
 
-#include <WProgram.h> // This brings in the Arduino Standard Functions
-#include <stdlib.h>
-#include <string.h>
-
+// This brings in the Arduino Standard Functions
+// For the Hardware Serial Functions only
+#include <WProgram.h>
+#include <stdlib.h>   // Parsing Functions
+#include <string.h>   // String Comparison Functions
+//#include <HardwareSerial.h>
 
 class WindSense {
 public:
     WindSense();
+    WindSense(HardwareSerial* serial);
     int grabChar(char input);
 
     int validateNMEA(char* input);
@@ -20,12 +23,12 @@ public:
     int parseInternalNMEA(char* input);
     int updateGPS_GPGLL();
 	int updateWIND_WIMWV();
+	int updateSPEED_GPVTG();
 
     void resetInternalNMEA();
 
     int partCount;            //!< index for partSentence
     char partSentence[100];   //!< buffer for incoming NMEA for grabChar function
-
     char stringArray[40][15]; //!< Array of strings for splitNMEA
     int stringArrayIdx;       //!< index for the array of strings
 
@@ -35,12 +38,12 @@ public:
 	 * each otherwise we lose precision
      */
     struct GPGLL {
-        double degreeLatitude;
-        double minuteLatitude;
+        int degreeLatitude;
+        int minuteLatitude;
         char latitudeDirection;
 
-        double degreeLongitude;
-        double minuteLongitude;
+        int degreeLongitude;
+        int minuteLongitude;
         char longitudeDirection;
 
 		char valid;
@@ -57,10 +60,10 @@ public:
     };
 
     struct GPVTG {
-        double course_overGround;
-        char unitCourse_Measurement;
-        double speed_overGround;
-        char speed_Units;
+        double courseoverGround;
+        char   unitCourseMeasurement;
+        double speedoverGround;
+        char   speedUnits;
     };
 
     // Create Instances of the structs so that they can

@@ -2,8 +2,12 @@
 #include <arduino.h>
 #include "WindSense/WindSense.h"
 
-/*
-
+/** For now, the only purpose of this file is testing
+ *
+ * Currently checking out the state of the WindSense
+ * Library and adding support for parsing NMEA values
+ * into appropriate types.
+ *
  */
 // Variables
 WindSense airman;
@@ -56,10 +60,24 @@ void dump() {
 	airman.parseInternalNMEA(airman.stringArray[0]);
 
 	// Dump the degrees and minutes to see if it worked
-	Serial.print("The degrees lattitude are ");
-	Serial.println(airman.GPS_GPGLL.degreeLatitude);
 	Serial.print("The minutes lattitude are ");
 	Serial.println(airman.GPS_GPGLL.minuteLatitude);
+	Serial.print("The degrees lattitude are ");
+	Serial.println(airman.GPS_GPGLL.degreeLatitude);
+	Serial.print("Lattitude Direction is ");
+	Serial.println(airman.GPS_GPGLL.latitudeDirection);
+
+	Serial.print("The minutes longitude are ");
+	Serial.println(airman.GPS_GPGLL.minuteLongitude);
+	Serial.print("The degrees longitude are ");
+	Serial.println(airman.GPS_GPGLL.degreeLongitude);
+	Serial.print("longitude Direction is ");
+	Serial.println(airman.GPS_GPGLL.longitudeDirection);
+
+
+
+	Serial.print("Wind Speed is ");
+	Serial.println(airman.WIND_WIMWV.windSpeed);
 
 	// Reseting the internal variables
 	airman.resetInternalNMEA();
