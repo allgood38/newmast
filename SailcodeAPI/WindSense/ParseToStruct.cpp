@@ -15,7 +15,6 @@
 
 int WindSense::parseInternalNMEA(char* input) {
 
-
 	if (strcmp(input,"GPGLL") == 0) {
 		//	updateGPS_GPGLL
 		updateGPS_GPGLL();
@@ -24,6 +23,9 @@ int WindSense::parseInternalNMEA(char* input) {
 		updateWIND_WIMWV();
 	} else if (strcmp(input, "GPVTG") == 0) {
 		updateSPEED_GPVTG();
+	} else {
+		// TODO Handle parse without valid
+		// NMEA label
 	}
 
 	return 1;
@@ -31,7 +33,7 @@ int WindSense::parseInternalNMEA(char* input) {
 
 /** Update the GPS Data Struct by parsing
  *
- * Given that the format of the lattitude and longitude
+ * Given that the format of the latitude and longitude
  * are given in a form which exceeds the accuracy of our
  * Arduino, we need to break it into minutes and degrees
  * into separate integers.
@@ -40,39 +42,56 @@ int WindSense::parseInternalNMEA(char* input) {
  */
 int WindSense::updateGPS_GPGLL() {
 	char* pEnd;
-	char minutes[5];
-	char degrees[5];
+	char minutes[10];
+	char degrees[10];
 
-	for (int i = 0; i < 4; i++) {
-		minutes[i] = stringArray[1][i];
-		degrees[i] = stringArray[1][i+5];
+	/* The AIRMAR Actually reports invalid data, check it
+	 * here and abort with 0 if invalid, not doing this
+	 * will definitely crash the for loops
+	 */
+	if (stringArray[6][0] == 'V') {
+		return 0;
 	}
-	minutes[4] = '\0';
-	degrees[5] = '\0';
 
+	// Since there will be parsing, an index will be used
+	int idx = 0;
+
+	/* The following two loops parse the latitude, uses
+	 * the period as a separator between the minutes
+	 * and degrees
+	 */
+	for (int i = 0; stringArray[1][idx] != '.'; i++) {
+		minutes[i] = stringArray[1][idx++];
+		// Always keeping a null at the end
+		minutes[i+1] = '\0';
+	}
+	// Skip the period
+	idx++;
+	for (int i = 0; stringArray[1][idx] != '\0'; i++) {
+		degrees[i] = stringArray[1][idx++];
+		degrees[i+1] = '\0';
+	}
+
+	// Extract int from the isolated strings
 	GPS_GPGLL.minuteLatitude = (int)strtol(minutes,&pEnd,10);
 	GPS_GPGLL.degreeLatitude = (int)strtol(degrees,&pEnd,10);
 
-	for (int i = 0; i < 4; i++) {
-		minutes[i] = stringArray[3][i];
-		degrees[i] = stringArray[3][i+5];
+	idx=0;
+	for (int i = 0; stringArray[3][idx] != '.'; i++) {
+		minutes[i] = stringArray[3][idx++];
+		minutes[i+1] = '\0';
 	}
-	minutes[4] = '\0';
-	degrees[5] = '\0';
+	idx++;
+	for (int i = 0; stringArray[3][idx] != '\0'; i++) {
+		degrees[i] = stringArray[3][idx++];
+		degrees[i+1] = '\0';
+	}
 
 	GPS_GPGLL.minuteLongitude = (int)strtol(minutes,&pEnd,10);
 	GPS_GPGLL.degreeLongitude = (int)strtol(degrees,&pEnd,10);
 	
 	GPS_GPGLL.latitudeDirection = stringArray[2][0];
 	GPS_GPGLL.longitudeDirection = stringArray[4][0];
-
-	// Debugging Nov 14, remove if found
-	Serial.print("The current value of String 1 is ");
-	Serial.println(stringArray[1]);
-	Serial.print("Minutes in string ");
-	Serial.println(minutes);
-	Serial.print("Degrees in String ");
-	Serial.println(degrees);
 
 	return 1;
 }
@@ -84,6 +103,11 @@ int WindSense::updateGPS_GPGLL() {
  * @out [WIND_WIMWV] All Data Fields
  */
 int WindSense::updateWIND_WIMWV() {
+	// Check if the AIRMAR says the data is valid
+	if (stringArray[5][0] == 'V') {
+		return 0;
+	}
+
 	WIND_WIMWV.windAngle      = strtod(stringArray[1],'\0');
 	WIND_WIMWV.reference      = stringArray[2][0];
 	WIND_WIMWV.windSpeed      = strtod(stringArray[3],'\0');
@@ -100,12 +124,15 @@ int WindSense::updateWIND_WIMWV() {
  * @out [SPEED_GPVTG] All Data Fields
  */
 int WindSense::updateSPEED_GPVTG() {
-	// $GPVTG,224.9,T,237.5,M,0.0,N,0.0,K,A*2D
+	// Check if the AIRMAR says the data is valid
+	if (stringArray[9][0] == 'N') {
+		return 0;
+	}
 	
-	SPEED_GPVTG.courseoverGround = strtod(stringArray[1], '\0');
+	SPEED_GPVTG.courseoverGround      = strtod(stringArray[1], '\0');
 	SPEED_GPVTG.unitCourseMeasurement = stringArray[2][0];
-	SPEED_GPVTG.speedoverGround = strtod(stringArray[5], '\0');
-	SPEED_GPVTG.speedUnits = stringArray[6][0];
+	SPEED_GPVTG.speedoverGround       = strtod(stringArray[5], '\0');
+	SPEED_GPVTG.speedUnits            = stringArray[6][0];
 	
 	return 1;
 }

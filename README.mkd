@@ -6,7 +6,9 @@ that anyone who wants to use it doesn't need to worry about any of the
 internals, they will simply need to instantiate it, tell it to poll the
 sensor for data and provide it through access methods.
 
-# WindSense Nearing completion, documentation on its exact usage to
+# WindSense 
+
+Nearing completion, documentation on its exact usage to
 follow upon completion. Then a unit test will need to be written.
 
 It will need to be instantiated with the memory of a Hardware Serial

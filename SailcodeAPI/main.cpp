@@ -11,6 +11,7 @@
  */
 // Variables
 WindSense airman;
+
 // Prototypes
 void dump();
 
@@ -74,10 +75,23 @@ void dump() {
 	Serial.print("longitude Direction is ");
 	Serial.println(airman.GPS_GPGLL.longitudeDirection);
 
-
-
 	Serial.print("Wind Speed is ");
 	Serial.println(airman.WIND_WIMWV.windSpeed);
+	Serial.print("Units for the speed ");
+	Serial.println(airman.WIND_WIMWV.windSpeedUnits);
+	Serial.print("The angle is ");
+	Serial.println(airman.WIND_WIMWV.windAngle);
+	Serial.print("The reference for that angle ");
+	Serial.println(airman.WIND_WIMWV.reference);
+	
+	Serial.print("Speed over ground ");
+	Serial.println(airman.SPEED_GPVTG.speedoverGround);
+	Serial.print("Units ");
+	Serial.println(airman.SPEED_GPVTG.speedUnits);
+	Serial.print("Course over ground ");
+	Serial.println(airman.SPEED_GPVTG.courseoverGround);
+	Serial.print("Units ");
+	Serial.println(airman.SPEED_GPVTG.unitCourseMeasurement);
 
 	// Reseting the internal variables
 	airman.resetInternalNMEA();

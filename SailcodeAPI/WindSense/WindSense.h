@@ -3,6 +3,7 @@
 
 // This brings in the Arduino Standard Functions
 // For the Hardware Serial Functions only
+// and the delay function used during initialisation
 #include <WProgram.h>
 #include <stdlib.h>   // Parsing Functions
 #include <string.h>   // String Comparison Functions
@@ -11,7 +12,7 @@
 class WindSense {
 public:
     WindSense();
-    WindSense(HardwareSerial* serial);
+    WindSense(HardwareSerial* inSerial);
     int grabChar(char input);
 
     int validateNMEA(char* input);
@@ -71,6 +72,10 @@ public:
     GPGLL GPS_GPGLL;
 	WIMWV WIND_WIMWV;
 	GPVTG SPEED_GPVTG;
+
+	// Create an instance of the Hardware Serial
+	// to be used within the class
+	HardwareSerial* senSerial;
 };
 
 #endif
