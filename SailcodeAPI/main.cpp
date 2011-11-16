@@ -1,3 +1,14 @@
+/** @mainpage
+ *
+ * @section intro Introduction
+ * This is a complete rewrite of the original sailcode, the idea is to break
+ * the main functions of the boat into reusable libraries. Each library is a
+ * class with a bunch of member functions and some data structs.
+ *
+ * There should be a library for the Wind Sensor and compass, the Polulu, any
+ * ethernet communications and maybe the sailing logic.
+ */
+
 #include <WProgram.h>
 #include <arduino.h>
 #include "WindSense/WindSense.h"

@@ -30,6 +30,7 @@ public:
 
 	//Functions with AIRMARSpecific
 	int debug(HardwareSerial &debugPortIn);
+	int debugDump(HardwareSerial &debugPortIn);
 
 
     int partCount;            //!< index for partSentence
@@ -80,7 +81,6 @@ public:
 	// Create an instance of the Hardware Serial
 	// to be used within the class
 	HardwareSerial* senSerial;
-	HardwareSerial* debugPort;
 };
 
 #endif

@@ -12,18 +12,36 @@
  * runs through them with the  validation, splitting and
  * parsing functions. It spits out output the entire way.
  *
- * @note The Serial port given to this function must have
+ * For this function to work properly, it must be called
+ * within a loop. If this were the only line to be executed
+ * in the main loop, it would work as expected.
+ *
+ * @NOTE The Serial port given to this function must have
  * already had the baud rate set
  */
 int WindSense::debug(HardwareSerial &debugPortIn) {
-	debugPort = &debugPortIn;
-	while (!debugPort->available()) {
-		// DO Nothing
+	HardwareSerial* debugPort = &debugPortIn;
+
+	while(debugPort->available()) {
+		if (grabChar(debugPort->read())) {
+			debugDump(*debugPort);
+		}
 	}
-	while (!grabChar(debugPort->read())) {
-		// DO Nothing
-		debugPort->println("Got a char");
-	}
+
+	return 1;
+}
+
+/** Dumps a lot of info to the computers serial line
+ *
+ * Would have been incorporated directly into the debug
+ * function, but it just takes up too much space. In the
+ * event the flash image for the arduino becomes too large
+ * be sure to get rid of this function.
+ *
+ * @NOTE Resets the Internal NMEA Index counters
+ */
+int WindSense::debugDump(HardwareSerial &debugPortIn) {
+	HardwareSerial* debugPort = &debugPortIn;
 
 	// Information about what is in the partSentence Buffer
 	debugPort->println("NMEA Detected");
@@ -43,40 +61,38 @@ int WindSense::debug(HardwareSerial &debugPortIn) {
 	parseInternalNMEA(stringArray[0]);
 
 	// Dump the degrees and minutes to see if it worked
-	Serial.print("The minutes lattitude are ");
-	Serial.println(GPS_GPGLL.minuteLatitude);
-	Serial.print("The degrees lattitude are ");
-	Serial.println(GPS_GPGLL.degreeLatitude);
-	Serial.print("Lattitude Direction is ");
-	Serial.println(GPS_GPGLL.latitudeDirection);
+	debugPort->print("The minutes lattitude are ");
+	debugPort->println(GPS_GPGLL.minuteLatitude);
+	debugPort->print("The degrees lattitude are ");
+	debugPort->println(GPS_GPGLL.degreeLatitude);
+	debugPort->print("Lattitude Direction is ");
+	debugPort->println(GPS_GPGLL.latitudeDirection);
 
-	Serial.print("The minutes longitude are ");
-	Serial.println(GPS_GPGLL.minuteLongitude);
-	Serial.print("The degrees longitude are ");
-	Serial.println(GPS_GPGLL.degreeLongitude);
-	Serial.print("longitude Direction is ");
-	Serial.println(GPS_GPGLL.longitudeDirection);
+	debugPort->print("The minutes longitude are ");
+	debugPort->println(GPS_GPGLL.minuteLongitude);
+	debugPort->print("The degrees longitude are ");
+	debugPort->println(GPS_GPGLL.degreeLongitude);
+	debugPort->print("longitude Direction is ");
+	debugPort->println(GPS_GPGLL.longitudeDirection);
 
-	Serial.print("Wind Speed is ");
-	Serial.println(WIND_WIMWV.windSpeed);
-	Serial.print("Units for the speed ");
-	Serial.println(WIND_WIMWV.windSpeedUnits);
-	Serial.print("The angle is ");
-	Serial.println(WIND_WIMWV.windAngle);
-	Serial.print("The reference for that angle ");
-	Serial.println(WIND_WIMWV.reference);
+	debugPort->print("Wind Speed is ");
+	debugPort->println(WIND_WIMWV.windSpeed);
+	debugPort->print("Units for the speed ");
+	debugPort->println(WIND_WIMWV.windSpeedUnits);
+	debugPort->print("The angle is ");
+	debugPort->println(WIND_WIMWV.windAngle);
+	debugPort->print("The reference for that angle ");
+	debugPort->println(WIND_WIMWV.reference);
 
-	Serial.print("Speed over ground ");
-	Serial.println(SPEED_GPVTG.speedoverGround);
-	Serial.print("Units ");
-	Serial.println(SPEED_GPVTG.speedUnits);
-	Serial.print("Course over ground ");
-	Serial.println(SPEED_GPVTG.courseoverGround);
-	Serial.print("Units ");
-	Serial.println(SPEED_GPVTG.unitCourseMeasurement);
+	debugPort->print("Speed over ground ");
+	debugPort->println(SPEED_GPVTG.speedoverGround);
+	debugPort->print("Units ");
+	debugPort->println(SPEED_GPVTG.speedUnits);
+	debugPort->print("Course over ground ");
+	debugPort->println(SPEED_GPVTG.courseoverGround);
+	debugPort->print("Units ");
+	debugPort->println(SPEED_GPVTG.unitCourseMeasurement);
 
 	resetInternalNMEA();
-
-	delay(1000);
 	return 1;
 }
