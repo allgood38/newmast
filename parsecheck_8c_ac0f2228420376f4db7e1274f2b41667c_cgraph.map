@@ -1,6 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$parsecheck_8c.html#a6eb38aec2c73ba0d09c04402f444b9e3" title="Adds a character to the partial sentence string." alt="" coords="120,5,195,35"/>
-<area shape="rect" id="node5" href="$functionTest_8cpp.html#a9b237b141b8e5beb59c15cdd7178a37a" title="dummyRead" alt="" coords="109,59,205,88"/>
-<area shape="rect" id="node7" href="$parsecheck_8c.html#a1f4fed0e3605418484d1a70044dd3c96" title="Returns true if the checksum matches at the end." alt="" coords="104,112,211,141"/>
-<area shape="rect" id="node9" href="$checksum_8c.html#a9a792c4f33863f57f6bb9750f265e1a8" title="The goal is to parse the insides of the sentence and the checksum so that they may be fed into the ch..." alt="" coords="111,165,204,195"/>
-</map>

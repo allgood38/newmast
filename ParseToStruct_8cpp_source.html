@@ -69,7 +69,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>Globals</span></a></li>
     </ul>
   </div>
 <div class="header">
@@ -77,10 +76,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">ParseToStruct.cpp</div>  </div>
 </div>
 <div class="contents">
-<a href="ParseToStruct_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 
+<div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 
 <a name="l00014"></a>00014 <span class="preprocessor">#include &quot;WindSense.h&quot;</span>
 <a name="l00015"></a>00015 
-<a name="l00016"></a><a class="code" href="classWindSense.html#a3bda1198330c913cadd51eb5bf9652a8">00016</a> <span class="keywordtype">int</span> <a class="code" href="classWindSense.html#a3ad16324837db2e9c4444103c03098a4">WindSense::parseInternalNMEA</a>(<span class="keywordtype">char</span>* input) {
+<a name="l00016"></a><a class="code" href="classWindSense.html#a3bda1198330c913cadd51eb5bf9652a8">00016</a> <span class="keywordtype">int</span> <a class="code" href="classWindSense.html#a3bda1198330c913cadd51eb5bf9652a8" title="Contains all of the parsing functions parseToStruct.cpp.">WindSense::parseInternalNMEA</a>(<span class="keywordtype">char</span>* input) {
 <a name="l00017"></a>00017 
 <a name="l00018"></a>00018     <span class="keywordflow">if</span> (strcmp(input,<span class="stringliteral">&quot;GPGLL&quot;</span>) == 0) {
 <a name="l00019"></a>00019         <span class="comment">//  updateGPS_GPGLL</span>
@@ -101,7 +100,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00043"></a><a class="code" href="classWindSense.html#a1d7be6f9e3ed9964a1661df7bf44df9d">00043</a> <span class="keywordtype">int</span> <a class="code" href="classWindSense.html#a1d7be6f9e3ed9964a1661df7bf44df9d" title="Update the GPS Data Struct by parsing.">WindSense::updateGPS_GPGLL</a>() {
 <a name="l00044"></a>00044     <span class="keywordtype">char</span>* pEnd;
 <a name="l00045"></a>00045     <span class="keywordtype">char</span> minutes[10];
-<a name="l00046"></a>00046     <span class="keywordtype">char</span> <a class="code" href="wiring_8h.html#afe93c2c14da376a1621194c15c1de496">degrees</a>[10];
+<a name="l00046"></a>00046     <span class="keywordtype">char</span> degrees[10];
 <a name="l00047"></a>00047 
 <a name="l00048"></a>00048     <span class="comment">/* The AIRMAR Actually reports invalid data, check it</span>
 <a name="l00049"></a>00049 <span class="comment">     * here and abort with 0 if invalid, not doing this</span>
@@ -118,38 +117,38 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00060"></a>00060 <span class="comment">     * the period as a separator between the minutes</span>
 <a name="l00061"></a>00061 <span class="comment">     * and degrees</span>
 <a name="l00062"></a>00062 <span class="comment">     */</span>
-<a name="l00063"></a>00063     <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="parsecheck_8c.html#acb559820d9ca11295b4500f179ef6392">i</a> = 0; <a class="code" href="classWindSense.html#afd05c14e6eae93432dbc0bc66737563d" title="Array of strings for splitNMEA.">stringArray</a>[1][idx] != <span class="charliteral">&#39;.&#39;</span>; <a class="code" href="parsecheck_8c.html#acb559820d9ca11295b4500f179ef6392">i</a>++) {
-<a name="l00064"></a>00064         minutes[<a class="code" href="parsecheck_8c.html#acb559820d9ca11295b4500f179ef6392">i</a>] = <a class="code" href="classWindSense.html#afd05c14e6eae93432dbc0bc66737563d" title="Array of strings for splitNMEA.">stringArray</a>[1][idx++];
+<a name="l00063"></a>00063     <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; <a class="code" href="classWindSense.html#afd05c14e6eae93432dbc0bc66737563d" title="Array of strings for splitNMEA.">stringArray</a>[1][idx] != <span class="charliteral">&#39;.&#39;</span>; i++) {
+<a name="l00064"></a>00064         minutes[i] = <a class="code" href="classWindSense.html#afd05c14e6eae93432dbc0bc66737563d" title="Array of strings for splitNMEA.">stringArray</a>[1][idx++];
 <a name="l00065"></a>00065         <span class="comment">// Always keeping a null at the end</span>
-<a name="l00066"></a>00066         minutes[<a class="code" href="parsecheck_8c.html#acb559820d9ca11295b4500f179ef6392">i</a>+1] = <span class="charliteral">&#39;\0&#39;</span>;
+<a name="l00066"></a>00066         minutes[i+1] = <span class="charliteral">&#39;\0&#39;</span>;
 <a name="l00067"></a>00067     }
 <a name="l00068"></a>00068     <span class="comment">// Skip the period</span>
 <a name="l00069"></a>00069     idx++;
-<a name="l00070"></a>00070     <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="parsecheck_8c.html#acb559820d9ca11295b4500f179ef6392">i</a> = 0; <a class="code" href="classWindSense.html#afd05c14e6eae93432dbc0bc66737563d" title="Array of strings for splitNMEA.">stringArray</a>[1][idx] != <span class="charliteral">&#39;\0&#39;</span>; <a class="code" href="parsecheck_8c.html#acb559820d9ca11295b4500f179ef6392">i</a>++) {
-<a name="l00071"></a>00071         degrees[<a class="code" href="parsecheck_8c.html#acb559820d9ca11295b4500f179ef6392">i</a>] = <a class="code" href="classWindSense.html#afd05c14e6eae93432dbc0bc66737563d" title="Array of strings for splitNMEA.">stringArray</a>[1][idx++];
-<a name="l00072"></a>00072         degrees[<a class="code" href="parsecheck_8c.html#acb559820d9ca11295b4500f179ef6392">i</a>+1] = <span class="charliteral">&#39;\0&#39;</span>;
+<a name="l00070"></a>00070     <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; <a class="code" href="classWindSense.html#afd05c14e6eae93432dbc0bc66737563d" title="Array of strings for splitNMEA.">stringArray</a>[1][idx] != <span class="charliteral">&#39;\0&#39;</span>; i++) {
+<a name="l00071"></a>00071         degrees[i] = <a class="code" href="classWindSense.html#afd05c14e6eae93432dbc0bc66737563d" title="Array of strings for splitNMEA.">stringArray</a>[1][idx++];
+<a name="l00072"></a>00072         degrees[i+1] = <span class="charliteral">&#39;\0&#39;</span>;
 <a name="l00073"></a>00073     }
 <a name="l00074"></a>00074 
 <a name="l00075"></a>00075     <span class="comment">// Extract int from the isolated strings</span>
-<a name="l00076"></a>00076     <a class="code" href="classWindSense.html#a24f70cd5284c30228676f62c5107d5dd">GPS_GPGLL</a>.<a class="code" href="structWindSense_1_1GPGLL.html#af4d7e37d4bda974a3398f4f8cbdb9f3e">minuteLatitude</a> = (int)strtol(minutes,&amp;pEnd,10);
-<a name="l00077"></a>00077     <a class="code" href="classWindSense.html#a24f70cd5284c30228676f62c5107d5dd">GPS_GPGLL</a>.<a class="code" href="structWindSense_1_1GPGLL.html#a81a9535580a3b1dc8ed6fa7ad778f2cc">degreeLatitude</a> = (int)strtol(degrees,&amp;pEnd,10);
+<a name="l00076"></a>00076     GPS_GPGLL.minuteLatitude = (int)strtol(minutes,&amp;pEnd,10);
+<a name="l00077"></a>00077     GPS_GPGLL.degreeLatitude = (int)strtol(degrees,&amp;pEnd,10);
 <a name="l00078"></a>00078 
 <a name="l00079"></a>00079     idx=0;
-<a name="l00080"></a>00080     <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="parsecheck_8c.html#acb559820d9ca11295b4500f179ef6392">i</a> = 0; <a class="code" href="classWindSense.html#afd05c14e6eae93432dbc0bc66737563d" title="Array of strings for splitNMEA.">stringArray</a>[3][idx] != <span class="charliteral">&#39;.&#39;</span>; <a class="code" href="parsecheck_8c.html#acb559820d9ca11295b4500f179ef6392">i</a>++) {
-<a name="l00081"></a>00081         minutes[<a class="code" href="parsecheck_8c.html#acb559820d9ca11295b4500f179ef6392">i</a>] = <a class="code" href="classWindSense.html#afd05c14e6eae93432dbc0bc66737563d" title="Array of strings for splitNMEA.">stringArray</a>[3][idx++];
-<a name="l00082"></a>00082         minutes[<a class="code" href="parsecheck_8c.html#acb559820d9ca11295b4500f179ef6392">i</a>+1] = <span class="charliteral">&#39;\0&#39;</span>;
+<a name="l00080"></a>00080     <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; <a class="code" href="classWindSense.html#afd05c14e6eae93432dbc0bc66737563d" title="Array of strings for splitNMEA.">stringArray</a>[3][idx] != <span class="charliteral">&#39;.&#39;</span>; i++) {
+<a name="l00081"></a>00081         minutes[i] = <a class="code" href="classWindSense.html#afd05c14e6eae93432dbc0bc66737563d" title="Array of strings for splitNMEA.">stringArray</a>[3][idx++];
+<a name="l00082"></a>00082         minutes[i+1] = <span class="charliteral">&#39;\0&#39;</span>;
 <a name="l00083"></a>00083     }
 <a name="l00084"></a>00084     idx++;
-<a name="l00085"></a>00085     <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="parsecheck_8c.html#acb559820d9ca11295b4500f179ef6392">i</a> = 0; <a class="code" href="classWindSense.html#afd05c14e6eae93432dbc0bc66737563d" title="Array of strings for splitNMEA.">stringArray</a>[3][idx] != <span class="charliteral">&#39;\0&#39;</span>; <a class="code" href="parsecheck_8c.html#acb559820d9ca11295b4500f179ef6392">i</a>++) {
-<a name="l00086"></a>00086         degrees[<a class="code" href="parsecheck_8c.html#acb559820d9ca11295b4500f179ef6392">i</a>] = <a class="code" href="classWindSense.html#afd05c14e6eae93432dbc0bc66737563d" title="Array of strings for splitNMEA.">stringArray</a>[3][idx++];
-<a name="l00087"></a>00087         degrees[<a class="code" href="parsecheck_8c.html#acb559820d9ca11295b4500f179ef6392">i</a>+1] = <span class="charliteral">&#39;\0&#39;</span>;
+<a name="l00085"></a>00085     <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; <a class="code" href="classWindSense.html#afd05c14e6eae93432dbc0bc66737563d" title="Array of strings for splitNMEA.">stringArray</a>[3][idx] != <span class="charliteral">&#39;\0&#39;</span>; i++) {
+<a name="l00086"></a>00086         degrees[i] = <a class="code" href="classWindSense.html#afd05c14e6eae93432dbc0bc66737563d" title="Array of strings for splitNMEA.">stringArray</a>[3][idx++];
+<a name="l00087"></a>00087         degrees[i+1] = <span class="charliteral">&#39;\0&#39;</span>;
 <a name="l00088"></a>00088     }
 <a name="l00089"></a>00089 
-<a name="l00090"></a>00090     <a class="code" href="classWindSense.html#a24f70cd5284c30228676f62c5107d5dd">GPS_GPGLL</a>.<a class="code" href="structWindSense_1_1GPGLL.html#ad85d30e607801e88d4ead6140ce7ada2">minuteLongitude</a> = (int)strtol(minutes,&amp;pEnd,10);
-<a name="l00091"></a>00091     <a class="code" href="classWindSense.html#a24f70cd5284c30228676f62c5107d5dd">GPS_GPGLL</a>.<a class="code" href="structWindSense_1_1GPGLL.html#a25d47dcb1d62bbe4e10ae9311e9a1284">degreeLongitude</a> = (int)strtol(degrees,&amp;pEnd,10);
+<a name="l00090"></a>00090     GPS_GPGLL.minuteLongitude = (int)strtol(minutes,&amp;pEnd,10);
+<a name="l00091"></a>00091     GPS_GPGLL.degreeLongitude = (int)strtol(degrees,&amp;pEnd,10);
 <a name="l00092"></a>00092     
-<a name="l00093"></a>00093     <a class="code" href="classWindSense.html#a24f70cd5284c30228676f62c5107d5dd">GPS_GPGLL</a>.<a class="code" href="structWindSense_1_1GPGLL.html#acc23dd60b06b5e6b3708960127cda605">latitudeDirection</a> = <a class="code" href="classWindSense.html#afd05c14e6eae93432dbc0bc66737563d" title="Array of strings for splitNMEA.">stringArray</a>[2][0];
-<a name="l00094"></a>00094     <a class="code" href="classWindSense.html#a24f70cd5284c30228676f62c5107d5dd">GPS_GPGLL</a>.<a class="code" href="structWindSense_1_1GPGLL.html#a38931004dc2c0c6a1ef6e100a96358b2">longitudeDirection</a> = <a class="code" href="classWindSense.html#afd05c14e6eae93432dbc0bc66737563d" title="Array of strings for splitNMEA.">stringArray</a>[4][0];
+<a name="l00093"></a>00093     GPS_GPGLL.latitudeDirection = <a class="code" href="classWindSense.html#afd05c14e6eae93432dbc0bc66737563d" title="Array of strings for splitNMEA.">stringArray</a>[2][0];
+<a name="l00094"></a>00094     GPS_GPGLL.longitudeDirection = <a class="code" href="classWindSense.html#afd05c14e6eae93432dbc0bc66737563d" title="Array of strings for splitNMEA.">stringArray</a>[4][0];
 <a name="l00095"></a>00095 
 <a name="l00096"></a>00096     <span class="keywordflow">return</span> 1;
 <a name="l00097"></a>00097 }
@@ -160,11 +159,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00108"></a>00108         <span class="keywordflow">return</span> 0;
 <a name="l00109"></a>00109     }
 <a name="l00110"></a>00110 
-<a name="l00111"></a>00111     <a class="code" href="classWindSense.html#aa4e41042ca6323048f5f00d30d2f15d3">WIND_WIMWV</a>.<a class="code" href="structWindSense_1_1WIMWV.html#a24bff21695b80eb0f00580f6a58fd972">windAngle</a>      = strtod(<a class="code" href="classWindSense.html#afd05c14e6eae93432dbc0bc66737563d" title="Array of strings for splitNMEA.">stringArray</a>[1],<span class="charliteral">&#39;\0&#39;</span>);
-<a name="l00112"></a>00112     <a class="code" href="classWindSense.html#aa4e41042ca6323048f5f00d30d2f15d3">WIND_WIMWV</a>.<a class="code" href="structWindSense_1_1WIMWV.html#aab03ac8cb967677eba6a98ac5b8e04e2">reference</a>      = <a class="code" href="classWindSense.html#afd05c14e6eae93432dbc0bc66737563d" title="Array of strings for splitNMEA.">stringArray</a>[2][0];
-<a name="l00113"></a>00113     <a class="code" href="classWindSense.html#aa4e41042ca6323048f5f00d30d2f15d3">WIND_WIMWV</a>.<a class="code" href="structWindSense_1_1WIMWV.html#a8a92124fd0443176c80be219e3c122ad">windSpeed</a>      = strtod(<a class="code" href="classWindSense.html#afd05c14e6eae93432dbc0bc66737563d" title="Array of strings for splitNMEA.">stringArray</a>[3],<span class="charliteral">&#39;\0&#39;</span>);
-<a name="l00114"></a>00114     <a class="code" href="classWindSense.html#aa4e41042ca6323048f5f00d30d2f15d3">WIND_WIMWV</a>.<a class="code" href="structWindSense_1_1WIMWV.html#a95dd9d1e5796d983056b9d33fe78baf2">windSpeedUnits</a> = <a class="code" href="classWindSense.html#afd05c14e6eae93432dbc0bc66737563d" title="Array of strings for splitNMEA.">stringArray</a>[4][0];
-<a name="l00115"></a>00115     <a class="code" href="classWindSense.html#aa4e41042ca6323048f5f00d30d2f15d3">WIND_WIMWV</a>.<a class="code" href="structWindSense_1_1WIMWV.html#a70cdbb1abfa0cb7c4aad6cf973b87306">valid</a>          = <a class="code" href="classWindSense.html#afd05c14e6eae93432dbc0bc66737563d" title="Array of strings for splitNMEA.">stringArray</a>[5][0];
+<a name="l00111"></a>00111     WIND_WIMWV.windAngle      = strtod(<a class="code" href="classWindSense.html#afd05c14e6eae93432dbc0bc66737563d" title="Array of strings for splitNMEA.">stringArray</a>[1],<span class="charliteral">&#39;\0&#39;</span>);
+<a name="l00112"></a>00112     WIND_WIMWV.reference      = <a class="code" href="classWindSense.html#afd05c14e6eae93432dbc0bc66737563d" title="Array of strings for splitNMEA.">stringArray</a>[2][0];
+<a name="l00113"></a>00113     WIND_WIMWV.windSpeed      = strtod(<a class="code" href="classWindSense.html#afd05c14e6eae93432dbc0bc66737563d" title="Array of strings for splitNMEA.">stringArray</a>[3],<span class="charliteral">&#39;\0&#39;</span>);
+<a name="l00114"></a>00114     WIND_WIMWV.windSpeedUnits = <a class="code" href="classWindSense.html#afd05c14e6eae93432dbc0bc66737563d" title="Array of strings for splitNMEA.">stringArray</a>[4][0];
+<a name="l00115"></a>00115     WIND_WIMWV.valid          = <a class="code" href="classWindSense.html#afd05c14e6eae93432dbc0bc66737563d" title="Array of strings for splitNMEA.">stringArray</a>[5][0];
 <a name="l00116"></a>00116 
 <a name="l00117"></a>00117     <span class="keywordflow">return</span> 1;
 <a name="l00118"></a>00118 }
@@ -175,10 +174,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00129"></a>00129         <span class="keywordflow">return</span> 0;
 <a name="l00130"></a>00130     }
 <a name="l00131"></a>00131     
-<a name="l00132"></a>00132     <a class="code" href="classWindSense.html#a545ca2abb5640fbe6dd5647b49211b78">SPEED_GPVTG</a>.<a class="code" href="structWindSense_1_1GPVTG.html#a03d56926a82a1ff48f0796d7b03c95b1">courseoverGround</a>      = strtod(<a class="code" href="classWindSense.html#afd05c14e6eae93432dbc0bc66737563d" title="Array of strings for splitNMEA.">stringArray</a>[1], <span class="charliteral">&#39;\0&#39;</span>);
-<a name="l00133"></a>00133     <a class="code" href="classWindSense.html#a545ca2abb5640fbe6dd5647b49211b78">SPEED_GPVTG</a>.<a class="code" href="structWindSense_1_1GPVTG.html#a06d286b75386d8d7ab0e2343ece7060b">unitCourseMeasurement</a> = <a class="code" href="classWindSense.html#afd05c14e6eae93432dbc0bc66737563d" title="Array of strings for splitNMEA.">stringArray</a>[2][0];
-<a name="l00134"></a>00134     <a class="code" href="classWindSense.html#a545ca2abb5640fbe6dd5647b49211b78">SPEED_GPVTG</a>.<a class="code" href="structWindSense_1_1GPVTG.html#a4e3a8d4405b839b4cec726e1d6083bb8">speedoverGround</a>       = strtod(<a class="code" href="classWindSense.html#afd05c14e6eae93432dbc0bc66737563d" title="Array of strings for splitNMEA.">stringArray</a>[5], <span class="charliteral">&#39;\0&#39;</span>);
-<a name="l00135"></a>00135     <a class="code" href="classWindSense.html#a545ca2abb5640fbe6dd5647b49211b78">SPEED_GPVTG</a>.<a class="code" href="structWindSense_1_1GPVTG.html#af0e6b88f4ffda74f8e3df25873ddb0f2">speedUnits</a>            = <a class="code" href="classWindSense.html#afd05c14e6eae93432dbc0bc66737563d" title="Array of strings for splitNMEA.">stringArray</a>[6][0];
+<a name="l00132"></a>00132     SPEED_GPVTG.courseoverGround      = strtod(<a class="code" href="classWindSense.html#afd05c14e6eae93432dbc0bc66737563d" title="Array of strings for splitNMEA.">stringArray</a>[1], <span class="charliteral">&#39;\0&#39;</span>);
+<a name="l00133"></a>00133     SPEED_GPVTG.unitCourseMeasurement = <a class="code" href="classWindSense.html#afd05c14e6eae93432dbc0bc66737563d" title="Array of strings for splitNMEA.">stringArray</a>[2][0];
+<a name="l00134"></a>00134     SPEED_GPVTG.speedoverGround       = strtod(<a class="code" href="classWindSense.html#afd05c14e6eae93432dbc0bc66737563d" title="Array of strings for splitNMEA.">stringArray</a>[5], <span class="charliteral">&#39;\0&#39;</span>);
+<a name="l00135"></a>00135     SPEED_GPVTG.speedUnits            = <a class="code" href="classWindSense.html#afd05c14e6eae93432dbc0bc66737563d" title="Array of strings for splitNMEA.">stringArray</a>[6][0];
 <a name="l00136"></a>00136     
 <a name="l00137"></a>00137     <span class="keywordflow">return</span> 1;
 <a name="l00138"></a>00138 }
@@ -189,7 +188,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Defines</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -201,7 +200,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Nov 15 2011 12:18:46 for NEWMAST by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Nov 16 2011 13:25:30 for NEWMAST by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.5.1
 </small></address>

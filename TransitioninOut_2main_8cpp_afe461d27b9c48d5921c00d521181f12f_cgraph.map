@@ -1,9 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$classHardwareSerial.html#a60e2bb4a3f40cfaf94601cd4e3333f43" title="HardwareSerial::available" alt="" coords="101,5,272,35"/>
-<area shape="rect" id="node5" href="$classPrint.html#abeb8bc6c2d103469679b88c1a966a21f" title="Print::println" alt="" coords="141,59,232,88"/>
-<area shape="rect" id="node7" href="$classPrint.html#a6c1f2f9a1988fe2d4ed593b3ac0185c7" title="Print::print" alt="" coords="461,59,544,88"/>
-<area shape="rect" id="node17" href="$classHardwareSerial.html#a760f254188b4687f5a8a74f4ddd3c83d" title="HardwareSerial::read" alt="" coords="115,163,259,192"/>
-<area shape="rect" id="node13" href="$classPrint.html#a525b37c566658ff8113a067f6e8d5bf1" title="Print::println" alt="" coords="321,59,412,88"/>
-<area shape="rect" id="node9" href="$classString.html#a61d8c8330af43b5f6ccbf11a92457b44" title="String::length" alt="" coords="592,32,691,61"/>
-<area shape="rect" id="node11" href="$classPrint.html#ad9393033793cfc17f3e37202ba244892" title="Print::write" alt="" coords="599,85,684,115"/>
-</map>

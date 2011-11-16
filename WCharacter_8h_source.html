@@ -69,7 +69,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>Globals</span></a></li>
     </ul>
   </div>
 <div class="header">
@@ -77,7 +76,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">WCharacter.h</div>  </div>
 </div>
 <div class="contents">
-<a href="WCharacter_8h.html">Go to the documentation of this file.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">/*</span>
+<div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">/*</span>
 <a name="l00002"></a>00002 <span class="comment"> WCharacter.h - Character utility functions for Wiring &amp; Arduino</span>
 <a name="l00003"></a>00003 <span class="comment"> Copyright (c) 2010 Hernando Barragan.  All right reserved.</span>
 <a name="l00004"></a>00004 <span class="comment"> </span>
@@ -102,27 +101,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00023"></a>00023 <span class="preprocessor">#include &lt;ctype.h&gt;</span>
 <a name="l00024"></a>00024 
 <a name="l00025"></a>00025 <span class="comment">// WCharacter.h prototypes</span>
-<a name="l00026"></a>00026 <span class="keyword">inline</span> <span class="keywordtype">boolean</span> <a class="code" href="WCharacter_8h.html#a40ecbd7e679ea4d50f81ef3010c63ccb">isAlphaNumeric</a>(<span class="keywordtype">int</span> c) <a class="code" href="Blink_2arduino_8h.html#aa5aa60072f4063655d5283b6d7b7ab44">__attribute__</a>((always_inline));
-<a name="l00027"></a>00027 <span class="keyword">inline</span> <span class="keywordtype">boolean</span> <a class="code" href="WCharacter_8h.html#ae38e5f3bf4215196b1b2f01feb67dc97">isAlpha</a>(<span class="keywordtype">int</span> c) <a class="code" href="Blink_2arduino_8h.html#aa5aa60072f4063655d5283b6d7b7ab44">__attribute__</a>((always_inline));
-<a name="l00028"></a>00028 <span class="keyword">inline</span> <span class="keywordtype">boolean</span> <a class="code" href="WCharacter_8h.html#a9bef669e9a914a002f3adbf7588c5b7f">isAscii</a>(<span class="keywordtype">int</span> c) <a class="code" href="Blink_2arduino_8h.html#aa5aa60072f4063655d5283b6d7b7ab44">__attribute__</a>((always_inline));
-<a name="l00029"></a>00029 <span class="keyword">inline</span> <span class="keywordtype">boolean</span> <a class="code" href="WCharacter_8h.html#aa1e8b6ff7994c16c727de92fe82a6c5e">isWhitespace</a>(<span class="keywordtype">int</span> c) <a class="code" href="Blink_2arduino_8h.html#aa5aa60072f4063655d5283b6d7b7ab44">__attribute__</a>((always_inline));
-<a name="l00030"></a>00030 <span class="keyword">inline</span> <span class="keywordtype">boolean</span> <a class="code" href="WCharacter_8h.html#aaa11939aa26de553018e71ede803547b">isControl</a>(<span class="keywordtype">int</span> c) <a class="code" href="Blink_2arduino_8h.html#aa5aa60072f4063655d5283b6d7b7ab44">__attribute__</a>((always_inline));
-<a name="l00031"></a>00031 <span class="keyword">inline</span> <span class="keywordtype">boolean</span> <a class="code" href="WCharacter_8h.html#a00fc18068e98a00ced2de3c0cfc2793a">isDigit</a>(<span class="keywordtype">int</span> c) <a class="code" href="Blink_2arduino_8h.html#aa5aa60072f4063655d5283b6d7b7ab44">__attribute__</a>((always_inline));
-<a name="l00032"></a>00032 <span class="keyword">inline</span> <span class="keywordtype">boolean</span> <a class="code" href="WCharacter_8h.html#a6b2ac2190fa1945f099ef272ddc12eba">isGraph</a>(<span class="keywordtype">int</span> c) <a class="code" href="Blink_2arduino_8h.html#aa5aa60072f4063655d5283b6d7b7ab44">__attribute__</a>((always_inline));
-<a name="l00033"></a>00033 <span class="keyword">inline</span> <span class="keywordtype">boolean</span> <a class="code" href="WCharacter_8h.html#a9b873f379081256784af35de409f27d7">isLowerCase</a>(<span class="keywordtype">int</span> c) <a class="code" href="Blink_2arduino_8h.html#aa5aa60072f4063655d5283b6d7b7ab44">__attribute__</a>((always_inline));
-<a name="l00034"></a>00034 <span class="keyword">inline</span> <span class="keywordtype">boolean</span> <a class="code" href="WCharacter_8h.html#ae2d120664cad11b1a7819a382621c835">isPrintable</a>(<span class="keywordtype">int</span> c) <a class="code" href="Blink_2arduino_8h.html#aa5aa60072f4063655d5283b6d7b7ab44">__attribute__</a>((always_inline));
-<a name="l00035"></a>00035 <span class="keyword">inline</span> <span class="keywordtype">boolean</span> <a class="code" href="WCharacter_8h.html#ad81f2ed3aa87fe37ab781fe38e4df84b">isPunct</a>(<span class="keywordtype">int</span> c) <a class="code" href="Blink_2arduino_8h.html#aa5aa60072f4063655d5283b6d7b7ab44">__attribute__</a>((always_inline));
-<a name="l00036"></a>00036 <span class="keyword">inline</span> <span class="keywordtype">boolean</span> <a class="code" href="WCharacter_8h.html#ab0f581e7fce5dc4722b8a824561b2c29">isSpace</a>(<span class="keywordtype">int</span> c) <a class="code" href="Blink_2arduino_8h.html#aa5aa60072f4063655d5283b6d7b7ab44">__attribute__</a>((always_inline));
-<a name="l00037"></a>00037 <span class="keyword">inline</span> <span class="keywordtype">boolean</span> <a class="code" href="WCharacter_8h.html#a939653d2e98c6dcfa8646aea936d2b25">isUpperCase</a>(<span class="keywordtype">int</span> c) <a class="code" href="Blink_2arduino_8h.html#aa5aa60072f4063655d5283b6d7b7ab44">__attribute__</a>((always_inline));
-<a name="l00038"></a>00038 <span class="keyword">inline</span> <span class="keywordtype">boolean</span> <a class="code" href="WCharacter_8h.html#a04fd71c44954d2bf1e47df8bd7857678">isHexadecimalDigit</a>(<span class="keywordtype">int</span> c) <a class="code" href="Blink_2arduino_8h.html#aa5aa60072f4063655d5283b6d7b7ab44">__attribute__</a>((always_inline));
-<a name="l00039"></a>00039 <span class="keyword">inline</span> <span class="keywordtype">int</span> <a class="code" href="WCharacter_8h.html#a97b92bef1d6fd64a291d66d3671c4ac0">toAscii</a>(<span class="keywordtype">int</span> c) <a class="code" href="Blink_2arduino_8h.html#aa5aa60072f4063655d5283b6d7b7ab44">__attribute__</a>((always_inline));
-<a name="l00040"></a>00040 <span class="keyword">inline</span> <span class="keywordtype">int</span> <a class="code" href="WCharacter_8h.html#a84077490f4d133962928ab4897781a65">toLowerCase</a>(<span class="keywordtype">int</span> c) <a class="code" href="Blink_2arduino_8h.html#aa5aa60072f4063655d5283b6d7b7ab44">__attribute__</a>((always_inline));
-<a name="l00041"></a>00041 <span class="keyword">inline</span> <span class="keywordtype">int</span> <a class="code" href="WCharacter_8h.html#ae7943209e31b947b2c8b7d426b80f9b3">toUpperCase</a>(<span class="keywordtype">int</span> c)<a class="code" href="Blink_2arduino_8h.html#aa5aa60072f4063655d5283b6d7b7ab44">__attribute__</a>((always_inline));
+<a name="l00026"></a>00026 <span class="keyword">inline</span> <span class="keywordtype">boolean</span> isAlphaNumeric(<span class="keywordtype">int</span> c) __attribute__((always_inline));
+<a name="l00027"></a>00027 <span class="keyword">inline</span> <span class="keywordtype">boolean</span> isAlpha(<span class="keywordtype">int</span> c) __attribute__((always_inline));
+<a name="l00028"></a>00028 <span class="keyword">inline</span> <span class="keywordtype">boolean</span> isAscii(<span class="keywordtype">int</span> c) __attribute__((always_inline));
+<a name="l00029"></a>00029 <span class="keyword">inline</span> <span class="keywordtype">boolean</span> isWhitespace(<span class="keywordtype">int</span> c) __attribute__((always_inline));
+<a name="l00030"></a>00030 <span class="keyword">inline</span> <span class="keywordtype">boolean</span> isControl(<span class="keywordtype">int</span> c) __attribute__((always_inline));
+<a name="l00031"></a>00031 <span class="keyword">inline</span> <span class="keywordtype">boolean</span> isDigit(<span class="keywordtype">int</span> c) __attribute__((always_inline));
+<a name="l00032"></a>00032 <span class="keyword">inline</span> <span class="keywordtype">boolean</span> isGraph(<span class="keywordtype">int</span> c) __attribute__((always_inline));
+<a name="l00033"></a>00033 <span class="keyword">inline</span> <span class="keywordtype">boolean</span> isLowerCase(<span class="keywordtype">int</span> c) __attribute__((always_inline));
+<a name="l00034"></a>00034 <span class="keyword">inline</span> <span class="keywordtype">boolean</span> isPrintable(<span class="keywordtype">int</span> c) __attribute__((always_inline));
+<a name="l00035"></a>00035 <span class="keyword">inline</span> <span class="keywordtype">boolean</span> isPunct(<span class="keywordtype">int</span> c) __attribute__((always_inline));
+<a name="l00036"></a>00036 <span class="keyword">inline</span> <span class="keywordtype">boolean</span> isSpace(<span class="keywordtype">int</span> c) __attribute__((always_inline));
+<a name="l00037"></a>00037 <span class="keyword">inline</span> <span class="keywordtype">boolean</span> isUpperCase(<span class="keywordtype">int</span> c) __attribute__((always_inline));
+<a name="l00038"></a>00038 <span class="keyword">inline</span> <span class="keywordtype">boolean</span> isHexadecimalDigit(<span class="keywordtype">int</span> c) __attribute__((always_inline));
+<a name="l00039"></a>00039 <span class="keyword">inline</span> <span class="keywordtype">int</span> toAscii(<span class="keywordtype">int</span> c) __attribute__((always_inline));
+<a name="l00040"></a>00040 <span class="keyword">inline</span> <span class="keywordtype">int</span> toLowerCase(<span class="keywordtype">int</span> c) __attribute__((always_inline));
+<a name="l00041"></a>00041 <span class="keyword">inline</span> <span class="keywordtype">int</span> toUpperCase(<span class="keywordtype">int</span> c)__attribute__((always_inline));
 <a name="l00042"></a>00042 
 <a name="l00043"></a>00043 
 <a name="l00044"></a>00044 <span class="comment">// Checks for an alphanumeric character. </span>
 <a name="l00045"></a>00045 <span class="comment">// It is equivalent to (isalpha(c) || isdigit(c)).</span>
-<a name="l00046"></a><a class="code" href="WCharacter_8h.html#a40ecbd7e679ea4d50f81ef3010c63ccb">00046</a> <span class="keyword">inline</span> <span class="keywordtype">boolean</span> <a class="code" href="WCharacter_8h.html#a40ecbd7e679ea4d50f81ef3010c63ccb">isAlphaNumeric</a>(<span class="keywordtype">int</span> c) 
+<a name="l00046"></a>00046 <span class="keyword">inline</span> <span class="keywordtype">boolean</span> isAlphaNumeric(<span class="keywordtype">int</span> c) 
 <a name="l00047"></a>00047 {
 <a name="l00048"></a>00048   <span class="keywordflow">return</span> ( isalnum(c) == 0 ? <span class="keyword">false</span> : <span class="keyword">true</span>);
 <a name="l00049"></a>00049 }
@@ -130,7 +129,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00051"></a>00051 
 <a name="l00052"></a>00052 <span class="comment">// Checks for an alphabetic character. </span>
 <a name="l00053"></a>00053 <span class="comment">// It is equivalent to (isupper(c) || islower(c)).</span>
-<a name="l00054"></a><a class="code" href="WCharacter_8h.html#ae38e5f3bf4215196b1b2f01feb67dc97">00054</a> <span class="keyword">inline</span> <span class="keywordtype">boolean</span> <a class="code" href="WCharacter_8h.html#ae38e5f3bf4215196b1b2f01feb67dc97">isAlpha</a>(<span class="keywordtype">int</span> c)
+<a name="l00054"></a>00054 <span class="keyword">inline</span> <span class="keywordtype">boolean</span> isAlpha(<span class="keywordtype">int</span> c)
 <a name="l00055"></a>00055 {
 <a name="l00056"></a>00056   <span class="keywordflow">return</span> ( isalpha(c) == 0 ? <span class="keyword">false</span> : <span class="keyword">true</span>);
 <a name="l00057"></a>00057 }
@@ -138,49 +137,49 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00059"></a>00059 
 <a name="l00060"></a>00060 <span class="comment">// Checks whether c is a 7-bit unsigned char value </span>
 <a name="l00061"></a>00061 <span class="comment">// that fits into the ASCII character set.</span>
-<a name="l00062"></a><a class="code" href="WCharacter_8h.html#a9bef669e9a914a002f3adbf7588c5b7f">00062</a> <span class="keyword">inline</span> <span class="keywordtype">boolean</span> <a class="code" href="WCharacter_8h.html#a9bef669e9a914a002f3adbf7588c5b7f">isAscii</a>(<span class="keywordtype">int</span> c)
+<a name="l00062"></a>00062 <span class="keyword">inline</span> <span class="keywordtype">boolean</span> isAscii(<span class="keywordtype">int</span> c)
 <a name="l00063"></a>00063 {
 <a name="l00064"></a>00064   <span class="keywordflow">return</span> ( isascii (c) == 0 ? <span class="keyword">false</span> : <span class="keyword">true</span>);
 <a name="l00065"></a>00065 }
 <a name="l00066"></a>00066 
 <a name="l00067"></a>00067 
 <a name="l00068"></a>00068 <span class="comment">// Checks for a blank character, that is, a space or a tab.</span>
-<a name="l00069"></a><a class="code" href="WCharacter_8h.html#aa1e8b6ff7994c16c727de92fe82a6c5e">00069</a> <span class="keyword">inline</span> <span class="keywordtype">boolean</span> <a class="code" href="WCharacter_8h.html#aa1e8b6ff7994c16c727de92fe82a6c5e">isWhitespace</a>(<span class="keywordtype">int</span> c)
+<a name="l00069"></a>00069 <span class="keyword">inline</span> <span class="keywordtype">boolean</span> isWhitespace(<span class="keywordtype">int</span> c)
 <a name="l00070"></a>00070 {
 <a name="l00071"></a>00071   <span class="keywordflow">return</span> ( isblank (c) == 0 ? <span class="keyword">false</span> : <span class="keyword">true</span>);
 <a name="l00072"></a>00072 }
 <a name="l00073"></a>00073 
 <a name="l00074"></a>00074 
 <a name="l00075"></a>00075 <span class="comment">// Checks for a control character.</span>
-<a name="l00076"></a><a class="code" href="WCharacter_8h.html#aaa11939aa26de553018e71ede803547b">00076</a> <span class="keyword">inline</span> <span class="keywordtype">boolean</span> <a class="code" href="WCharacter_8h.html#aaa11939aa26de553018e71ede803547b">isControl</a>(<span class="keywordtype">int</span> c)
+<a name="l00076"></a>00076 <span class="keyword">inline</span> <span class="keywordtype">boolean</span> isControl(<span class="keywordtype">int</span> c)
 <a name="l00077"></a>00077 {
 <a name="l00078"></a>00078   <span class="keywordflow">return</span> ( iscntrl (c) == 0 ? <span class="keyword">false</span> : <span class="keyword">true</span>);
 <a name="l00079"></a>00079 }
 <a name="l00080"></a>00080 
 <a name="l00081"></a>00081 
 <a name="l00082"></a>00082 <span class="comment">// Checks for a digit (0 through 9).</span>
-<a name="l00083"></a><a class="code" href="WCharacter_8h.html#a00fc18068e98a00ced2de3c0cfc2793a">00083</a> <span class="keyword">inline</span> <span class="keywordtype">boolean</span> <a class="code" href="WCharacter_8h.html#a00fc18068e98a00ced2de3c0cfc2793a">isDigit</a>(<span class="keywordtype">int</span> c)
+<a name="l00083"></a>00083 <span class="keyword">inline</span> <span class="keywordtype">boolean</span> isDigit(<span class="keywordtype">int</span> c)
 <a name="l00084"></a>00084 {
 <a name="l00085"></a>00085   <span class="keywordflow">return</span> ( isdigit (c) == 0 ? <span class="keyword">false</span> : <span class="keyword">true</span>);
 <a name="l00086"></a>00086 }
 <a name="l00087"></a>00087 
 <a name="l00088"></a>00088 
 <a name="l00089"></a>00089 <span class="comment">// Checks for any printable character except space.</span>
-<a name="l00090"></a><a class="code" href="WCharacter_8h.html#a6b2ac2190fa1945f099ef272ddc12eba">00090</a> <span class="keyword">inline</span> <span class="keywordtype">boolean</span> <a class="code" href="WCharacter_8h.html#a6b2ac2190fa1945f099ef272ddc12eba">isGraph</a>(<span class="keywordtype">int</span> c)
+<a name="l00090"></a>00090 <span class="keyword">inline</span> <span class="keywordtype">boolean</span> isGraph(<span class="keywordtype">int</span> c)
 <a name="l00091"></a>00091 {
 <a name="l00092"></a>00092   <span class="keywordflow">return</span> ( isgraph (c) == 0 ? <span class="keyword">false</span> : <span class="keyword">true</span>);
 <a name="l00093"></a>00093 }
 <a name="l00094"></a>00094 
 <a name="l00095"></a>00095 
 <a name="l00096"></a>00096 <span class="comment">// Checks for a lower-case character.</span>
-<a name="l00097"></a><a class="code" href="WCharacter_8h.html#a9b873f379081256784af35de409f27d7">00097</a> <span class="keyword">inline</span> <span class="keywordtype">boolean</span> <a class="code" href="WCharacter_8h.html#a9b873f379081256784af35de409f27d7">isLowerCase</a>(<span class="keywordtype">int</span> c)
+<a name="l00097"></a>00097 <span class="keyword">inline</span> <span class="keywordtype">boolean</span> isLowerCase(<span class="keywordtype">int</span> c)
 <a name="l00098"></a>00098 {
 <a name="l00099"></a>00099   <span class="keywordflow">return</span> (islower (c) == 0 ? <span class="keyword">false</span> : <span class="keyword">true</span>);
 <a name="l00100"></a>00100 }
 <a name="l00101"></a>00101 
 <a name="l00102"></a>00102 
 <a name="l00103"></a>00103 <span class="comment">// Checks for any printable character including space.</span>
-<a name="l00104"></a><a class="code" href="WCharacter_8h.html#ae2d120664cad11b1a7819a382621c835">00104</a> <span class="keyword">inline</span> <span class="keywordtype">boolean</span> <a class="code" href="WCharacter_8h.html#ae2d120664cad11b1a7819a382621c835">isPrintable</a>(<span class="keywordtype">int</span> c)
+<a name="l00104"></a>00104 <span class="keyword">inline</span> <span class="keywordtype">boolean</span> isPrintable(<span class="keywordtype">int</span> c)
 <a name="l00105"></a>00105 {
 <a name="l00106"></a>00106   <span class="keywordflow">return</span> ( isprint (c) == 0 ? <span class="keyword">false</span> : <span class="keyword">true</span>);
 <a name="l00107"></a>00107 }
@@ -188,7 +187,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00109"></a>00109 
 <a name="l00110"></a>00110 <span class="comment">// Checks for any printable character which is not a space </span>
 <a name="l00111"></a>00111 <span class="comment">// or an alphanumeric character.</span>
-<a name="l00112"></a><a class="code" href="WCharacter_8h.html#ad81f2ed3aa87fe37ab781fe38e4df84b">00112</a> <span class="keyword">inline</span> <span class="keywordtype">boolean</span> <a class="code" href="WCharacter_8h.html#ad81f2ed3aa87fe37ab781fe38e4df84b">isPunct</a>(<span class="keywordtype">int</span> c)
+<a name="l00112"></a>00112 <span class="keyword">inline</span> <span class="keywordtype">boolean</span> isPunct(<span class="keywordtype">int</span> c)
 <a name="l00113"></a>00113 {
 <a name="l00114"></a>00114   <span class="keywordflow">return</span> ( ispunct (c) == 0 ? <span class="keyword">false</span> : <span class="keyword">true</span>);
 <a name="l00115"></a>00115 }
@@ -197,14 +196,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00118"></a>00118 <span class="comment">// Checks for white-space characters. For the avr-libc library, </span>
 <a name="l00119"></a>00119 <span class="comment">// these are: space, formfeed (&#39;\f&#39;), newline (&#39;\n&#39;), carriage </span>
 <a name="l00120"></a>00120 <span class="comment">// return (&#39;\r&#39;), horizontal tab (&#39;\t&#39;), and vertical tab (&#39;\v&#39;).</span>
-<a name="l00121"></a><a class="code" href="WCharacter_8h.html#ab0f581e7fce5dc4722b8a824561b2c29">00121</a> <span class="keyword">inline</span> <span class="keywordtype">boolean</span> <a class="code" href="WCharacter_8h.html#ab0f581e7fce5dc4722b8a824561b2c29">isSpace</a>(<span class="keywordtype">int</span> c)
+<a name="l00121"></a>00121 <span class="keyword">inline</span> <span class="keywordtype">boolean</span> isSpace(<span class="keywordtype">int</span> c)
 <a name="l00122"></a>00122 {
 <a name="l00123"></a>00123   <span class="keywordflow">return</span> ( isspace (c) == 0 ? <span class="keyword">false</span> : <span class="keyword">true</span>);
 <a name="l00124"></a>00124 }
 <a name="l00125"></a>00125 
 <a name="l00126"></a>00126 
 <a name="l00127"></a>00127 <span class="comment">// Checks for an uppercase letter.</span>
-<a name="l00128"></a><a class="code" href="WCharacter_8h.html#a939653d2e98c6dcfa8646aea936d2b25">00128</a> <span class="keyword">inline</span> <span class="keywordtype">boolean</span> <a class="code" href="WCharacter_8h.html#a939653d2e98c6dcfa8646aea936d2b25">isUpperCase</a>(<span class="keywordtype">int</span> c)
+<a name="l00128"></a>00128 <span class="keyword">inline</span> <span class="keywordtype">boolean</span> isUpperCase(<span class="keywordtype">int</span> c)
 <a name="l00129"></a>00129 {
 <a name="l00130"></a>00130   <span class="keywordflow">return</span> ( isupper (c) == 0 ? <span class="keyword">false</span> : <span class="keyword">true</span>);
 <a name="l00131"></a>00131 }
@@ -212,7 +211,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00133"></a>00133 
 <a name="l00134"></a>00134 <span class="comment">// Checks for a hexadecimal digits, i.e. one of 0 1 2 3 4 5 6 7 </span>
 <a name="l00135"></a>00135 <span class="comment">// 8 9 a b c d e f A B C D E F.</span>
-<a name="l00136"></a><a class="code" href="WCharacter_8h.html#a04fd71c44954d2bf1e47df8bd7857678">00136</a> <span class="keyword">inline</span> <span class="keywordtype">boolean</span> <a class="code" href="WCharacter_8h.html#a04fd71c44954d2bf1e47df8bd7857678">isHexadecimalDigit</a>(<span class="keywordtype">int</span> c)
+<a name="l00136"></a>00136 <span class="keyword">inline</span> <span class="keywordtype">boolean</span> isHexadecimalDigit(<span class="keywordtype">int</span> c)
 <a name="l00137"></a>00137 {
 <a name="l00138"></a>00138   <span class="keywordflow">return</span> ( isxdigit (c) == 0 ? <span class="keyword">false</span> : <span class="keyword">true</span>);
 <a name="l00139"></a>00139 }
@@ -220,7 +219,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00141"></a>00141 
 <a name="l00142"></a>00142 <span class="comment">// Converts c to a 7-bit unsigned char value that fits into the </span>
 <a name="l00143"></a>00143 <span class="comment">// ASCII character set, by clearing the high-order bits.</span>
-<a name="l00144"></a><a class="code" href="WCharacter_8h.html#a97b92bef1d6fd64a291d66d3671c4ac0">00144</a> <span class="keyword">inline</span> <span class="keywordtype">int</span> <a class="code" href="WCharacter_8h.html#a97b92bef1d6fd64a291d66d3671c4ac0">toAscii</a>(<span class="keywordtype">int</span> c)
+<a name="l00144"></a>00144 <span class="keyword">inline</span> <span class="keywordtype">int</span> toAscii(<span class="keywordtype">int</span> c)
 <a name="l00145"></a>00145 {
 <a name="l00146"></a>00146   <span class="keywordflow">return</span> toascii (c);
 <a name="l00147"></a>00147 }
@@ -232,14 +231,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00153"></a>00153 <span class="comment">// characters.</span>
 <a name="l00154"></a>00154 
 <a name="l00155"></a>00155 <span class="comment">// Converts the letter c to lower case, if possible.</span>
-<a name="l00156"></a><a class="code" href="WCharacter_8h.html#a84077490f4d133962928ab4897781a65">00156</a> <span class="keyword">inline</span> <span class="keywordtype">int</span> <a class="code" href="WCharacter_8h.html#a84077490f4d133962928ab4897781a65">toLowerCase</a>(<span class="keywordtype">int</span> c)
+<a name="l00156"></a>00156 <span class="keyword">inline</span> <span class="keywordtype">int</span> toLowerCase(<span class="keywordtype">int</span> c)
 <a name="l00157"></a>00157 {
 <a name="l00158"></a>00158   <span class="keywordflow">return</span> tolower (c);
 <a name="l00159"></a>00159 }
 <a name="l00160"></a>00160 
 <a name="l00161"></a>00161 
 <a name="l00162"></a>00162 <span class="comment">// Converts the letter c to upper case, if possible.</span>
-<a name="l00163"></a><a class="code" href="WCharacter_8h.html#ae7943209e31b947b2c8b7d426b80f9b3">00163</a> <span class="keyword">inline</span> <span class="keywordtype">int</span> <a class="code" href="WCharacter_8h.html#ae7943209e31b947b2c8b7d426b80f9b3">toUpperCase</a>(<span class="keywordtype">int</span> c)
+<a name="l00163"></a>00163 <span class="keyword">inline</span> <span class="keywordtype">int</span> toUpperCase(<span class="keywordtype">int</span> c)
 <a name="l00164"></a>00164 {
 <a name="l00165"></a>00165   <span class="keywordflow">return</span> toupper (c);
 <a name="l00166"></a>00166 }
@@ -252,7 +251,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Defines</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -264,7 +263,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Nov 15 2011 12:18:46 for NEWMAST by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Nov 16 2011 13:25:30 for NEWMAST by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.5.1
 </small></address>
