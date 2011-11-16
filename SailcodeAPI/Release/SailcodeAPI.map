@@ -7,7 +7,7 @@ Archive member included because of file (symbol)
 ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
                               ../../ArduinoCore/Release//libArduinoCore.a(Print.o) (String::operator[](unsigned int) const)
 ../../ArduinoCore/Release//libArduinoCore.a(wiring.o)
-                              ./WindSense/WindSense.o (delay)
+                              ./WindSense/AIRMARSpecific.o (delay)
 ../../ArduinoCore/Release//libArduinoCore.a(wiring_digital.o)
                               ./main.o (pinMode)
 ../../ArduinoCore/Release//libArduinoCore.a(pins_arduino.o)
@@ -53,7 +53,7 @@ Archive member included because of file (symbol)
 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_exit.o)
                               /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm328p.o (exit)
 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_copy_data.o)
-                              ./WindSense/ParseToStruct.o (__do_copy_data)
+                              ./WindSense/AIRMARSpecific.o (__do_copy_data)
 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_clear_bss.o)
                               ./main.o (__do_clear_bss)
 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_ctors.o)
@@ -132,15 +132,19 @@ Discarded input sections
  .bss           0x00000000        0x0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm328p.o
  .stab          0x00000000      0x6b4 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm328p.o
  .stabstr       0x00000000       0x64 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm328p.o
+ .text          0x00000000        0x0 ./WindSense/AIRMARSpecific.o
+ .bss           0x00000000        0x0 ./WindSense/AIRMARSpecific.o
+ .stab          0x00000000      0x6b4 ./WindSense/AIRMARSpecific.o
+ .stabstr       0x00000000     0x2084 ./WindSense/AIRMARSpecific.o
  .text          0x00000000        0x0 ./WindSense/ParseToStruct.o
  .bss           0x00000000        0x0 ./WindSense/ParseToStruct.o
  .stab          0x00000000      0x738 ./WindSense/ParseToStruct.o
- .stabstr       0x00000000     0x209c ./WindSense/ParseToStruct.o
+ .stabstr       0x00000000     0x211e ./WindSense/ParseToStruct.o
  .text          0x00000000        0x0 ./WindSense/WindSense.o
  .data          0x00000000       0x13 ./WindSense/WindSense.o
  .bss           0x00000000        0x0 ./WindSense/WindSense.o
  .stab          0x00000000      0x978 ./WindSense/WindSense.o
- .stabstr       0x00000000     0x21e1 ./WindSense/WindSense.o
+ .stabstr       0x00000000     0x2263 ./WindSense/WindSense.o
  .text._ZN9WindSenseC2Ev
                 0x00000000       0x10 ./WindSense/WindSense.o
  .text._ZN9WindSenseC1EP14HardwareSerial
@@ -149,8 +153,8 @@ Discarded input sections
                 0x00000000       0x3e ./WindSense/WindSense.o
  .text          0x00000000        0x0 ./main.o
  .bss           0x00000000        0x0 ./main.o
- .stab          0x00000000      0x7ec ./main.o
- .stabstr       0x00000000     0x1fe9 ./main.o
+ .stab          0x00000000      0x5ac ./main.o
+ .stabstr       0x00000000     0x205b ./main.o
  .text          0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
  .data          0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
  .bss           0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
@@ -313,8 +317,6 @@ Discarded input sections
  .stab          0x00000000      0x8e8 ../../ArduinoCore/Release//libArduinoCore.a(wiring.o)
  .stabstr       0x00000000      0xb6d ../../ArduinoCore/Release//libArduinoCore.a(wiring.o)
  .text.millis   0x00000000       0x1c ../../ArduinoCore/Release//libArduinoCore.a(wiring.o)
- .text.micros   0x00000000       0x4c ../../ArduinoCore/Release//libArduinoCore.a(wiring.o)
- .text.delay    0x00000000       0x4c ../../ArduinoCore/Release//libArduinoCore.a(wiring.o)
  .text.delayMicroseconds
                 0x00000000       0x14 ../../ArduinoCore/Release//libArduinoCore.a(wiring.o)
  .text          0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(wiring_digital.o)
@@ -636,6 +638,7 @@ Linker script and memory map
 
 Address of section .data set to 0x800100
 LOAD /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm328p.o
+LOAD ./WindSense/AIRMARSpecific.o
 LOAD ./WindSense/ParseToStruct.o
 LOAD ./WindSense/WindSense.o
 LOAD ./main.o
@@ -737,7 +740,7 @@ LOAD /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000     0x1bea
+.text           0x00000000     0x1cfa
  *(.vectors)
  .vectors       0x00000000       0x68 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/crtm328p.o
                 0x00000000                __vectors
@@ -832,218 +835,222 @@ LOAD /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a
                 0x00000152                __vector_20
                 0x00000156                . = ALIGN (0x2)
  *(.text.*)
+ .text._ZN9WindSense5debugER14HardwareSerial
+                0x00000156      0x314 ./WindSense/AIRMARSpecific.o
+                0x00000156                WindSense::debug(HardwareSerial&)
  .text._ZN9WindSense17updateSPEED_GPVTGEv
-                0x00000156       0x7c ./WindSense/ParseToStruct.o
-                0x00000156                WindSense::updateSPEED_GPVTG()
+                0x0000046a       0x7c ./WindSense/ParseToStruct.o
+                0x0000046a                WindSense::updateSPEED_GPVTG()
  .text._ZN9WindSense16updateWIND_WIMWVEv
-                0x000001d2       0x8c ./WindSense/ParseToStruct.o
-                0x000001d2                WindSense::updateWIND_WIMWV()
+                0x000004e6       0x8c ./WindSense/ParseToStruct.o
+                0x000004e6                WindSense::updateWIND_WIMWV()
  .text._ZN9WindSense15updateGPS_GPGLLEv
-                0x0000025e      0x1a4 ./WindSense/ParseToStruct.o
-                0x0000025e                WindSense::updateGPS_GPGLL()
+                0x00000572      0x1a4 ./WindSense/ParseToStruct.o
+                0x00000572                WindSense::updateGPS_GPGLL()
  .text._ZN9WindSense17parseInternalNMEAEPc
-                0x00000402       0x5a ./WindSense/ParseToStruct.o
-                0x00000402                WindSense::parseInternalNMEA(char*)
+                0x00000716       0x5a ./WindSense/ParseToStruct.o
+                0x00000716                WindSense::parseInternalNMEA(char*)
  .text._ZN9WindSenseC1Ev
-                0x0000045c       0x10 ./WindSense/WindSense.o
-                0x0000045c                WindSense::WindSense()
+                0x00000770       0x10 ./WindSense/WindSense.o
+                0x00000770                WindSense::WindSense()
  .text._ZN9WindSense8grabCharEc
-                0x0000046c       0x50 ./WindSense/WindSense.o
-                0x0000046c                WindSense::grabChar(char)
+                0x00000780       0x50 ./WindSense/WindSense.o
+                0x00000780                WindSense::grabChar(char)
  .text._ZN9WindSense9splitNMEAEPc
-                0x000004bc       0xf6 ./WindSense/WindSense.o
-                0x000004bc                WindSense::splitNMEA(char*)
+                0x000007d0       0xf6 ./WindSense/WindSense.o
+                0x000007d0                WindSense::splitNMEA(char*)
  .text._ZN9WindSense17splitInternalNMEAEv
-                0x000005b2        0xc ./WindSense/WindSense.o
-                0x000005b2                WindSense::splitInternalNMEA()
+                0x000008c6        0xc ./WindSense/WindSense.o
+                0x000008c6                WindSense::splitInternalNMEA()
  .text._ZN9WindSense17resetInternalNMEAEv
-                0x000005be       0x14 ./WindSense/WindSense.o
-                0x000005be                WindSense::resetInternalNMEA()
+                0x000008d2       0x14 ./WindSense/WindSense.o
+                0x000008d2                WindSense::resetInternalNMEA()
  .text._ZN9WindSense12validateNMEAEPc
-                0x000005d2       0x80 ./WindSense/WindSense.o
-                0x000005d2                WindSense::validateNMEA(char*)
+                0x000008e6       0x80 ./WindSense/WindSense.o
+                0x000008e6                WindSense::validateNMEA(char*)
  .text._ZN9WindSense20validateInternalNMEAEv
-                0x00000652        0xc ./WindSense/WindSense.o
-                0x00000652                WindSense::validateInternalNMEA()
+                0x00000966        0xc ./WindSense/WindSense.o
+                0x00000966                WindSense::validateInternalNMEA()
  .text._GLOBAL__I_airman
-                0x0000065e        0xa ./main.o
- .text._Z4dumpv
-                0x00000668      0x280 ./main.o
-                0x00000668                dump()
- .text.loop     0x000008e8       0x2a ./main.o
-                0x000008e8                loop
- .text.setup    0x00000912       0x2e ./main.o
-                0x00000912                setup
- .text.main     0x00000940        0xe ./main.o
-                0x00000940                main
+                0x00000972        0xa ./main.o
+ .text.loop     0x0000097c        0xe ./main.o
+                0x0000097c                loop
+ .text.setup    0x0000098a       0x2e ./main.o
+                0x0000098a                setup
+ .text.main     0x000009b8        0xe ./main.o
+                0x000009b8                main
  .text.__vector_18
-                0x0000094e       0x62 ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
-                0x0000094e                __vector_18
+                0x000009c6       0x62 ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
+                0x000009c6                __vector_18
  .text._ZN14HardwareSerial5beginEl
-                0x000009b0       0xb2 ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
-                0x000009b0                HardwareSerial::begin(long)
+                0x00000a28       0xb2 ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
+                0x00000a28                HardwareSerial::begin(long)
  .text._ZN14HardwareSerial9availableEv
-                0x00000a62       0x22 ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
-                0x00000a62                HardwareSerial::available()
+                0x00000ada       0x22 ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
+                0x00000ada                HardwareSerial::available()
  .text._ZN14HardwareSerial4peekEv
-                0x00000a84       0x34 ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
-                0x00000a84                HardwareSerial::peek()
+                0x00000afc       0x34 ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
+                0x00000afc                HardwareSerial::peek()
  .text._ZN14HardwareSerial4readEv
-                0x00000ab8       0x48 ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
-                0x00000ab8                HardwareSerial::read()
+                0x00000b30       0x48 ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
+                0x00000b30                HardwareSerial::read()
  .text._ZN14HardwareSerial5flushEv
-                0x00000b00       0x18 ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
-                0x00000b00                HardwareSerial::flush()
+                0x00000b78       0x18 ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
+                0x00000b78                HardwareSerial::flush()
  .text._ZN14HardwareSerial5writeEh
-                0x00000b18       0x26 ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
-                0x00000b18                HardwareSerial::write(unsigned char)
+                0x00000b90       0x26 ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
+                0x00000b90                HardwareSerial::write(unsigned char)
  .text._GLOBAL__I_rx_buffer
-                0x00000b3e       0x74 ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
+                0x00000bb6       0x74 ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
  .text._ZN5Print5writeEPKc
-                0x00000bb2       0x30 ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
-                0x00000bb2                Print::write(char const*)
+                0x00000c2a       0x30 ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+                0x00000c2a                Print::write(char const*)
  .text._ZN5Print5writeEPKhj
-                0x00000be2       0x3e ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
-                0x00000be2                Print::write(unsigned char const*, unsigned int)
+                0x00000c5a       0x3e ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+                0x00000c5a                Print::write(unsigned char const*, unsigned int)
  .text._ZN5Print5printEPKc
-                0x00000c20       0x10 ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
-                0x00000c20                Print::print(char const*)
+                0x00000c98       0x10 ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+                0x00000c98                Print::print(char const*)
  .text._ZN5Print11printNumberEmh
-                0x00000c30      0x134 ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
-                0x00000c30                Print::printNumber(unsigned long, unsigned char)
+                0x00000ca8      0x134 ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+                0x00000ca8                Print::printNumber(unsigned long, unsigned char)
  .text._ZN5Print5printEmi
-                0x00000d64       0x1e ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
-                0x00000d64                Print::print(unsigned long, int)
+                0x00000ddc       0x1e ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+                0x00000ddc                Print::print(unsigned long, int)
  .text._ZN5Print5printEli
-                0x00000d82       0x6c ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
-                0x00000d82                Print::print(long, int)
+                0x00000dfa       0x6c ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+                0x00000dfa                Print::print(long, int)
  .text._ZN5Print5printEii
-                0x00000dee       0x26 ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
-                0x00000dee                Print::print(int, int)
+                0x00000e66       0x26 ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+                0x00000e66                Print::print(int, int)
  .text._ZN5Print7printlnEv
-                0x00000e14       0x2e ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
-                0x00000e14                Print::println()
+                0x00000e8c       0x2e ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+                0x00000e8c                Print::println()
  .text._ZN5Print7printlnEPKc
-                0x00000e42       0x16 ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
-                0x00000e42                Print::println(char const*)
+                0x00000eba       0x16 ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+                0x00000eba                Print::println(char const*)
  .text._ZN5Print7printlnEii
-                0x00000e58       0x36 ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
-                0x00000e58                Print::println(int, int)
+                0x00000ed0       0x36 ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+                0x00000ed0                Print::println(int, int)
  .text._ZN5Print7printlnEci
-                0x00000e8e       0x38 ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
-                0x00000e8e                Print::println(char, int)
+                0x00000f06       0x38 ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+                0x00000f06                Print::println(char, int)
  .text._ZN5Print10printFloatEdh
-                0x00000ec6      0x118 ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
-                0x00000ec6                Print::printFloat(double, unsigned char)
+                0x00000f3e      0x118 ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+                0x00000f3e                Print::printFloat(double, unsigned char)
  .text._ZN5Print7printlnEdi
-                0x00000fde       0x16 ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
-                0x00000fde                Print::println(double, int)
+                0x00001056       0x16 ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+                0x00001056                Print::println(double, int)
  .text.__vector_16
-                0x00000ff4       0x90 ../../ArduinoCore/Release//libArduinoCore.a(wiring.o)
-                0x00000ff4                __vector_16
- .text.init     0x00001084       0x76 ../../ArduinoCore/Release//libArduinoCore.a(wiring.o)
-                0x00001084                init
- .text.pinMode  0x000010fa       0x4c ../../ArduinoCore/Release//libArduinoCore.a(wiring_digital.o)
-                0x000010fa                pinMode
+                0x0000106c       0x90 ../../ArduinoCore/Release//libArduinoCore.a(wiring.o)
+                0x0000106c                __vector_16
+ .text.micros   0x000010fc       0x4c ../../ArduinoCore/Release//libArduinoCore.a(wiring.o)
+                0x000010fc                micros
+ .text.delay    0x00001148       0x4c ../../ArduinoCore/Release//libArduinoCore.a(wiring.o)
+                0x00001148                delay
+ .text.init     0x00001194       0x76 ../../ArduinoCore/Release//libArduinoCore.a(wiring.o)
+                0x00001194                init
+ .text.pinMode  0x0000120a       0x4c ../../ArduinoCore/Release//libArduinoCore.a(wiring_digital.o)
+                0x0000120a                pinMode
  .text.avr-libc.fplib
-                0x00001146        0xa /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libm.a(addsf3.o)
-                0x00001146                __subsf3
-                0x00001148                __addsf3
+                0x00001256        0xa /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libm.a(addsf3.o)
+                0x00001256                __subsf3
+                0x00001258                __addsf3
  .text.avr-libc.fplib
-                0x00001150       0xc0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libm.a(addsf3x.o)
-                0x0000116a                __addsf3x
+                0x00001260       0xc0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libm.a(addsf3x.o)
+                0x0000127a                __addsf3x
  .text.avr-libc.fplib
-                0x00001210        0x8 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libm.a(cmpsf2.o)
-                0x00001210                __lesf2
-                0x00001210                __nesf2
-                0x00001210                __eqsf2
-                0x00001210                __cmpsf2
-                0x00001210                __ltsf2
+                0x00001320        0x8 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libm.a(cmpsf2.o)
+                0x00001320                __lesf2
+                0x00001320                __nesf2
+                0x00001320                __eqsf2
+                0x00001320                __cmpsf2
+                0x00001320                __ltsf2
  .text.avr-libc.fplib
-                0x00001218        0x4 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libm.a(divsf3.o)
-                0x00001218                __divsf3
+                0x00001328        0x4 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libm.a(divsf3.o)
+                0x00001328                __divsf3
  .text.avr-libc.fplib
-                0x0000121c       0xcc /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libm.a(divsf3x.o)
-                0x00001232                __divsf3x
-                0x00001236                __divsf3_pse
+                0x0000132c       0xcc /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libm.a(divsf3x.o)
+                0x00001342                __divsf3x
+                0x00001346                __divsf3_pse
  .text.avr-libc.fplib
-                0x000012e8        0xa /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libm.a(fixsfsi.o)
-                0x000012e8                __fixsfsi
+                0x000013f8        0xa /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libm.a(fixsfsi.o)
+                0x000013f8                __fixsfsi
  .text.avr-libc.fplib
-                0x000012f2       0x58 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libm.a(fixunssfsi.o)
-                0x000012f2                __fixunssfsi
+                0x00001402       0x58 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libm.a(fixunssfsi.o)
+                0x00001402                __fixunssfsi
  .text.avr-libc.fplib
-                0x0000134a       0x7a /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libm.a(floatsisf.o)
-                0x0000134a                __floatunsisf
-                0x0000134e                __floatsisf
+                0x0000145a       0x7a /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libm.a(floatsisf.o)
+                0x0000145a                __floatunsisf
+                0x0000145e                __floatsisf
  .text.avr-libc.fplib
-                0x000013c4       0x48 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libm.a(fp_cmp.o)
-                0x000013c4                __fp_cmp
+                0x000014d4       0x48 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libm.a(fp_cmp.o)
+                0x000014d4                __fp_cmp
  .text.avr-libc.fplib
-                0x0000140c        0xc /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libm.a(fp_inf.o)
-                0x0000140c                __fp_inf
+                0x0000151c        0xc /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libm.a(fp_inf.o)
+                0x0000151c                __fp_inf
  .text.avr-libc.fplib
-                0x00001418        0x6 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libm.a(fp_nan.o)
-                0x00001418                __fp_nan
+                0x00001528        0x6 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libm.a(fp_nan.o)
+                0x00001528                __fp_nan
  .text.avr-libc.fplib
-                0x0000141e        0xe /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libm.a(fp_pscA.o)
-                0x0000141e                __fp_pscA
+                0x0000152e        0xe /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libm.a(fp_pscA.o)
+                0x0000152e                __fp_pscA
  .text.avr-libc.fplib
-                0x0000142c        0xe /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libm.a(fp_pscB.o)
-                0x0000142c                __fp_pscB
+                0x0000153c        0xe /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libm.a(fp_pscB.o)
+                0x0000153c                __fp_pscB
  .text.avr-libc.fplib
-                0x0000143a       0x22 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libm.a(fp_round.o)
-                0x0000143a                __fp_round
+                0x0000154a       0x22 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libm.a(fp_round.o)
+                0x0000154a                __fp_round
  .text.avr-libc.fplib
-                0x0000145c       0x44 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libm.a(fp_split3.o)
-                0x0000145c                __fp_split3
-                0x0000146c                __fp_splitA
+                0x0000156c       0x44 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libm.a(fp_split3.o)
+                0x0000156c                __fp_split3
+                0x0000157c                __fp_splitA
  .text.avr-libc.fplib
-                0x000014a0        0xe /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libm.a(fp_zero.o)
-                0x000014a0                __fp_zero
-                0x000014a2                __fp_szero
+                0x000015b0        0xe /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libm.a(fp_zero.o)
+                0x000015b0                __fp_zero
+                0x000015b2                __fp_szero
  .text.avr-libc.fplib
-                0x000014ae        0x4 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libm.a(mulsf3.o)
-                0x000014ae                __mulsf3
+                0x000015be        0x4 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libm.a(mulsf3.o)
+                0x000015be                __mulsf3
  .text.avr-libc.fplib
-                0x000014b2       0xc2 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libm.a(mulsf3x.o)
-                0x000014c6                __mulsf3x
-                0x000014ca                __mulsf3_pse
- .text.libgcc   0x00001574       0x44 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_udivmodsi4.o)
-                0x00001574                __udivmodsi4
- .text.libgcc   0x000015b8        0xc /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_tablejump.o)
-                0x000015b8                __tablejump2__
-                0x000015bc                __tablejump__
+                0x000015c2       0xc2 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libm.a(mulsf3x.o)
+                0x000015d6                __mulsf3x
+                0x000015da                __mulsf3_pse
+ .text.libgcc   0x00001684       0x44 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_udivmodsi4.o)
+                0x00001684                __udivmodsi4
+ .text.libgcc   0x000016c8        0xc /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_tablejump.o)
+                0x000016c8                __tablejump2__
+                0x000016cc                __tablejump__
  .text.avr-libc
-                0x000015c4      0x2c0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strtod.o)
-                0x000015c4                strtod
+                0x000016d4      0x2c0 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strtod.o)
+                0x000016d4                strtod
  .text.avr-libc
-                0x00001884      0x25e /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strtol.o)
-                0x00001884                strtol
+                0x00001994      0x25e /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strtol.o)
+                0x00001994                strtol
  .text.avr-libc
-                0x00001ae2       0x10 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(isspace.o)
-                0x00001ae2                isspace
+                0x00001bf2       0x10 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(isspace.o)
+                0x00001bf2                isspace
  .text.avr-libc
-                0x00001af2       0x30 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strncasecmp_P.o)
-                0x00001af2                strncasecmp_P
+                0x00001c02       0x30 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strncasecmp_P.o)
+                0x00001c02                strncasecmp_P
  .text.avr-libc
-                0x00001b22       0x12 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strcmp.o)
-                0x00001b22                strcmp
+                0x00001c32       0x12 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strcmp.o)
+                0x00001c32                strcmp
  .text.avr-libc
-                0x00001b34        0x6 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(cty_isfalse.o)
-                0x00001b34                __ctype_isfalse
-                0x00001b38                __ctype_istrue
- .text.libgcc   0x00001b3a       0x3e /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_mulsi3.o)
-                0x00001b3a                __mulsi3
- .text.libgcc   0x00001b78       0x38 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_prologue.o)
-                0x00001b78                __prologue_saves__
- .text.libgcc   0x00001bb0       0x36 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_epilogue.o)
-                0x00001bb0                __epilogue_restores__
-                0x00001be6                . = ALIGN (0x2)
+                0x00001c44        0x6 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(cty_isfalse.o)
+                0x00001c44                __ctype_isfalse
+                0x00001c48                __ctype_istrue
+ .text.libgcc   0x00001c4a       0x3e /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_mulsi3.o)
+                0x00001c4a                __mulsi3
+ .text.libgcc   0x00001c88       0x38 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_prologue.o)
+                0x00001c88                __prologue_saves__
+ .text.libgcc   0x00001cc0       0x36 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_epilogue.o)
+                0x00001cc0                __epilogue_restores__
+                0x00001cf6                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x00001be6        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_exit.o)
-                0x00001be6                exit
-                0x00001be6                _exit
+ .fini9         0x00001cf6        0x0 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_exit.o)
+                0x00001cf6                exit
+                0x00001cf6                _exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -1062,60 +1069,60 @@ LOAD /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x00001be6        0x4 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_exit.o)
+ .fini0         0x00001cf6        0x4 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_exit.o)
  *(.fini0)
-                0x00001bea                _etext = .
+                0x00001cfa                _etext = .
 
-.data           0x00800100      0x17c load address 0x00001bea
+.data           0x00800100      0x186 load address 0x00001cfa
                 0x00800100                PROVIDE (__data_start, .)
  *(.data)
- .data          0x00800100       0x12 ./WindSense/ParseToStruct.o
- .data          0x00800112      0x155 ./main.o
- .data          0x00800267        0x2 ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+ .data          0x00800100      0x147 ./WindSense/AIRMARSpecific.o
+ .data          0x00800247       0x12 ./WindSense/ParseToStruct.o
+ .data          0x00800259       0x19 ./main.o
+ .data          0x00800272        0x2 ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
  *(.data*)
  *(.rodata)
  *(.rodata*)
  .rodata._ZTV14HardwareSerial
-                0x00800269       0x12 ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
-                0x00800269                vtable for HardwareSerial
+                0x00800274       0x12 ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
+                0x00800274                vtable for HardwareSerial
  *(.gnu.linkonce.d*)
-                0x0080027c                . = ALIGN (0x2)
- *fill*         0x0080027b        0x1 00
-                0x0080027c                _edata = .
-                0x0080027c                PROVIDE (__data_end, .)
+                0x00800286                . = ALIGN (0x2)
+                0x00800286                _edata = .
+                0x00800286                PROVIDE (__data_end, .)
 
-.bss            0x0080027c      0x384
-                0x0080027c                PROVIDE (__bss_start, .)
+.bss            0x00800286      0x386
+                0x00800286                PROVIDE (__bss_start, .)
  *(.bss)
  *(.bss*)
- .bss.airman    0x0080027c      0x2e2 ./main.o
-                0x0080027c                airman
+ .bss.airman    0x00800286      0x2e4 ./main.o
+                0x00800286                airman
  .bss.rx_buffer
-                0x0080055e       0x84 ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
-                0x0080055e                rx_buffer
- .bss.Serial    0x008005e2       0x13 ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
-                0x008005e2                Serial
+                0x0080056a       0x84 ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
+                0x0080056a                rx_buffer
+ .bss.Serial    0x008005ee       0x13 ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
+                0x008005ee                Serial
  .bss.timer0_overflow_count
-                0x008005f5        0x4 ../../ArduinoCore/Release//libArduinoCore.a(wiring.o)
-                0x008005f5                timer0_overflow_count
+                0x00800601        0x4 ../../ArduinoCore/Release//libArduinoCore.a(wiring.o)
+                0x00800601                timer0_overflow_count
  .bss.timer0_millis
-                0x008005f9        0x4 ../../ArduinoCore/Release//libArduinoCore.a(wiring.o)
-                0x008005f9                timer0_millis
+                0x00800605        0x4 ../../ArduinoCore/Release//libArduinoCore.a(wiring.o)
+                0x00800605                timer0_millis
  .bss.timer0_fract
-                0x008005fd        0x1 ../../ArduinoCore/Release//libArduinoCore.a(wiring.o)
+                0x00800609        0x1 ../../ArduinoCore/Release//libArduinoCore.a(wiring.o)
  *(COMMON)
- COMMON         0x008005fe        0x2 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(errno.o)
-                0x008005fe                errno
-                0x00800600                PROVIDE (__bss_end, .)
-                0x00001bea                __data_load_start = LOADADDR (.data)
-                0x00001d66                __data_load_end = (__data_load_start + SIZEOF (.data))
+ COMMON         0x0080060a        0x2 /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(errno.o)
+                0x0080060a                errno
+                0x0080060c                PROVIDE (__bss_end, .)
+                0x00001cfa                __data_load_start = LOADADDR (.data)
+                0x00001e80                __data_load_end = (__data_load_start + SIZEOF (.data))
 
-.noinit         0x00800600        0x0
-                0x00800600                PROVIDE (__noinit_start, .)
+.noinit         0x0080060c        0x0
+                0x0080060c                PROVIDE (__noinit_start, .)
  *(.noinit*)
-                0x00800600                PROVIDE (__noinit_end, .)
-                0x00800600                _end = .
-                0x00800600                PROVIDE (__heap_start, .)
+                0x0080060c                PROVIDE (__noinit_end, .)
+                0x0080060c                _end = .
+                0x0080060c                PROVIDE (__heap_start, .)
 
 .eeprom         0x00810000        0x0
  *(.eeprom*)
@@ -1202,7 +1209,6 @@ Symbol                                            File
 HardwareSerial::HardwareSerial(ring_buffer*, unsigned char volatile*, unsigned char volatile*, unsigned char volatile*, unsigned char volatile*, unsigned char volatile*, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char) ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
 HardwareSerial::HardwareSerial(ring_buffer*, unsigned char volatile*, unsigned char volatile*, unsigned char volatile*, unsigned char volatile*, unsigned char volatile*, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char) ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
 HardwareSerial::available()                       ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
-                                                  ./main.o
 HardwareSerial::begin(long)                       ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
                                                   ./main.o
                                                   ./WindSense/WindSense.o
@@ -1210,15 +1216,14 @@ HardwareSerial::end()                             ../../ArduinoCore/Release//lib
 HardwareSerial::flush()                           ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
 HardwareSerial::peek()                            ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
 HardwareSerial::read()                            ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
-                                                  ./main.o
 HardwareSerial::write(unsigned char)              ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
 Print::print(String const&)                       ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
 Print::print(char const*)                         ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
-                                                  ./main.o
+                                                  ./WindSense/AIRMARSpecific.o
 Print::print(char, int)                           ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
 Print::print(double, int)                         ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
 Print::print(int, int)                            ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
-                                                  ./main.o
+                                                  ./WindSense/AIRMARSpecific.o
 Print::print(long, int)                           ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
 Print::print(unsigned char, int)                  ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
 Print::print(unsigned int, int)                   ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
@@ -1230,12 +1235,13 @@ Print::println(String const&)                     ../../ArduinoCore/Release//lib
 Print::println(char const*)                       ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
                                                   ./main.o
                                                   ./WindSense/WindSense.o
+                                                  ./WindSense/AIRMARSpecific.o
 Print::println(char, int)                         ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
-                                                  ./main.o
+                                                  ./WindSense/AIRMARSpecific.o
 Print::println(double, int)                       ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
-                                                  ./main.o
+                                                  ./WindSense/AIRMARSpecific.o
 Print::println(int, int)                          ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
-                                                  ./main.o
+                                                  ./WindSense/AIRMARSpecific.o
 Print::println(long, int)                         ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
 Print::println(unsigned char, int)                ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
 Print::println(unsigned int, int)                 ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
@@ -1246,6 +1252,7 @@ Print::write(unsigned char const*, unsigned int)  ../../ArduinoCore/Release//lib
                                                   ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
 Serial                                            ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
                                                   ./main.o
+                                                  ./WindSense/AIRMARSpecific.o
 String::String(String const&)                     ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
 String::String(String const&)                     ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
 String::String(char const*)                       ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
@@ -1307,20 +1314,22 @@ WindSense::WindSense()                            ./WindSense/WindSense.o
                                                   ./main.o
 WindSense::WindSense(HardwareSerial*)             ./WindSense/WindSense.o
 WindSense::WindSense(HardwareSerial*)             ./WindSense/WindSense.o
+WindSense::debug(HardwareSerial&)                 ./WindSense/AIRMARSpecific.o
+                                                  ./main.o
 WindSense::grabChar(char)                         ./WindSense/WindSense.o
-                                                  ./main.o
+                                                  ./WindSense/AIRMARSpecific.o
 WindSense::parseInternalNMEA(char*)               ./WindSense/ParseToStruct.o
-                                                  ./main.o
+                                                  ./WindSense/AIRMARSpecific.o
 WindSense::resetInternalNMEA()                    ./WindSense/WindSense.o
-                                                  ./main.o
+                                                  ./WindSense/AIRMARSpecific.o
 WindSense::splitInternalNMEA()                    ./WindSense/WindSense.o
-                                                  ./main.o
+                                                  ./WindSense/AIRMARSpecific.o
 WindSense::splitNMEA(char*)                       ./WindSense/WindSense.o
 WindSense::updateGPS_GPGLL()                      ./WindSense/ParseToStruct.o
 WindSense::updateSPEED_GPVTG()                    ./WindSense/ParseToStruct.o
 WindSense::updateWIND_WIMWV()                     ./WindSense/ParseToStruct.o
 WindSense::validateInternalNMEA()                 ./WindSense/WindSense.o
-                                                  ./main.o
+                                                  ./WindSense/AIRMARSpecific.o
 WindSense::validateNMEA(char*)                    ./WindSense/WindSense.o
 __addsf3                                          /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libm.a(addsf3.o)
                                                   ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
@@ -1362,6 +1371,7 @@ __do_copy_data                                    /usr/lib/gcc/avr/4.3.5/avr5/li
                                                   ./main.o
                                                   ./WindSense/WindSense.o
                                                   ./WindSense/ParseToStruct.o
+                                                  ./WindSense/AIRMARSpecific.o
 __do_global_ctors                                 /usr/lib/gcc/avr/4.3.5/avr5/libgcc.a(_ctors.o)
                                                   ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
                                                   ./main.o
@@ -1493,6 +1503,7 @@ atol                                              /usr/lib/gcc/avr/4.3.5/../../.
                                                   ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
 delay                                             ../../ArduinoCore/Release//libArduinoCore.a(wiring.o)
                                                   ./WindSense/WindSense.o
+                                                  ./WindSense/AIRMARSpecific.o
 delayMicroseconds                                 ../../ArduinoCore/Release//libArduinoCore.a(wiring.o)
 digitalRead                                       ../../ArduinoCore/Release//libArduinoCore.a(wiring_digital.o)
 digitalWrite                                      ../../ArduinoCore/Release//libArduinoCore.a(wiring_digital.o)
@@ -1502,7 +1513,6 @@ digital_pin_to_port_PGM                           ../../ArduinoCore/Release//lib
                                                   ../../ArduinoCore/Release//libArduinoCore.a(wiring_digital.o)
 digital_pin_to_timer_PGM                          ../../ArduinoCore/Release//libArduinoCore.a(pins_arduino.o)
                                                   ../../ArduinoCore/Release//libArduinoCore.a(wiring_digital.o)
-dump()                                            ./main.o
 errno                                             /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(errno.o)
                                                   /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strtol.o)
                                                   /usr/lib/gcc/avr/4.3.5/../../../avr/lib/avr5/libc.a(strtod.o)

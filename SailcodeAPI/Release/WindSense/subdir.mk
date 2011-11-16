@@ -4,14 +4,17 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
+../WindSense/AIRMARSpecific.cpp \
 ../WindSense/ParseToStruct.cpp \
 ../WindSense/WindSense.cpp 
 
 OBJS += \
+./WindSense/AIRMARSpecific.o \
 ./WindSense/ParseToStruct.o \
 ./WindSense/WindSense.o 
 
 CPP_DEPS += \
+./WindSense/AIRMARSpecific.d \
 ./WindSense/ParseToStruct.d \
 ./WindSense/WindSense.d 
 

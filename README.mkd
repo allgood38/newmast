@@ -17,3 +17,9 @@ available.
 
 This class will also be able to host the functions for the compass,
 although this will be added on later.
+
+Doxygen generated output for the project, however it currently includes
+all of the depreciated code, will need to be cleaned up some time, however
+here is the link to it
+
+http://allgood38.github.com/newmast/

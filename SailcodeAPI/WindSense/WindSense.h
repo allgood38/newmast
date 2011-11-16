@@ -9,6 +9,7 @@
 #include <string.h>   // String Comparison Functions
 //#include <HardwareSerial.h>
 
+
 class WindSense {
 public:
     WindSense();
@@ -17,16 +18,19 @@ public:
 
     int validateNMEA(char* input);
     int validateInternalNMEA();
-
     int splitNMEA(char* input);
     int splitInternalNMEA();
+    void resetInternalNMEA();
 
+    // Functions with ParseToStruct
     int parseInternalNMEA(char* input);
     int updateGPS_GPGLL();
 	int updateWIND_WIMWV();
 	int updateSPEED_GPVTG();
 
-    void resetInternalNMEA();
+	//Functions with AIRMARSpecific
+	int debug(HardwareSerial &debugPortIn);
+
 
     int partCount;            //!< index for partSentence
     char partSentence[100];   //!< buffer for incoming NMEA for grabChar function
@@ -76,6 +80,7 @@ public:
 	// Create an instance of the Hardware Serial
 	// to be used within the class
 	HardwareSerial* senSerial;
+	HardwareSerial* debugPort;
 };
 
 #endif
