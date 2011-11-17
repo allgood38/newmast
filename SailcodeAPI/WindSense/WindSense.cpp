@@ -5,12 +5,13 @@ WindSense::WindSense() {
     stringArrayIdx = 0;   //!< index for the array of strings
 }
 
-WindSense::WindSense(HardwareSerial* inSerial) {
-	// Here, we initialise the wind sensor
-	senSerial = inSerial;
-	senSerial->begin(4800);
+WindSense::WindSense(HardwareSerial &inSerial) {
+	// Here, we initialize the wind sensor
+	senSerial = &inSerial;
+	//senSerial->begin(4800);
 	delay(100);
 	senSerial->println("$PAMTC,EN,RMC,0,10");
+	delay(100);
 }
 
 /** Adds a character to the partial sentence string.

@@ -59,7 +59,7 @@ all: SailcodeAPI.elf secondary-outputs
 SailcodeAPI.elf: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: AVR C++ Linker'
-	avr-g++ -s -Os -Wl,--gc-sections -o"SailcodeAPI.elf" $(OBJS) $(USER_OBJS) $(LIBS) -lm -Wl,-Map,SailcodeAPI.map,--cref -lm -L../../ArduinoCore/Release/ -mmcu=atmega328p
+	avr-g++ -s -Os -Wl,--gc-sections -o"SailcodeAPI.elf" $(OBJS) $(USER_OBJS) $(LIBS) -lm -Wl,-Map,SailcodeAPI.map,--cref -lm -L../../ArduinoCore/Release/ -mmcu=atmega2560
 	@echo 'Finished building target: $@'
 	@echo ' '
 
@@ -71,7 +71,7 @@ SailcodeAPI.hex: SailcodeAPI.elf
 
 sizedummy: SailcodeAPI.elf
 	@echo 'Invoking: Print Size'
-	-avr-size --format=avr --mcu=atmega328p SailcodeAPI.elf
+	-avr-size --format=avr --mcu=atmega2560 SailcodeAPI.elf
 	@echo 'Finished building: $@'
 	@echo ' '
 

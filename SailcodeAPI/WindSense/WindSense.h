@@ -13,7 +13,7 @@
 class WindSense {
 public:
     WindSense();
-    WindSense(HardwareSerial* inSerial);
+    WindSense(HardwareSerial &inSerial);
     int grabChar(char input);
 
     int validateNMEA(char* input);
@@ -31,6 +31,7 @@ public:
 	//Functions with AIRMARSpecific
 	int debug(HardwareSerial &debugPortIn);
 	int debugDump(HardwareSerial &debugPortIn);
+	int betterDebug(HardwareSerial &debugPortIn);
 
 
     int partCount;            //!< index for partSentence
@@ -81,6 +82,7 @@ public:
 	// Create an instance of the Hardware Serial
 	// to be used within the class
 	HardwareSerial* senSerial;
+	HardwareSerial* debugPort;
 };
 
 #endif

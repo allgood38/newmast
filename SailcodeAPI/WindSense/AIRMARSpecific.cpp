@@ -1,6 +1,6 @@
 /** Stuff related purely to out wind sensor set-up
  *
- * Things like the initialisation after instantiation of the
+ * Things like the initialization after instantiation of the
  * object, and some debugging function stuff.
  */
 #include "WindSense.h"
@@ -20,11 +20,11 @@
  * already had the baud rate set
  */
 int WindSense::debug(HardwareSerial &debugPortIn) {
-	HardwareSerial* debugPort = &debugPortIn;
+	debugPort = &debugPortIn;
 
-	while(debugPort->available()) {
-		if (grabChar(debugPort->read())) {
-			debugDump(*debugPort);
+	while(senSerial->available()) {
+		if (grabChar(senSerial->read())) {
+			debugDump(debugPortIn);
 		}
 	}
 
@@ -96,3 +96,19 @@ int WindSense::debugDump(HardwareSerial &debugPortIn) {
 	resetInternalNMEA();
 	return 1;
 }
+
+int WindSense::betterDebug(HardwareSerial &debugPortIn) {
+	HardwareSerial* debugPort = &debugPortIn;
+	char buffer[100];
+	debugPort->println("NMEA Detected");
+
+	if (GPS_GPGLL.degreeLatitude != 0) {
+	sprintf(buffer, "GPS-Lat %i %i %c  Lon %i %i %c", GPS_GPGLL.minuteLatitude, \
+			GPS_GPGLL.degreeLatitude, GPS_GPGLL.latitudeDirection, \
+			GPS_GPGLL.minuteLongitude, GPS_GPGLL.degreeLongitude, \
+			GPS_GPGLL.longitudeDirection);
+	}
+	debugPort->println(buffer);
+	return 1;
+}
+

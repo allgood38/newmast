@@ -37,12 +37,20 @@ int main(void) {
 void setup() {
     // Initialise the digital pin as an output.
     // Pin 13 has an LED connected on most Arduino boards:
-    pinMode(13, OUTPUT);
-    Serial.begin(9600);
+
+	pinMode(13, OUTPUT);
+    Serial.begin(19200);
     Serial.println("Ready and awaiting input");
+    Serial3.begin(4800);
+
+    airman.senSerial = &Serial3;
 }
 
 void loop() {
+
+	//Serial.println("Regular Output");
+	//serialAlias->println("Alias Output");
 	airman.debug(Serial);
+
 }
 
