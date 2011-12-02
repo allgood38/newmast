@@ -31,4 +31,5 @@ SIZEDUMMY :=
 SUBDIRS := \
 . \
 WindSense \
+Debugging \
 
