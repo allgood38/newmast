@@ -23,7 +23,10 @@ int WindSense::debug(HardwareSerial &debugPortIn) {
 	debugPort = &debugPortIn;
 
 	while(senSerial->available()) {
-		if (grabChar(senSerial->read())) {
+		if (senSerial->available() > MAX_SERIAL_BUFFER) {
+			senSerial->flush();
+		} else if (grabChar(senSerial->read())) {
+			//betterDebug(debugPortIn);
 			debugDump(debugPortIn);
 		}
 	}
@@ -97,11 +100,19 @@ int WindSense::debugDump(HardwareSerial &debugPortIn) {
 	return 1;
 }
 
+/** Attempt to create a more brief debug output
+ * Uses the sprintf to generate a single string to be dealt
+ * with by the serial function, rather than having to call it
+ * all the time.
+ */
 int WindSense::betterDebug(HardwareSerial &debugPortIn) {
 	HardwareSerial* debugPort = &debugPortIn;
 	char buffer[100];
 	debugPort->println("NMEA Detected");
 
+	validateInternalNMEA();
+	splitInternalNMEA();
+	parseInternalNMEA(stringArray[0]);
 	if (GPS_GPGLL.degreeLatitude != 0) {
 	sprintf(buffer, "GPS-Lat %i %i %c  Lon %i %i %c", GPS_GPGLL.minuteLatitude, \
 			GPS_GPGLL.degreeLatitude, GPS_GPGLL.latitudeDirection, \
@@ -109,6 +120,12 @@ int WindSense::betterDebug(HardwareSerial &debugPortIn) {
 			GPS_GPGLL.longitudeDirection);
 	}
 	debugPort->println(buffer);
+	sprintf(buffer, "Wind speed %g %c angle %g", WIND_WIMWV.windSpeed, \
+			WIND_WIMWV.windSpeedUnits, \
+			WIND_WIMWV.windAngle);
+
+	debugPort->println(buffer);
+	resetInternalNMEA();
 	return 1;
 }
 

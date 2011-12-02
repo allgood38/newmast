@@ -58,7 +58,7 @@ all: Blink.elf secondary-outputs
 Blink.elf: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: AVR C++ Linker'
-	avr-g++ -s -Os -Wl,--gc-sections -o"Blink.elf" $(OBJS) $(USER_OBJS) $(LIBS) -lm -Wl,-Map,Blink.map,--cref -L../../ArduinoCore/Release/ -mmcu=atmega2560
+	avr-g++ -s -Os -Wl,--gc-sections -o"Blink.elf" $(OBJS) $(USER_OBJS) $(LIBS) -lm -Wl,-Map,Blink.map,--cref -L../../ArduinoCore/Release/ -mmcu=atmega328p
 	@echo 'Finished building target: $@'
 	@echo ' '
 
@@ -70,7 +70,7 @@ Blink.hex: Blink.elf
 
 sizedummy: Blink.elf
 	@echo 'Invoking: Print Size'
-	-avr-size --format=avr --mcu=atmega2560 Blink.elf
+	-avr-size --format=avr --mcu=atmega328p Blink.elf
 	@echo 'Finished building: $@'
 	@echo ' '
 

@@ -25,12 +25,12 @@ void setup() {
   // Pin 13 has an LED connected on most Arduino boards:
   pinMode(13, OUTPUT);     
   Serial.begin(19200);
-  Serial3.begin(4800);
+  //Serial3.begin(4800);
 }
 
 void loop() {
 
-  if (Serial3.available()) {
-	  Serial.print(Serial3.read(),BYTE);
+  if (Serial.available()) {
+	  Serial.print(Serial.read(),BYTE);
   }
 }

@@ -19,12 +19,20 @@ WindSense::WindSense(HardwareSerial &inSerial) {
  * character has been found. There a number of cases in which this can
  * fail and need to be handled.
  *
+ * In the event of a string which begins to get created becomes much too
+ * large, the function resets the partially completed string index and
+ * returns a zero.
+ *
  * @note Requires the external variables, partSentence and partCount
  * @return Whether or not a complete NMEA sentence has been stored, 0 if
  * it hasn't 1 if it has.
  */
 int WindSense::grabChar(char input) {
-    if (partCount > 0 || input == '$') {
+	if (partCount >= sizeof(partSentence) - 1) {
+		partCount = 0;
+		partSentence[0] = '\0';
+		return 0;
+	} else if (partCount > 0 || input == '$') {
         partSentence[partCount] = input;
         partCount++;
     }

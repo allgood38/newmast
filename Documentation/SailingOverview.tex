@@ -1,8 +1,16 @@
+%        File: SailingOverview.tex
+%     Created: Fri Nov 18 11:00 AM 2011 E
+% Last Change: Fri Nov 18 11:00 AM 2011 E
+%
 \documentclass[letterpaper]{article}
-\usepackage{graphicx} 	% For figures and images
-\usepackage{alltt} 		% For better verbatim
-\usepackage[]{amsmath}
-% \usepackage{fullpage}
+\usepackage{graphicx} % For figures and images
+\usepackage{alltt} % For better verbatim
+\usepackage[]{hyperref} % Links
+\usepackage[]{url} % External Links
+\usepackage{setspace}
+\usepackage{fancyvrb}
+\usepackage{color}
+\usepackage[ascii]{inputenc}
 
 % The HRule command is required for the title page
 % from the wikibook
@@ -13,6 +21,10 @@
 \setlength{\parskip}{2ex}
 
 \begin{document}
+\input{pygment.tex}
+% If the titlepage is included, uncomment below.
+%\input{title.tex}
+%\doublespacing
 
 \section{The Sailcode Application Interface} % (fold)
 \label{sec:The Sailcode Application Interface}
@@ -30,16 +42,18 @@ The new API is going to contain as much code which has already been written in a
 
 % section The Sailcode Application Interface (end)
 
-\section{Classes in Arduino} % (fold)
+\subsection{Classes in Arduino} % (fold)
 \label{sec:Classes in Arduino}
 
-Although Arduino is written in C, it is possible to create classes with some limitations. You can create a Library in a seperate file/folder, which is compiled separately. Then in the Arduino source code, you can just include it and create an instance.
+\url{http://arduino.cc/en/Hacking/LibraryTutorial}
 
-You cannot use the \verb:new: keyword in C, but if you really need to declare an object off the heap, you can use the relloc and malloc functions which can do the same thing. Though these would be pretty dangerous if there ever to be a memory leak.
+The underlying software Arduino is built on attempts to implement the C/C++ language and is able to understand almost all of it. There are a few things that are not, such as the \verb+new+ and \verb+delete+, but there is a work around for this. The one thing it will not support, is the use of template functions. Template functions allow you to make functions that can operate on arbitrary data types, and wouldn't really be useful for our purposes anyways.
+
+When you write a class on the Arduino, you write it in a library. Where a library is just another set of source files which are included in the build. The Arduino IDE is very picky about where you put the library files, but the eclipse IDE just requires you to have a valid include statement. Check out the link above for more info. 
 
 % section Classes in Arduino (end)
 
-\section{The Wind Sensor} % (fold)
+\subsection{The Wind Sensor} % (fold)
 \label{sec:The Wind Sensor}
 
 Will be contained in its own class and carry all of its own supporting variables.
@@ -119,4 +133,41 @@ The wind sensor is connected to the Arduino through Serial port 3, which runs th
 \bibliographystyle{plain}
 \bibliography{plans}
 \nocite{*}
+
+
+\begin{itemize}
+	\item The wind direction relative to the front of the boat
+	\item The current GPS Location of the boat
+\end{itemize}
+\section{Sailing Navigation} % (fold)
+\label{sec:Sailing Navigation}
+
+\subsection{Navigation with GPS Data} % (fold)
+\label{sec:Navigation with GPS Data}
+
+The boat is going to be given certain points that it needs to reach.
+These will be given to it through a data file containing the GPS
+locations. Given that the boat cannot sail a straight line to the
+objective, it is going to need to deal with changing wind conditions and
+any other obstacles.
+
+From this point on, the locations which the robot must reach will be called
+hard coded locations. In order to reach these locations, the robot will generate
+a series of in between points to take care of the challenges of sailing to the
+hard coded points.
+
+% Testing the code highlighting
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{c+cp}{\PYZsh{}}\PY{c+cp}{include <stdio.h>}
+
+\PY{k+kt}{int} \PY{n+nf}{main}\PY{p}{(}\PY{k+kt}{int} \PY{n}{argc}\PY{p}{,} \PY{k}{const} \PY{k+kt}{char} \PY{o}{*}\PY{n}{argv}\PY{p}{[}\PY{p}{]}\PY{p}{)}
+\PY{p}{\PYZob{}}
+	\PY{n}{printf}\PY{p}{(}\PY{l+s}{"}\PY{l+s}{This shit is bananas}\PY{l+s+se}{\PYZbs{}n}\PY{l+s}{"}\PY{p}{)}\PY{p}{;}
+	\PY{k}{return} \PY{l+m+mi}{0}\PY{p}{;}
+\PY{p}{\PYZcb{}}
+\end{Verbatim}
+
+% section Sailing Navigation (end)
 \end{document}
+
+

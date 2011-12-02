@@ -1,6 +1,8 @@
 #ifndef WindSense_H
 #define WindSense_H
 
+#define MAX_SERIAL_BUFFER 120
+
 // This brings in the Arduino Standard Functions
 // For the Hardware Serial Functions only
 // and the delay function used during initialisation
