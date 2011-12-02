@@ -2,3 +2,10 @@
 *.elf
 *.map
 *.o
+*.hex
+TransitioninOut
+makefile
+*.mk
+*.d
+*.swp
+
