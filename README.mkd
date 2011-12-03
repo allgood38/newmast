@@ -25,3 +25,7 @@ here is the link to it
 http://allgood38.github.com/newmast/
 
 # Debugging Class
+
+
+
+CSS Stylesheet used in the home page curtesy of... http://kev.inburke.com/kevin/markdown-css-help-make-the-web-prettier/
