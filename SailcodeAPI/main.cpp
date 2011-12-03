@@ -40,12 +40,9 @@ int main(void) {
 }
 
 void setup() {
-    // Initialise the digital pin as an output.
-    // Pin 13 has an LED connected on most Arduino boards:
-
-	pinMode(13, OUTPUT);
 	Serial.begin(19200);
 	airman.attach(Serial);
+
 	panic.attach(Serial);
     panic.println("Ready for action");
 }
