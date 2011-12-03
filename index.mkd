@@ -1,6 +1,0 @@
-Newmast Sailcode Documentation
-==============================
-
-Checkout the Doxygen generated documentation to get a feel for the source code [here](doxygen/index.html).
-
-Download the pdf docs explain its usage [here](WindSense.pdf)

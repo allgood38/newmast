@@ -1,5 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node1" href="$classPrint.html" title="Print" alt="" coords="6,5,55,33"/>
-<area shape="rect" id="node3" href="$classStream.html" title="Stream" alt="" coords="104,5,168,33"/>
-<area shape="rect" id="node5" href="$classHardwareSerial.html" title="HardwareSerial" alt="" coords="217,5,330,33"/>
-</map>

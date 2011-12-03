@@ -1,8 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" href="$classHardwareSerial.html" title="HardwareSerial" alt="" coords="5,166,117,194"/>
-<area shape="rect" id="node4" href="$classStream.html" title="Stream" alt="" coords="29,86,93,114"/>
-<area shape="rect" id="node6" href="$classPrint.html" title="Print" alt="" coords="37,6,85,34"/>
-<area shape="rect" id="node8" href="$structWindSense_1_1GPGLL.html" title="GPS Data Struct Contains the GPS data from the airmar." alt="" coords="141,166,283,194"/>
-<area shape="rect" id="node10" href="$structWindSense_1_1GPVTG.html" title="WindSense::GPVTG" alt="" coords="307,166,449,194"/>
-<area shape="rect" id="node12" href="$structWindSense_1_1WIMWV.html" title="WindSense::WIMWV" alt="" coords="475,166,620,194"/>
-</map>
