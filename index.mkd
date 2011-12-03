@@ -1,0 +1,6 @@
+Newmast Sailcode Documentation
+==============================
+
+Checkout doxygen output [here](doxygen/index.html)
+
+Checkout the pdf doc [here](WindSense_Manual.pdf)
