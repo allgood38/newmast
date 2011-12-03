@@ -1,0 +1,35 @@
+\contentsline {chapter}{\numberline {1}\discretionary {-}{}{}Main \discretionary {-}{}{}Page}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}\discretionary {-}{}{}Introduction}{1}{section.1.1}
+\contentsline {chapter}{\numberline {2}\discretionary {-}{}{}Data \discretionary {-}{}{}Structure \discretionary {-}{}{}Index}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}\discretionary {-}{}{}Class \discretionary {-}{}{}Hierarchy}{3}{section.2.1}
+\contentsline {chapter}{\numberline {3}\discretionary {-}{}{}Data \discretionary {-}{}{}Structure \discretionary {-}{}{}Index}{5}{chapter.3}
+\contentsline {section}{\numberline {3.1}\discretionary {-}{}{}Data \discretionary {-}{}{}Structures}{5}{section.3.1}
+\contentsline {chapter}{\numberline {4}\discretionary {-}{}{}Data \discretionary {-}{}{}Structure \discretionary {-}{}{}Documentation}{7}{chapter.4}
+\contentsline {section}{\numberline {4.1}\discretionary {-}{}{}Wind\discretionary {-}{}{}Sense\discretionary {-}{}{}:\discretionary {-}{}{}:\discretionary {-}{}{}G\discretionary {-}{}{}P\discretionary {-}{}{}G\discretionary {-}{}{}L\discretionary {-}{}{}L \discretionary {-}{}{}Struct \discretionary {-}{}{}Reference}{7}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}\discretionary {-}{}{}Detailed \discretionary {-}{}{}Description}{7}{subsection.4.1.1}
+\contentsline {section}{\numberline {4.2}\discretionary {-}{}{}Wind\discretionary {-}{}{}Sense\discretionary {-}{}{}:\discretionary {-}{}{}:\discretionary {-}{}{}G\discretionary {-}{}{}P\discretionary {-}{}{}V\discretionary {-}{}{}T\discretionary {-}{}{}G \discretionary {-}{}{}Struct \discretionary {-}{}{}Reference}{7}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}\discretionary {-}{}{}Detailed \discretionary {-}{}{}Description}{8}{subsection.4.2.1}
+\contentsline {section}{\numberline {4.3}\discretionary {-}{}{}Hardware\discretionary {-}{}{}Serial \discretionary {-}{}{}Class \discretionary {-}{}{}Reference}{8}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}\discretionary {-}{}{}Detailed \discretionary {-}{}{}Description}{9}{subsection.4.3.1}
+\contentsline {section}{\numberline {4.4}\discretionary {-}{}{}Print \discretionary {-}{}{}Class \discretionary {-}{}{}Reference}{10}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}\discretionary {-}{}{}Detailed \discretionary {-}{}{}Description}{11}{subsection.4.4.1}
+\contentsline {section}{\numberline {4.5}\discretionary {-}{}{}Stream \discretionary {-}{}{}Class \discretionary {-}{}{}Reference}{11}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}\discretionary {-}{}{}Detailed \discretionary {-}{}{}Description}{12}{subsection.4.5.1}
+\contentsline {section}{\numberline {4.6}\discretionary {-}{}{}String \discretionary {-}{}{}Class \discretionary {-}{}{}Reference}{12}{section.4.6}
+\contentsline {subsection}{\numberline {4.6.1}\discretionary {-}{}{}Detailed \discretionary {-}{}{}Description}{14}{subsection.4.6.1}
+\contentsline {section}{\numberline {4.7}\discretionary {-}{}{}Wind\discretionary {-}{}{}Sense\discretionary {-}{}{}:\discretionary {-}{}{}:\discretionary {-}{}{}W\discretionary {-}{}{}I\discretionary {-}{}{}M\discretionary {-}{}{}W\discretionary {-}{}{}V \discretionary {-}{}{}Struct \discretionary {-}{}{}Reference}{14}{section.4.7}
+\contentsline {subsection}{\numberline {4.7.1}\discretionary {-}{}{}Detailed \discretionary {-}{}{}Description}{14}{subsection.4.7.1}
+\contentsline {section}{\numberline {4.8}\discretionary {-}{}{}Wind\discretionary {-}{}{}Sense \discretionary {-}{}{}Class \discretionary {-}{}{}Reference}{15}{section.4.8}
+\contentsline {subsection}{\numberline {4.8.1}\discretionary {-}{}{}Detailed \discretionary {-}{}{}Description}{16}{subsection.4.8.1}
+\contentsline {subsection}{\numberline {4.8.2}\discretionary {-}{}{}Constructor \& \discretionary {-}{}{}Destructor \discretionary {-}{}{}Documentation}{16}{subsection.4.8.2}
+\contentsline {subsubsection}{\numberline {4.8.2.1}\discretionary {-}{}{}Wind\discretionary {-}{}{}Sense}{16}{subsubsection.4.8.2.1}
+\contentsline {subsection}{\numberline {4.8.3}\discretionary {-}{}{}Member \discretionary {-}{}{}Function \discretionary {-}{}{}Documentation}{17}{subsection.4.8.3}
+\contentsline {subsubsection}{\numberline {4.8.3.1}debug}{17}{subsubsection.4.8.3.1}
+\contentsline {subsubsection}{\numberline {4.8.3.2}debug\discretionary {-}{}{}Dump}{17}{subsubsection.4.8.3.2}
+\contentsline {subsubsection}{\numberline {4.8.3.3}grab\discretionary {-}{}{}Char}{19}{subsubsection.4.8.3.3}
+\contentsline {subsubsection}{\numberline {4.8.3.4}parse\discretionary {-}{}{}Internal\discretionary {-}{}{}N\discretionary {-}{}{}M\discretionary {-}{}{}E\discretionary {-}{}{}A}{19}{subsubsection.4.8.3.4}
+\contentsline {subsubsection}{\numberline {4.8.3.5}split\discretionary {-}{}{}N\discretionary {-}{}{}M\discretionary {-}{}{}E\discretionary {-}{}{}A}{20}{subsubsection.4.8.3.5}
+\contentsline {subsubsection}{\numberline {4.8.3.6}update\discretionary {-}{}{}G\discretionary {-}{}{}P\discretionary {-}{}{}S\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}G\discretionary {-}{}{}P\discretionary {-}{}{}G\discretionary {-}{}{}L\discretionary {-}{}{}L}{21}{subsubsection.4.8.3.6}
+\contentsline {subsubsection}{\numberline {4.8.3.7}update\discretionary {-}{}{}S\discretionary {-}{}{}P\discretionary {-}{}{}E\discretionary {-}{}{}E\discretionary {-}{}{}D\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}G\discretionary {-}{}{}P\discretionary {-}{}{}V\discretionary {-}{}{}T\discretionary {-}{}{}G}{22}{subsubsection.4.8.3.7}
+\contentsline {subsubsection}{\numberline {4.8.3.8}update\discretionary {-}{}{}W\discretionary {-}{}{}I\discretionary {-}{}{}N\discretionary {-}{}{}D\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}W\discretionary {-}{}{}I\discretionary {-}{}{}M\discretionary {-}{}{}W\discretionary {-}{}{}V}{23}{subsubsection.4.8.3.8}
+\contentsline {subsubsection}{\numberline {4.8.3.9}validate\discretionary {-}{}{}N\discretionary {-}{}{}M\discretionary {-}{}{}E\discretionary {-}{}{}A}{23}{subsubsection.4.8.3.9}

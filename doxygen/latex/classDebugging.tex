@@ -1,0 +1,154 @@
+\hypertarget{classDebugging}{
+\section{\-Debugging \-Class \-Reference}
+\label{classDebugging}\index{\-Debugging@{\-Debugging}}
+}
+
+
+\-Take notes anywhere in the program and output to your choice \hyperlink{Debugging_8h_source}{\-Debugging.\-h}.  
+
+
+
+
+{\ttfamily \#include $<$\-Debugging.\-h$>$}
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classDebugging_a6c915eb80d0f20fabcbfb10e82041e89}{take\-Note} (char $\ast$input)
+\begin{DoxyCompactList}\small\item\em \-The main point of this class. \end{DoxyCompactList}\item 
+int \hyperlink{classDebugging_abb629b4360ea31719550d03f96635ccb}{attach} (\hyperlink{classHardwareSerial}{\-Hardware\-Serial} \&serial\-Port)
+\begin{DoxyCompactList}\small\item\em \-Initialize the class with a \-Serial \-Output. \end{DoxyCompactList}\item 
+int \hyperlink{classDebugging_ae74b8c5d0f8445f098ffd07bab368f0a}{println} (char $\ast$string\-In)
+\begin{DoxyCompactList}\small\item\em \-Turn send a sentence to the choosen output. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Take notes anywhere in the program and output to your choice \hyperlink{Debugging_8h_source}{\-Debugging.\-h}. 
+
+\-Created on\-: \-Dec 1, 2011 \-Author\-: \-Q\-M\-A\-S\-T
+
+\-The goal is to be able to write sentences to this class from anywhere within the main code. \-Meanwhile this class will control what is done with that sentence.
+
+\-It should be able to send the data to either the serial port or the \-S\-D card without needing the change any part of the main code except for the constructor when it is initialized. 
+
+\-Definition at line 23 of file \-Debugging.\-h.
+
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classDebugging_abb629b4360ea31719550d03f96635ccb}{
+\index{\-Debugging@{\-Debugging}!attach@{attach}}
+\index{attach@{attach}!Debugging@{\-Debugging}}
+\subsubsection[{attach}]{\setlength{\rightskip}{0pt plus 5cm}int \-Debugging\-::attach (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Hardware\-Serial} \&}]{serial\-Port}
+\end{DoxyParamCaption}
+)}}
+\label{classDebugging_abb629b4360ea31719550d03f96635ccb}
+
+
+\-Initialize the class with a \-Serial \-Output. 
+
+\-Doesn't \-Initialize the serial port, that needs to be done in the setup function.
+
+
+\begin{DoxyParams}[1]{\-Parameters}
+\mbox{\tt in}  & {\em \hyperlink{classHardwareSerial}{\-Hardware\-Serial}} & instance \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\mbox{[}out\mbox{]} 0 if successful 
+\end{DoxyReturn}
+
+
+\-Definition at line 21 of file \-Debugging.\-cpp.
+
+
+\begin{DoxyCode}
+                                                {
+    if (debugOut != NULL) {
+        // The output has already been set
+        return 1;
+    }
+    debugOut = &serialPort;
+    return 0;
+}
+\end{DoxyCode}
+\hypertarget{classDebugging_ae74b8c5d0f8445f098ffd07bab368f0a}{
+\index{\-Debugging@{\-Debugging}!println@{println}}
+\index{println@{println}!Debugging@{\-Debugging}}
+\subsubsection[{println}]{\setlength{\rightskip}{0pt plus 5cm}int \-Debugging\-::println (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{string\-In}
+\end{DoxyParamCaption}
+)}}
+\label{classDebugging_ae74b8c5d0f8445f098ffd07bab368f0a}
+
+
+\-Turn send a sentence to the choosen output. 
+
+
+\begin{DoxyParams}[1]{\-Parameters}
+\mbox{\tt in}  & {\em \-Character} & array (\hyperlink{classString}{\-String}) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\mbox{[}out\mbox{]} 0 if successful 
+\end{DoxyReturn}
+
+
+\-Definition at line 30 of file \-Debugging.\-cpp.
+
+
+\begin{DoxyCode}
+                                     {
+    if (debugOut == NULL) {
+        // The output has not been set
+        return 1;
+    }
+
+    debugOut->println(stringIn);
+    return 0;
+}
+\end{DoxyCode}
+\hypertarget{classDebugging_a6c915eb80d0f20fabcbfb10e82041e89}{
+\index{\-Debugging@{\-Debugging}!take\-Note@{take\-Note}}
+\index{take\-Note@{take\-Note}!Debugging@{\-Debugging}}
+\subsubsection[{take\-Note}]{\setlength{\rightskip}{0pt plus 5cm}int \-Debugging\-::take\-Note (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{input}
+\end{DoxyParamCaption}
+)}}
+\label{classDebugging_a6c915eb80d0f20fabcbfb10e82041e89}
+
+
+\-The main point of this class. 
+
+\-Take a single string and send it to the desired output as specified by the constructor.
+
+
+\begin{DoxyParams}[1]{\-Parameters}
+\mbox{\tt in}  & {\em notable} & string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\mbox{[}out\mbox{]} 0 if successful 
+\end{DoxyReturn}
+
+
+\-Definition at line 15 of file \-Debugging.\-cpp.
+
+
+\begin{DoxyCode}
+                                   {
+
+
+    return 0;
+}
+\end{DoxyCode}
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\-Debugging.\-h\item 
+\-Debugging.\-cpp\end{DoxyCompactItemize}
