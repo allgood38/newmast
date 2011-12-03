@@ -1,0 +1,1884 @@
+Archive member included because of file (symbol)
+
+../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
+                              ./main.o (HardwareSerial::begin(long))
+../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+                              ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o) (Print::write(char const*))
+../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+                              ../../ArduinoCore/Release//libArduinoCore.a(Print.o) (String::operator[](unsigned int) const)
+../../ArduinoCore/Release//libArduinoCore.a(wiring.o)
+                              ./WindSense/ParseToStruct.o (millis)
+../../ArduinoCore/Release//libArduinoCore.a(wiring_digital.o)
+                              ./main.o (pinMode)
+../../ArduinoCore/Release//libArduinoCore.a(pins_arduino.o)
+                              ../../ArduinoCore/Release//libArduinoCore.a(wiring_digital.o) (port_to_mode_PGM)
+/usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(addsf3.o)
+                              ../../ArduinoCore/Release//libArduinoCore.a(Print.o) (__subsf3)
+/usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(addsf3x.o)
+                              /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(addsf3.o) (__addsf3x)
+/usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(cmpsf2.o)
+                              ../../ArduinoCore/Release//libArduinoCore.a(Print.o) (__ltsf2)
+/usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(divsf3.o)
+                              ../../ArduinoCore/Release//libArduinoCore.a(Print.o) (__divsf3)
+/usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(divsf3x.o)
+                              /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(divsf3.o) (__divsf3x)
+/usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fixsfsi.o)
+                              ../../ArduinoCore/Release//libArduinoCore.a(Print.o) (__fixsfsi)
+/usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fixunssfsi.o)
+                              ../../ArduinoCore/Release//libArduinoCore.a(Print.o) (__fixunssfsi)
+/usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(floatsisf.o)
+                              ../../ArduinoCore/Release//libArduinoCore.a(Print.o) (__floatunsisf)
+/usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fp_cmp.o)
+                              /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(cmpsf2.o) (__fp_cmp)
+/usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fp_inf.o)
+                              /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(addsf3x.o) (__fp_inf)
+/usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fp_nan.o)
+                              /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(addsf3x.o) (__fp_nan)
+/usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fp_pscA.o)
+                              /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(addsf3x.o) (__fp_pscA)
+/usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fp_pscB.o)
+                              /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(addsf3x.o) (__fp_pscB)
+/usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fp_round.o)
+                              /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(addsf3.o) (__fp_round)
+/usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fp_split3.o)
+                              /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(addsf3x.o) (__fp_split3)
+/usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fp_zero.o)
+                              /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(addsf3x.o) (__fp_zero)
+/usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(mulsf3.o)
+                              ../../ArduinoCore/Release//libArduinoCore.a(Print.o) (__mulsf3)
+/usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(mulsf3x.o)
+                              /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(mulsf3.o) (__mulsf3x)
+/usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/avr5/libgcc.a(_udivmodsi4.o)
+                              ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o) (__udivmodsi4)
+/usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/avr5/libgcc.a(_exit.o)
+                              /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o (exit)
+/usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/avr5/libgcc.a(_copy_data.o)
+                              ./WindSense/AIRMARSpecific.o (__do_copy_data)
+/usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/avr5/libgcc.a(_clear_bss.o)
+                              ./main.o (__do_clear_bss)
+/usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/avr5/libgcc.a(_ctors.o)
+                              ./main.o (__do_global_ctors)
+/usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/avr5/libgcc.a(_tablejump.o)
+                              /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/avr5/libgcc.a(_ctors.o) (__tablejump__)
+/usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(malloc.o)
+                              ../../ArduinoCore/Release//libArduinoCore.a(WString.o) (malloc)
+/usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(realloc.o)
+                              ../../ArduinoCore/Release//libArduinoCore.a(WString.o) (realloc)
+/usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strtod.o)
+                              ./WindSense/ParseToStruct.o (strtod)
+/usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strtol.o)
+                              ./WindSense/ParseToStruct.o (strtol)
+/usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(atol.o)
+                              ../../ArduinoCore/Release//libArduinoCore.a(WString.o) (atol)
+/usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(isspace.o)
+                              ../../ArduinoCore/Release//libArduinoCore.a(WString.o) (isspace)
+/usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(tolower.o)
+                              ../../ArduinoCore/Release//libArduinoCore.a(WString.o) (tolower)
+/usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(toupper.o)
+                              ../../ArduinoCore/Release//libArduinoCore.a(WString.o) (toupper)
+/usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strncasecmp_P.o)
+                              /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strtod.o) (strncasecmp_P)
+/usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(memcpy.o)
+                              /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(realloc.o) (memcpy)
+/usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strcat.o)
+                              ../../ArduinoCore/Release//libArduinoCore.a(WString.o) (strcat)
+/usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strchr.o)
+                              ../../ArduinoCore/Release//libArduinoCore.a(WString.o) (strchr)
+/usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strcmp.o)
+                              ./WindSense/ParseToStruct.o (strcmp)
+/usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strcpy.o)
+                              ../../ArduinoCore/Release//libArduinoCore.a(WString.o) (strcpy)
+/usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strncmp.o)
+                              ../../ArduinoCore/Release//libArduinoCore.a(WString.o) (strncmp)
+/usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strncpy.o)
+                              ../../ArduinoCore/Release//libArduinoCore.a(WString.o) (strncpy)
+/usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strrchr.o)
+                              ../../ArduinoCore/Release//libArduinoCore.a(WString.o) (strrchr)
+/usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strstr.o)
+                              ../../ArduinoCore/Release//libArduinoCore.a(WString.o) (strstr)
+/usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(itoa.o)
+                              ./main.o (itoa)
+/usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(ltoa.o)
+                              ../../ArduinoCore/Release//libArduinoCore.a(WString.o) (ltoa)
+/usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(mulsi10.o)
+                              /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(atol.o) (__mulsi_const_10)
+/usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(ultoa.o)
+                              ../../ArduinoCore/Release//libArduinoCore.a(WString.o) (ultoa)
+/usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(sprintf.o)
+                              ./WindSense/AIRMARSpecific.o (sprintf)
+/usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+                              /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(sprintf.o) (vfprintf)
+/usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(errno.o)
+                              /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strtod.o) (errno)
+/usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(cty_isfalse.o)
+                              /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(isspace.o) (__ctype_isfalse)
+/usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strnlen_P.o)
+                              /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(vfprintf_std.o) (strnlen_P)
+/usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strnlen.o)
+                              /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(vfprintf_std.o) (strnlen)
+/usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strrev.o)
+                              /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(itoa.o) (strrev)
+/usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(fputc.o)
+                              /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(vfprintf_std.o) (fputc)
+/usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(ultoa_invert.o)
+                              /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(vfprintf_std.o) (__ultoa_invert)
+/usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/avr5/libgcc.a(_mulsi3.o)
+                              /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strtol.o) (__mulsi3)
+/usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/avr5/libgcc.a(_udivmodhi4.o)
+                              /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(itoa.o) (__udivmodhi4)
+/usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/avr5/libgcc.a(_prologue.o)
+                              /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(realloc.o) (__prologue_saves__)
+/usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/avr5/libgcc.a(_epilogue.o)
+                              /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(realloc.o) (__epilogue_restores__)
+
+Allocating common symbols
+Common symbol       size              file
+
+errno               0x2               /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(errno.o)
+__brkval            0x2               /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(malloc.o)
+__flp               0x2               /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(malloc.o)
+
+Discarded input sections
+
+ .data          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+ .stab          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+ .stabstr       0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+ .text          0x00000000        0x0 ./WindSense/AIRMARSpecific.o
+ .data          0x00000000        0x0 ./WindSense/AIRMARSpecific.o
+ .bss           0x00000000        0x0 ./WindSense/AIRMARSpecific.o
+ .debug_abbrev  0x00000000        0x0 ./WindSense/AIRMARSpecific.o
+ .debug_info    0x00000000        0x0 ./WindSense/AIRMARSpecific.o
+ .debug_line    0x00000000        0x0 ./WindSense/AIRMARSpecific.o
+ .text._ZN9WindSense11betterDebugER14HardwareSerial
+                0x00000000        0x0 ./WindSense/AIRMARSpecific.o
+ .text._ZN9WindSense9debugDumpER14HardwareSerial
+                0x00000000        0x0 ./WindSense/AIRMARSpecific.o
+ .text._ZN9WindSense5debugER14HardwareSerial
+                0x00000000        0x0 ./WindSense/AIRMARSpecific.o
+ .debug_frame   0x00000000        0x0 ./WindSense/AIRMARSpecific.o
+ .debug_loc     0x00000000        0x0 ./WindSense/AIRMARSpecific.o
+ .debug_pubnames
+                0x00000000        0x0 ./WindSense/AIRMARSpecific.o
+ .debug_aranges
+                0x00000000        0x0 ./WindSense/AIRMARSpecific.o
+ .debug_ranges  0x00000000        0x0 ./WindSense/AIRMARSpecific.o
+ .debug_str     0x00000000        0x0 ./WindSense/AIRMARSpecific.o
+ .text          0x00000000        0x0 ./WindSense/ParseToStruct.o
+ .bss           0x00000000        0x0 ./WindSense/ParseToStruct.o
+ .debug_abbrev  0x00000000        0x0 ./WindSense/ParseToStruct.o
+ .debug_info    0x00000000        0x0 ./WindSense/ParseToStruct.o
+ .debug_line    0x00000000        0x0 ./WindSense/ParseToStruct.o
+ .debug_frame   0x00000000        0x0 ./WindSense/ParseToStruct.o
+ .debug_loc     0x00000000        0x0 ./WindSense/ParseToStruct.o
+ .debug_pubnames
+                0x00000000        0x0 ./WindSense/ParseToStruct.o
+ .debug_aranges
+                0x00000000        0x0 ./WindSense/ParseToStruct.o
+ .debug_ranges  0x00000000        0x0 ./WindSense/ParseToStruct.o
+ .debug_str     0x00000000        0x0 ./WindSense/ParseToStruct.o
+ .text          0x00000000        0x0 ./WindSense/PublicFunctions.o
+ .data          0x00000000        0x0 ./WindSense/PublicFunctions.o
+ .bss           0x00000000        0x0 ./WindSense/PublicFunctions.o
+ .debug_abbrev  0x00000000        0x0 ./WindSense/PublicFunctions.o
+ .debug_info    0x00000000        0x0 ./WindSense/PublicFunctions.o
+ .debug_line    0x00000000        0x0 ./WindSense/PublicFunctions.o
+ .debug_frame   0x00000000        0x0 ./WindSense/PublicFunctions.o
+ .debug_loc     0x00000000        0x0 ./WindSense/PublicFunctions.o
+ .debug_pubnames
+                0x00000000        0x0 ./WindSense/PublicFunctions.o
+ .debug_aranges
+                0x00000000        0x0 ./WindSense/PublicFunctions.o
+ .debug_ranges  0x00000000        0x0 ./WindSense/PublicFunctions.o
+ .debug_str     0x00000000        0x0 ./WindSense/PublicFunctions.o
+ .text          0x00000000        0x0 ./WindSense/WindSense.o
+ .data          0x00000000        0x0 ./WindSense/WindSense.o
+ .bss           0x00000000        0x0 ./WindSense/WindSense.o
+ .debug_abbrev  0x00000000        0x0 ./WindSense/WindSense.o
+ .debug_info    0x00000000        0x0 ./WindSense/WindSense.o
+ .debug_line    0x00000000        0x0 ./WindSense/WindSense.o
+ .text._ZN9WindSenseC2Ev
+                0x00000000        0x0 ./WindSense/WindSense.o
+ .text._ZN9WindSense17resetInternalNMEAEv
+                0x00000000        0x0 ./WindSense/WindSense.o
+ .debug_frame   0x00000000        0x0 ./WindSense/WindSense.o
+ .debug_loc     0x00000000        0x0 ./WindSense/WindSense.o
+ .debug_pubnames
+                0x00000000        0x0 ./WindSense/WindSense.o
+ .debug_aranges
+                0x00000000        0x0 ./WindSense/WindSense.o
+ .debug_ranges  0x00000000        0x0 ./WindSense/WindSense.o
+ .debug_str     0x00000000        0x0 ./WindSense/WindSense.o
+ .text          0x00000000        0x0 ./Debugging/Debugging.o
+ .data          0x00000000        0x0 ./Debugging/Debugging.o
+ .bss           0x00000000        0x0 ./Debugging/Debugging.o
+ .debug_abbrev  0x00000000        0x0 ./Debugging/Debugging.o
+ .debug_info    0x00000000        0x0 ./Debugging/Debugging.o
+ .debug_line    0x00000000        0x0 ./Debugging/Debugging.o
+ .text._ZN9DebuggingC2Ev
+                0x00000000        0x0 ./Debugging/Debugging.o
+ .text._ZN9Debugging8takeNoteEPc
+                0x00000000        0x0 ./Debugging/Debugging.o
+ .debug_frame   0x00000000        0x0 ./Debugging/Debugging.o
+ .debug_loc     0x00000000        0x0 ./Debugging/Debugging.o
+ .debug_pubnames
+                0x00000000        0x0 ./Debugging/Debugging.o
+ .debug_aranges
+                0x00000000        0x0 ./Debugging/Debugging.o
+ .debug_ranges  0x00000000        0x0 ./Debugging/Debugging.o
+ .debug_str     0x00000000        0x0 ./Debugging/Debugging.o
+ .text          0x00000000        0x0 ./main.o
+ .bss           0x00000000        0x0 ./main.o
+ .debug_abbrev  0x00000000        0x0 ./main.o
+ .debug_info    0x00000000        0x0 ./main.o
+ .debug_line    0x00000000        0x0 ./main.o
+ .debug_frame   0x00000000        0x0 ./main.o
+ .debug_pubnames
+                0x00000000        0x0 ./main.o
+ .debug_aranges
+                0x00000000        0x0 ./main.o
+ .debug_ranges  0x00000000        0x0 ./main.o
+ .debug_str     0x00000000        0x0 ./main.o
+ .text          0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
+ .data          0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
+ .bss           0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
+ .debug_abbrev  0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
+ .debug_info    0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
+ .debug_line    0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
+ .text._ZN14HardwareSerialC2EP11ring_bufferPVhS3_S3_S3_S3_hhhhh
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
+ .text._ZN14HardwareSerialC1EP11ring_bufferPVhS3_S3_S3_S3_hhhhh
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
+ .text._ZN14HardwareSerial3endEv
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
+ .rodata._ZTV6Stream
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
+ .debug_frame   0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
+ .debug_loc     0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
+ .debug_pubnames
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
+ .debug_aranges
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
+ .debug_ranges  0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
+ .debug_str     0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
+ .text          0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+ .data          0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+ .bss           0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+ .debug_abbrev  0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+ .debug_info    0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+ .debug_line    0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+ .text._ZN5Print5printERK6String
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+ .text._ZN5Print5printEmi
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+ .text._ZN5Print5printEji
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+ .text._ZN5Print5printEhi
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+ .text._ZN5Print5printEii
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+ .text._ZN5Print5printEci
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+ .text._ZN5Print7printlnEmi
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+ .text._ZN5Print7printlnEji
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+ .text._ZN5Print7printlnEhi
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+ .text._ZN5Print7printlnERK6String
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+ .text._ZN5Print7printlnEli
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+ .text._ZN5Print7printlnEii
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+ .text._ZN5Print7printlnEci
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+ .text._ZN5Print10printFloatEdh
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+ .text._ZN5Print5printEdi
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+ .text._ZN5Print7printlnEdi
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+ .rodata._ZTV5Print
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+ .debug_frame   0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+ .debug_loc     0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+ .debug_pubnames
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+ .debug_aranges
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+ .debug_ranges  0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+ .debug_str     0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+ .text          0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+ .data          0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+ .bss           0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+ .debug_abbrev  0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+ .debug_info    0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+ .debug_line    0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+ .text._ZNK6String6charAtEj
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+ .text._ZN6String9setCharAtEjc
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+ .text._ZN6StringixEj
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+ .text._ZNK6StringixEj
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+ .text._ZN6String5toIntEv
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+ .text._ZN6String11toCharArrayEPcj
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+ .text._ZN6String8getBytesEPhj
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+ .text._ZN6StringD1Ev
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+ .text._ZNK6String10startsWithERKS_j
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+ .text._ZNK6String10startsWithERKS_
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+ .text._ZNK6String11lastIndexOfEcj
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+ .text._ZNK6String11lastIndexOfEc
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+ .text._ZNK6String7indexOfERKS_j
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+ .text._ZNK6String7indexOfERKS_
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+ .text._ZNK6String7indexOfEcj
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+ .text._ZNK6String7indexOfEc
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+ .text._ZNK6String6equalsERKS_
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+ .text._ZNK6String8endsWithERKS_
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+ .text._ZNK6StringgeERKS_
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+ .text._ZNK6StringleERKS_
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+ .text._ZNK6StringgtERKS_
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+ .text._ZNK6StringltERKS_
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+ .text._ZNK6StringneERKS_
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+ .text._ZNK6StringeqERKS_
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+ .text._ZNK6String9compareToERKS_
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+ .text._ZN6StringpLERKS_
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+ .text._ZN6String6concatERKS_
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+ .text._ZN6String9getBufferEj
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+ .text._ZN6StringaSERKS_
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+ .text._ZN6StringC1Eh
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+ .text._ZN6StringC2Eh
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+ .text._ZN6StringC1Ec
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+ .text._ZN6StringC2Ec
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+ .text._ZN6StringC1ERKS_
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+ .text._ZN6StringC2ERKS_
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+ .text._ZN6StringC1Emi
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+ .text._ZN6StringC2Emi
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+ .text._ZN6StringC1Eji
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+ .text._ZN6StringC2Eji
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+ .text._ZN6StringC1EPKc
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+ .text._ZNK6String11toUpperCaseEv
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+ .text._ZNK6String11toLowerCaseEv
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+ .text._ZNK6String16equalsIgnoreCaseERKS_
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+ .text._ZNK6String9substringEjj
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+ .text._ZNK6String9substringEj
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+ .text._ZNK6String11lastIndexOfERKS_j
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+ .text._ZNK6String11lastIndexOfERKS_
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+ .text._ZNK6String4trimEv
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+ .text._ZN6String7replaceERKS_S1_
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+ .text._ZN6String7replaceEcc
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+ .text._ZN6StringC2EPKc
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+ .text._ZN6StringC1Eli
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+ .text._ZN6StringC2Eli
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+ .text._ZN6StringC1Eii
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+ .text._ZN6StringC2Eii
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+ .bss._ZZN6StringixEjE19dummy_writable_char
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+ .debug_frame   0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+ .debug_loc     0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+ .debug_pubnames
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+ .debug_aranges
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+ .debug_ranges  0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+ .debug_str     0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+ .text          0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(wiring.o)
+ .data          0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(wiring.o)
+ .bss           0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(wiring.o)
+ .debug_abbrev  0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(wiring.o)
+ .debug_info    0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(wiring.o)
+ .debug_line    0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(wiring.o)
+ .text.micros   0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(wiring.o)
+ .text.delay    0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(wiring.o)
+ .text.delayMicroseconds
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(wiring.o)
+ .debug_frame   0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(wiring.o)
+ .debug_loc     0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(wiring.o)
+ .debug_pubnames
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(wiring.o)
+ .debug_aranges
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(wiring.o)
+ .debug_ranges  0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(wiring.o)
+ .debug_str     0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(wiring.o)
+ .text          0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(wiring_digital.o)
+ .data          0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(wiring_digital.o)
+ .bss           0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(wiring_digital.o)
+ .debug_abbrev  0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(wiring_digital.o)
+ .debug_info    0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(wiring_digital.o)
+ .debug_line    0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(wiring_digital.o)
+ .text.turnOffPWM
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(wiring_digital.o)
+ .text.digitalWrite
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(wiring_digital.o)
+ .text.digitalRead
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(wiring_digital.o)
+ .debug_frame   0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(wiring_digital.o)
+ .debug_loc     0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(wiring_digital.o)
+ .debug_pubnames
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(wiring_digital.o)
+ .debug_aranges
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(wiring_digital.o)
+ .debug_ranges  0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(wiring_digital.o)
+ .debug_str     0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(wiring_digital.o)
+ .text          0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(pins_arduino.o)
+ .data          0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(pins_arduino.o)
+ .bss           0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(pins_arduino.o)
+ .debug_abbrev  0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(pins_arduino.o)
+ .debug_info    0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(pins_arduino.o)
+ .debug_line    0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(pins_arduino.o)
+ .debug_pubnames
+                0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(pins_arduino.o)
+ .debug_str     0x00000000        0x0 ../../ArduinoCore/Release//libArduinoCore.a(pins_arduino.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(addsf3.o)
+ .data          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(addsf3.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(addsf3.o)
+ .stab          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(addsf3.o)
+ .stabstr       0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(addsf3.o)
+ .text.avr-libc.fplib
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(addsf3.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(addsf3x.o)
+ .data          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(addsf3x.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(addsf3x.o)
+ .stab          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(addsf3x.o)
+ .stabstr       0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(addsf3x.o)
+ .text.avr-libc.fplib
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(addsf3x.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(cmpsf2.o)
+ .data          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(cmpsf2.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(cmpsf2.o)
+ .stab          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(cmpsf2.o)
+ .stabstr       0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(cmpsf2.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(divsf3.o)
+ .data          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(divsf3.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(divsf3.o)
+ .stab          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(divsf3.o)
+ .stabstr       0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(divsf3.o)
+ .text.avr-libc.fplib
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(divsf3.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(divsf3x.o)
+ .data          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(divsf3x.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(divsf3x.o)
+ .stab          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(divsf3x.o)
+ .stabstr       0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(divsf3x.o)
+ .text.avr-libc.fplib
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(divsf3x.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fixsfsi.o)
+ .data          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fixsfsi.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fixsfsi.o)
+ .stab          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fixsfsi.o)
+ .stabstr       0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fixsfsi.o)
+ .text.avr-libc.fplib
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fixsfsi.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fixunssfsi.o)
+ .data          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fixunssfsi.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fixunssfsi.o)
+ .stab          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fixunssfsi.o)
+ .stabstr       0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fixunssfsi.o)
+ .text.avr-libc.fplib
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fixunssfsi.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(floatsisf.o)
+ .data          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(floatsisf.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(floatsisf.o)
+ .stab          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(floatsisf.o)
+ .stabstr       0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(floatsisf.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fp_cmp.o)
+ .data          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fp_cmp.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fp_cmp.o)
+ .stab          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fp_cmp.o)
+ .stabstr       0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fp_cmp.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fp_inf.o)
+ .data          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fp_inf.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fp_inf.o)
+ .stab          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fp_inf.o)
+ .stabstr       0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fp_inf.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fp_nan.o)
+ .data          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fp_nan.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fp_nan.o)
+ .stab          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fp_nan.o)
+ .stabstr       0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fp_nan.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fp_pscA.o)
+ .data          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fp_pscA.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fp_pscA.o)
+ .stab          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fp_pscA.o)
+ .stabstr       0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fp_pscA.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fp_pscB.o)
+ .data          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fp_pscB.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fp_pscB.o)
+ .stab          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fp_pscB.o)
+ .stabstr       0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fp_pscB.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fp_round.o)
+ .data          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fp_round.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fp_round.o)
+ .stab          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fp_round.o)
+ .stabstr       0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fp_round.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fp_split3.o)
+ .data          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fp_split3.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fp_split3.o)
+ .stab          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fp_split3.o)
+ .stabstr       0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fp_split3.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fp_zero.o)
+ .data          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fp_zero.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fp_zero.o)
+ .stab          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fp_zero.o)
+ .stabstr       0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fp_zero.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(mulsf3.o)
+ .data          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(mulsf3.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(mulsf3.o)
+ .stab          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(mulsf3.o)
+ .stabstr       0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(mulsf3.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(mulsf3x.o)
+ .data          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(mulsf3x.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(mulsf3x.o)
+ .stab          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(mulsf3x.o)
+ .stabstr       0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(mulsf3x.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/avr5/libgcc.a(_udivmodsi4.o)
+ .data          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/avr5/libgcc.a(_udivmodsi4.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/avr5/libgcc.a(_udivmodsi4.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/avr5/libgcc.a(_exit.o)
+ .data          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/avr5/libgcc.a(_exit.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/avr5/libgcc.a(_exit.o)
+ .text.libgcc   0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/avr5/libgcc.a(_exit.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/avr5/libgcc.a(_copy_data.o)
+ .data          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/avr5/libgcc.a(_copy_data.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc   0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/avr5/libgcc.a(_copy_data.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/avr5/libgcc.a(_clear_bss.o)
+ .data          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/avr5/libgcc.a(_clear_bss.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc   0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/avr5/libgcc.a(_clear_bss.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/avr5/libgcc.a(_ctors.o)
+ .data          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/avr5/libgcc.a(_ctors.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/avr5/libgcc.a(_ctors.o)
+ .text.libgcc   0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/avr5/libgcc.a(_ctors.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/avr5/libgcc.a(_tablejump.o)
+ .data          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/avr5/libgcc.a(_tablejump.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/avr5/libgcc.a(_tablejump.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(malloc.o)
+ .data          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(malloc.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(malloc.o)
+ .debug_abbrev  0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(malloc.o)
+ .debug_info    0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(malloc.o)
+ .debug_line    0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(malloc.o)
+ .text.avr-libc
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(malloc.o)
+ .debug_frame   0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(malloc.o)
+ .debug_loc     0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(malloc.o)
+ .debug_pubnames
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(malloc.o)
+ .debug_aranges
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(malloc.o)
+ .debug_ranges  0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(malloc.o)
+ .debug_str     0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(malloc.o)
+ COMMON         0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(malloc.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(realloc.o)
+ .data          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(realloc.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(realloc.o)
+ .debug_abbrev  0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(realloc.o)
+ .debug_info    0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(realloc.o)
+ .debug_line    0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(realloc.o)
+ .text.avr-libc
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(realloc.o)
+ .debug_frame   0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(realloc.o)
+ .debug_loc     0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(realloc.o)
+ .debug_pubnames
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(realloc.o)
+ .debug_aranges
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(realloc.o)
+ .debug_ranges  0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(realloc.o)
+ .debug_str     0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(realloc.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strtod.o)
+ .data          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strtod.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strtod.o)
+ .debug_abbrev  0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strtod.o)
+ .debug_info    0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strtod.o)
+ .debug_line    0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strtod.o)
+ .debug_frame   0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strtod.o)
+ .debug_loc     0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strtod.o)
+ .debug_pubnames
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strtod.o)
+ .debug_aranges
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strtod.o)
+ .debug_ranges  0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strtod.o)
+ .debug_str     0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strtod.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strtol.o)
+ .data          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strtol.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strtol.o)
+ .debug_abbrev  0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strtol.o)
+ .debug_info    0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strtol.o)
+ .debug_line    0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strtol.o)
+ .debug_frame   0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strtol.o)
+ .debug_loc     0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strtol.o)
+ .debug_pubnames
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strtol.o)
+ .debug_aranges
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strtol.o)
+ .debug_ranges  0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strtol.o)
+ .debug_str     0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strtol.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(atol.o)
+ .data          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(atol.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(atol.o)
+ .stab          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(atol.o)
+ .stabstr       0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(atol.o)
+ .text.avr-libc
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(atol.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(isspace.o)
+ .data          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(isspace.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(isspace.o)
+ .stab          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(isspace.o)
+ .stabstr       0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(isspace.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(tolower.o)
+ .data          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(tolower.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(tolower.o)
+ .stab          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(tolower.o)
+ .stabstr       0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(tolower.o)
+ .text.avr-libc
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(tolower.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(toupper.o)
+ .data          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(toupper.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(toupper.o)
+ .stab          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(toupper.o)
+ .stabstr       0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(toupper.o)
+ .text.avr-libc
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(toupper.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strncasecmp_P.o)
+ .data          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strncasecmp_P.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strncasecmp_P.o)
+ .stab          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strncasecmp_P.o)
+ .stabstr       0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strncasecmp_P.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(memcpy.o)
+ .data          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(memcpy.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(memcpy.o)
+ .stab          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(memcpy.o)
+ .stabstr       0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(memcpy.o)
+ .text.avr-libc
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(memcpy.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strcat.o)
+ .data          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strcat.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strcat.o)
+ .stab          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strcat.o)
+ .stabstr       0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strcat.o)
+ .text.avr-libc
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strcat.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strchr.o)
+ .data          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strchr.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strchr.o)
+ .stab          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strchr.o)
+ .stabstr       0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strchr.o)
+ .text.avr-libc
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strchr.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strcmp.o)
+ .data          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strcmp.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strcmp.o)
+ .stab          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strcmp.o)
+ .stabstr       0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strcmp.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strcpy.o)
+ .data          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strcpy.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strcpy.o)
+ .stab          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strcpy.o)
+ .stabstr       0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strcpy.o)
+ .text.avr-libc
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strcpy.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strncmp.o)
+ .data          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strncmp.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strncmp.o)
+ .stab          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strncmp.o)
+ .stabstr       0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strncmp.o)
+ .text.avr-libc
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strncmp.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strncpy.o)
+ .data          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strncpy.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strncpy.o)
+ .stab          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strncpy.o)
+ .stabstr       0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strncpy.o)
+ .text.avr-libc
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strncpy.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strrchr.o)
+ .data          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strrchr.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strrchr.o)
+ .stab          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strrchr.o)
+ .stabstr       0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strrchr.o)
+ .text.avr-libc
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strrchr.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strstr.o)
+ .data          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strstr.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strstr.o)
+ .stab          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strstr.o)
+ .stabstr       0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strstr.o)
+ .text.avr-libc
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strstr.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(itoa.o)
+ .data          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(itoa.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(itoa.o)
+ .stab          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(itoa.o)
+ .stabstr       0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(itoa.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(ltoa.o)
+ .data          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(ltoa.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(ltoa.o)
+ .stab          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(ltoa.o)
+ .stabstr       0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(ltoa.o)
+ .text.avr-libc
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(ltoa.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(mulsi10.o)
+ .data          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(mulsi10.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(mulsi10.o)
+ .stab          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(mulsi10.o)
+ .stabstr       0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(mulsi10.o)
+ .text.avr-libc
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(mulsi10.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(ultoa.o)
+ .data          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(ultoa.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(ultoa.o)
+ .stab          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(ultoa.o)
+ .stabstr       0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(ultoa.o)
+ .text.avr-libc
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(ultoa.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(sprintf.o)
+ .data          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(sprintf.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(sprintf.o)
+ .debug_abbrev  0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(sprintf.o)
+ .debug_info    0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(sprintf.o)
+ .debug_line    0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(sprintf.o)
+ .text.avr-libc
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(sprintf.o)
+ .debug_frame   0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(sprintf.o)
+ .debug_loc     0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(sprintf.o)
+ .debug_pubnames
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(sprintf.o)
+ .debug_aranges
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(sprintf.o)
+ .debug_ranges  0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(sprintf.o)
+ .debug_str     0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(sprintf.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+ .data          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+ .debug_abbrev  0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+ .debug_info    0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+ .debug_line    0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+ .text.avr-libc
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+ .debug_frame   0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+ .debug_loc     0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+ .debug_pubnames
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+ .debug_aranges
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+ .debug_ranges  0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+ .debug_str     0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(errno.o)
+ .data          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(errno.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(errno.o)
+ .debug_abbrev  0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(errno.o)
+ .debug_info    0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(errno.o)
+ .debug_line    0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(errno.o)
+ .debug_pubnames
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(errno.o)
+ .debug_str     0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(errno.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(cty_isfalse.o)
+ .data          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(cty_isfalse.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(cty_isfalse.o)
+ .stab          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(cty_isfalse.o)
+ .stabstr       0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(cty_isfalse.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strnlen_P.o)
+ .data          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strnlen_P.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strnlen_P.o)
+ .stab          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strnlen_P.o)
+ .stabstr       0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strnlen_P.o)
+ .text.avr-libc
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strnlen_P.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strnlen.o)
+ .data          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strnlen.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strnlen.o)
+ .stab          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strnlen.o)
+ .stabstr       0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strnlen.o)
+ .text.avr-libc
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strnlen.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strrev.o)
+ .data          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strrev.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strrev.o)
+ .stab          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strrev.o)
+ .stabstr       0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strrev.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(fputc.o)
+ .data          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(fputc.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(fputc.o)
+ .debug_abbrev  0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(fputc.o)
+ .debug_info    0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(fputc.o)
+ .debug_line    0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(fputc.o)
+ .text.avr-libc
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(fputc.o)
+ .debug_frame   0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(fputc.o)
+ .debug_loc     0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(fputc.o)
+ .debug_pubnames
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(fputc.o)
+ .debug_aranges
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(fputc.o)
+ .debug_ranges  0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(fputc.o)
+ .debug_str     0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(fputc.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(ultoa_invert.o)
+ .data          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(ultoa_invert.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(ultoa_invert.o)
+ .stab          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(ultoa_invert.o)
+ .stabstr       0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(ultoa_invert.o)
+ .text.avr-libc
+                0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(ultoa_invert.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/avr5/libgcc.a(_mulsi3.o)
+ .data          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/avr5/libgcc.a(_mulsi3.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/avr5/libgcc.a(_mulsi3.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/avr5/libgcc.a(_udivmodhi4.o)
+ .data          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/avr5/libgcc.a(_udivmodhi4.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/avr5/libgcc.a(_udivmodhi4.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/avr5/libgcc.a(_prologue.o)
+ .data          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/avr5/libgcc.a(_prologue.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/avr5/libgcc.a(_prologue.o)
+ .text          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/avr5/libgcc.a(_epilogue.o)
+ .data          0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/avr5/libgcc.a(_epilogue.o)
+ .bss           0x00000000        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/avr5/libgcc.a(_epilogue.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+Address of section .data set to 0x800100
+LOAD /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+LOAD ./WindSense/AIRMARSpecific.o
+LOAD ./WindSense/ParseToStruct.o
+LOAD ./WindSense/PublicFunctions.o
+LOAD ./WindSense/WindSense.o
+LOAD ./Debugging/Debugging.o
+LOAD ./main.o
+LOAD ../../ArduinoCore/Release//libArduinoCore.a
+LOAD /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a
+LOAD /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/avr5/libgcc.a
+LOAD /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a
+LOAD /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/avr5/libgcc.a
+LOAD /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a
+LOAD /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/avr5/libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000     0x192e
+ *(.vectors)
+ .vectors       0x00000000       0x68 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+                0x00000000                __vectors
+                0x00000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.progmem*)
+ .progmem.data  0x00000068       0x5a ../../ArduinoCore/Release//libArduinoCore.a(pins_arduino.o)
+                0x00000068                port_to_mode_PGM
+                0x00000086                digital_pin_to_port_PGM
+                0x0000009a                digital_pin_to_bit_mask_PGM
+                0x00000072                port_to_output_PGM
+                0x0000007c                port_to_input_PGM
+                0x000000ae                digital_pin_to_timer_PGM
+ .progmem.data  0x000000c2       0x3b /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strtod.o)
+                0x000000fe                . = ALIGN (0x2)
+ *fill*         0x000000fd        0x1 00
+                0x000000fe                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x000000fe        0x0 linker stubs
+ *(.trampolines*)
+                0x000000fe                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x000000fe                __ctors_start = .
+ *(.ctors)
+ .ctors         0x000000fe        0x2 ./main.o
+ .ctors         0x00000100        0x2 ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
+                0x00000102                __ctors_end = .
+                0x00000102                __dtors_start = .
+ *(.dtors)
+                0x00000102                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x00000102        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+                0x00000102                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00000102        0xc /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x0000010e       0x16 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/avr5/libgcc.a(_copy_data.o)
+                0x0000010e                __do_copy_data
+ .init4         0x00000124       0x10 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/avr5/libgcc.a(_clear_bss.o)
+                0x00000124                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ .init6         0x00000134       0x16 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/avr5/libgcc.a(_ctors.o)
+                0x00000134                __do_global_ctors
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x0000014a        0x8 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+ *(.init9)
+ *(.text)
+ .text          0x00000152        0x4 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+                0x00000152                __vector_22
+                0x00000152                __vector_1
+                0x00000152                __vector_24
+                0x00000152                __vector_12
+                0x00000152                __bad_interrupt
+                0x00000152                __vector_6
+                0x00000152                __vector_3
+                0x00000152                __vector_23
+                0x00000152                __vector_25
+                0x00000152                __vector_11
+                0x00000152                __vector_13
+                0x00000152                __vector_17
+                0x00000152                __vector_19
+                0x00000152                __vector_7
+                0x00000152                __vector_5
+                0x00000152                __vector_4
+                0x00000152                __vector_9
+                0x00000152                __vector_2
+                0x00000152                __vector_21
+                0x00000152                __vector_15
+                0x00000152                __vector_8
+                0x00000152                __vector_14
+                0x00000152                __vector_10
+                0x00000152                __vector_20
+                0x00000156                . = ALIGN (0x2)
+ *(.text.*)
+ .text._ZN9WindSense11stupidDebugEv
+                0x00000156        0xc ./WindSense/AIRMARSpecific.o
+                0x00000156                WindSense::stupidDebug()
+ .text._ZN9WindSense17updateSPEED_GPVTGEv
+                0x00000162       0x86 ./WindSense/ParseToStruct.o
+                0x00000162                WindSense::updateSPEED_GPVTG()
+ .text._ZN9WindSense16updateWIND_WIMWVEv
+                0x000001e8       0x9e ./WindSense/ParseToStruct.o
+                0x000001e8                WindSense::updateWIND_WIMWV()
+ .text._ZN9WindSense15updateGPS_GPGLLEv
+                0x00000286      0x1b6 ./WindSense/ParseToStruct.o
+                0x00000286                WindSense::updateGPS_GPGLL()
+ .text._ZN9WindSense17parseInternalNMEAEPc
+                0x0000043c       0x60 ./WindSense/ParseToStruct.o
+                0x0000043c                WindSense::parseInternalNMEA(char*)
+ .text._ZN9WindSense17parseInternalNMEAEv
+                0x0000049c        0xc ./WindSense/ParseToStruct.o
+                0x0000049c                WindSense::parseInternalNMEA()
+ .text._ZN9WindSense6attachER14HardwareSerial
+                0x000004a8       0x1e ./WindSense/PublicFunctions.o
+                0x000004a8                WindSense::attach(HardwareSerial&)
+ .text._ZN9WindSense13pollAllValuesEv
+                0x000004c6      0x1de ./WindSense/PublicFunctions.o
+                0x000004c6                WindSense::pollAllValues()
+ .text._ZN9WindSenseC1Ev
+                0x000006a4       0x10 ./WindSense/WindSense.o
+                0x000006a4                WindSense::WindSense()
+ .text._ZN9WindSense8grabCharEc
+                0x000006b4       0x56 ./WindSense/WindSense.o
+                0x000006b4                WindSense::grabChar(char)
+ .text._ZN9WindSense9splitNMEAEPc
+                0x0000070a       0xf6 ./WindSense/WindSense.o
+                0x0000070a                WindSense::splitNMEA(char*)
+ .text._ZN9WindSense17splitInternalNMEAEv
+                0x00000800        0xc ./WindSense/WindSense.o
+                0x00000800                WindSense::splitInternalNMEA()
+ .text._ZN9WindSense12validateNMEAEPc
+                0x0000080c       0x80 ./WindSense/WindSense.o
+                0x0000080c                WindSense::validateNMEA(char*)
+ .text._ZN9WindSense20validateInternalNMEAEv
+                0x0000088c        0xc ./WindSense/WindSense.o
+                0x0000088c                WindSense::validateInternalNMEA()
+ .text._ZN9WindSense19processInternalNMEAEv
+                0x00000898       0x54 ./WindSense/WindSense.o
+                0x00000898                WindSense::processInternalNMEA()
+ .text._ZN9DebuggingC1Ev
+                0x000008ec        0x2 ./Debugging/Debugging.o
+                0x000008ec                Debugging::Debugging()
+ .text._ZN9Debugging6attachER14HardwareSerial
+                0x000008ee       0x1c ./Debugging/Debugging.o
+                0x000008ee                Debugging::attach(HardwareSerial&)
+ .text._ZN9Debugging7printlnEPc
+                0x0000090a       0x1c ./Debugging/Debugging.o
+                0x0000090a                Debugging::println(char*)
+ .text._GLOBAL__I_airman
+                0x00000926       0x12 ./main.o
+ .text.loop     0x00000938       0x32 ./main.o
+                0x00000938                loop
+ .text.setup    0x0000096a       0x50 ./main.o
+                0x0000096a                setup
+ .text.main     0x000009ba        0xe ./main.o
+                0x000009ba                main
+ .text.__vector_18
+                0x000009c8       0x62 ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
+                0x000009c8                __vector_18
+ .text._ZN14HardwareSerial5beginEl
+                0x00000a2a       0xb2 ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
+                0x00000a2a                HardwareSerial::begin(long)
+ .text._ZN14HardwareSerial9availableEv
+                0x00000adc       0x22 ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
+                0x00000adc                HardwareSerial::available()
+ .text._ZN14HardwareSerial4peekEv
+                0x00000afe       0x34 ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
+                0x00000afe                HardwareSerial::peek()
+ .text._ZN14HardwareSerial4readEv
+                0x00000b32       0x48 ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
+                0x00000b32                HardwareSerial::read()
+ .text._ZN14HardwareSerial5flushEv
+                0x00000b7a       0x18 ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
+                0x00000b7a                HardwareSerial::flush()
+ .text._ZN14HardwareSerial5writeEh
+                0x00000b92       0x26 ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
+                0x00000b92                HardwareSerial::write(unsigned char)
+ .text._GLOBAL__I_rx_buffer
+                0x00000bb8       0x74 ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
+ .text._ZN5Print5writeEPKc
+                0x00000c2c       0x30 ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+                0x00000c2c                Print::write(char const*)
+ .text._ZN5Print5writeEPKhj
+                0x00000c5c       0x3e ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+                0x00000c5c                Print::write(unsigned char const*, unsigned int)
+ .text._ZN5Print5printEPKc
+                0x00000c9a       0x10 ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+                0x00000c9a                Print::print(char const*)
+ .text._ZN5Print11printNumberEmh
+                0x00000caa      0x134 ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+                0x00000caa                Print::printNumber(unsigned long, unsigned char)
+ .text._ZN5Print5printEli
+                0x00000dde       0x6c ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+                0x00000dde                Print::print(long, int)
+ .text._ZN5Print7printlnEv
+                0x00000e4a       0x2e ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+                0x00000e4a                Print::println()
+ .text._ZN5Print7printlnEPKc
+                0x00000e78       0x16 ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+                0x00000e78                Print::println(char const*)
+ .text.__vector_16
+                0x00000e8e       0x90 ../../ArduinoCore/Release//libArduinoCore.a(wiring.o)
+                0x00000e8e                __vector_16
+ .text.millis   0x00000f1e       0x1c ../../ArduinoCore/Release//libArduinoCore.a(wiring.o)
+                0x00000f1e                millis
+ .text.init     0x00000f3a       0x76 ../../ArduinoCore/Release//libArduinoCore.a(wiring.o)
+                0x00000f3a                init
+ .text.pinMode  0x00000fb0       0x4c ../../ArduinoCore/Release//libArduinoCore.a(wiring_digital.o)
+                0x00000fb0                pinMode
+ .text.avr-libc.fplib
+                0x00000ffc        0x8 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(cmpsf2.o)
+                0x00000ffc                __lesf2
+                0x00000ffc                __nesf2
+                0x00000ffc                __eqsf2
+                0x00000ffc                __cmpsf2
+                0x00000ffc                __ltsf2
+ .text.avr-libc.fplib
+                0x00001004       0x7a /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(floatsisf.o)
+                0x00001008                __floatsisf
+                0x00001004                __floatunsisf
+ .text.avr-libc.fplib
+                0x0000107e       0x48 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fp_cmp.o)
+                0x0000107e                __fp_cmp
+ .text.avr-libc.fplib
+                0x000010c6        0xc /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fp_inf.o)
+                0x000010c6                __fp_inf
+ .text.avr-libc.fplib
+                0x000010d2        0x6 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fp_nan.o)
+                0x000010d2                __fp_nan
+ .text.avr-libc.fplib
+                0x000010d8        0xe /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fp_pscA.o)
+                0x000010d8                __fp_pscA
+ .text.avr-libc.fplib
+                0x000010e6        0xe /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fp_pscB.o)
+                0x000010e6                __fp_pscB
+ .text.avr-libc.fplib
+                0x000010f4       0x22 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fp_round.o)
+                0x000010f4                __fp_round
+ .text.avr-libc.fplib
+                0x00001116       0x44 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fp_split3.o)
+                0x00001116                __fp_split3
+                0x00001126                __fp_splitA
+ .text.avr-libc.fplib
+                0x0000115a        0xe /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fp_zero.o)
+                0x0000115a                __fp_zero
+                0x0000115c                __fp_szero
+ .text.avr-libc.fplib
+                0x00001168        0x4 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(mulsf3.o)
+                0x00001168                __mulsf3
+ .text.avr-libc.fplib
+                0x0000116c       0xc2 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(mulsf3x.o)
+                0x00001184                __mulsf3_pse
+                0x00001180                __mulsf3x
+ .text.libgcc   0x0000122e       0x44 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/avr5/libgcc.a(_udivmodsi4.o)
+                0x0000122e                __udivmodsi4
+ .text.libgcc   0x00001272        0xc /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/avr5/libgcc.a(_tablejump.o)
+                0x00001276                __tablejump__
+                0x00001272                __tablejump2__
+ .text.avr-libc
+                0x0000127e      0x2c0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strtod.o)
+                0x0000127e                strtod
+ .text.avr-libc
+                0x0000153e      0x25e /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strtol.o)
+                0x0000153e                strtol
+ .text.avr-libc
+                0x0000179c       0x10 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(isspace.o)
+                0x0000179c                isspace
+ .text.avr-libc
+                0x000017ac       0x30 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strncasecmp_P.o)
+                0x000017ac                strncasecmp_P
+ .text.avr-libc
+                0x000017dc       0x12 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strcmp.o)
+                0x000017dc                strcmp
+ .text.avr-libc
+                0x000017ee       0x42 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(itoa.o)
+                0x000017ee                itoa
+ .text.avr-libc
+                0x00001830        0x6 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(cty_isfalse.o)
+                0x00001834                __ctype_istrue
+                0x00001830                __ctype_isfalse
+ .text.avr-libc
+                0x00001836       0x20 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strrev.o)
+                0x00001836                strrev
+ .text.libgcc   0x00001856       0x3e /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/avr5/libgcc.a(_mulsi3.o)
+                0x00001856                __mulsi3
+ .text.libgcc   0x00001894       0x28 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/avr5/libgcc.a(_udivmodhi4.o)
+                0x00001894                __udivmodhi4
+ .text.libgcc   0x000018bc       0x38 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/avr5/libgcc.a(_prologue.o)
+                0x000018bc                __prologue_saves__
+ .text.libgcc   0x000018f4       0x36 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/avr5/libgcc.a(_epilogue.o)
+                0x000018f4                __epilogue_restores__
+                0x0000192a                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x0000192a        0x0 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/avr5/libgcc.a(_exit.o)
+                0x0000192a                exit
+                0x0000192a                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x0000192a        0x4 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/avr5/libgcc.a(_exit.o)
+ *(.fini0)
+                0x0000192e                _etext = .
+
+.data           0x00800100       0x36 load address 0x0000192e
+                0x00800100                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800100       0x12 ./WindSense/ParseToStruct.o
+ .data          0x00800112       0x11 ./main.o
+ *(.data*)
+ *(.rodata)
+ *(.rodata*)
+ .rodata._ZTV14HardwareSerial
+                0x00800123       0x12 ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
+                0x00800123                vtable for HardwareSerial
+ *(.gnu.linkonce.d*)
+                0x00800136                . = ALIGN (0x2)
+ *fill*         0x00800135        0x1 00
+                0x00800136                _edata = .
+                0x00800136                PROVIDE (__data_end, .)
+
+.bss            0x00800136      0x3c0
+                0x00800136                PROVIDE (__bss_start, .)
+ *(.bss)
+ *(.bss*)
+ .bss.airman    0x00800136      0x2ea ./main.o
+                0x00800136                airman
+ .bss.panic     0x00800420        0x2 ./main.o
+                0x00800420                panic
+ .bss.debugString
+                0x00800422       0x32 ./main.o
+                0x00800422                debugString
+ .bss.rx_buffer
+                0x00800454       0x84 ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
+                0x00800454                rx_buffer
+ .bss.Serial    0x008004d8       0x13 ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
+                0x008004d8                Serial
+ .bss.timer0_overflow_count
+                0x008004eb        0x4 ../../ArduinoCore/Release//libArduinoCore.a(wiring.o)
+                0x008004eb                timer0_overflow_count
+ .bss.timer0_millis
+                0x008004ef        0x4 ../../ArduinoCore/Release//libArduinoCore.a(wiring.o)
+                0x008004ef                timer0_millis
+ .bss.timer0_fract
+                0x008004f3        0x1 ../../ArduinoCore/Release//libArduinoCore.a(wiring.o)
+ *(COMMON)
+ COMMON         0x008004f4        0x2 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(errno.o)
+                0x008004f4                errno
+                0x008004f6                PROVIDE (__bss_end, .)
+                0x0000192e                __data_load_start = LOADADDR (.data)
+                0x00001964                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x008004f6        0x0
+                0x008004f6                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x008004f6                PROVIDE (__noinit_end, .)
+                0x008004f6                _end = .
+                0x008004f6                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info)
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(SailcodeAPI.elf elf32-avr)
+LOAD linker stubs
+
+.debug_ranges
+
+Cross Reference Table
+
+Symbol                                            File
+Debugging::Debugging()                            ./Debugging/Debugging.o
+Debugging::Debugging()                            ./Debugging/Debugging.o
+                                                  ./main.o
+Debugging::attach(HardwareSerial&)                ./Debugging/Debugging.o
+                                                  ./main.o
+Debugging::println(char*)                         ./Debugging/Debugging.o
+                                                  ./main.o
+Debugging::takeNote(char*)                        ./Debugging/Debugging.o
+HardwareSerial::HardwareSerial(ring_buffer*, unsigned char volatile*, unsigned char volatile*, unsigned char volatile*, unsigned char volatile*, unsigned char volatile*, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char) ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
+HardwareSerial::HardwareSerial(ring_buffer*, unsigned char volatile*, unsigned char volatile*, unsigned char volatile*, unsigned char volatile*, unsigned char volatile*, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char) ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
+HardwareSerial::available()                       ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
+HardwareSerial::begin(long)                       ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
+                                                  ./main.o
+HardwareSerial::end()                             ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
+HardwareSerial::flush()                           ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
+HardwareSerial::peek()                            ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
+HardwareSerial::read()                            ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
+HardwareSerial::write(unsigned char)              ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
+Print::print(String const&)                       ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+Print::print(char const*)                         ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+                                                  ./WindSense/AIRMARSpecific.o
+Print::print(char, int)                           ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+Print::print(double, int)                         ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+Print::print(int, int)                            ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+                                                  ./WindSense/AIRMARSpecific.o
+Print::print(long, int)                           ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+Print::print(unsigned char, int)                  ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+Print::print(unsigned int, int)                   ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+Print::print(unsigned long, int)                  ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+Print::printFloat(double, unsigned char)          ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+Print::printNumber(unsigned long, unsigned char)  ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+Print::println()                                  ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+Print::println(String const&)                     ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+Print::println(char const*)                       ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+                                                  ./Debugging/Debugging.o
+                                                  ./WindSense/AIRMARSpecific.o
+Print::println(char, int)                         ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+                                                  ./WindSense/AIRMARSpecific.o
+Print::println(double, int)                       ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+                                                  ./WindSense/AIRMARSpecific.o
+Print::println(int, int)                          ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+                                                  ./WindSense/AIRMARSpecific.o
+Print::println(long, int)                         ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+Print::println(unsigned char, int)                ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+Print::println(unsigned int, int)                 ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+Print::println(unsigned long, int)                ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+Print::write(char const*)                         ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+                                                  ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
+Print::write(unsigned char const*, unsigned int)  ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+                                                  ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
+Serial                                            ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
+                                                  ./main.o
+String::String(String const&)                     ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+String::String(String const&)                     ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+String::String(char const*)                       ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+String::String(char const*)                       ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+String::String(char)                              ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+String::String(char)                              ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+String::String(int, int)                          ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+String::String(int, int)                          ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+String::String(long, int)                         ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+String::String(long, int)                         ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+String::String(unsigned char)                     ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+String::String(unsigned char)                     ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+String::String(unsigned int, int)                 ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+String::String(unsigned int, int)                 ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+String::String(unsigned long, int)                ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+String::String(unsigned long, int)                ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+String::charAt(unsigned int) const                ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+String::compareTo(String const&) const            ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+String::concat(String const&)                     ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+String::endsWith(String const&) const             ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+String::equals(String const&) const               ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+String::equalsIgnoreCase(String const&) const     ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+String::getBuffer(unsigned int)                   ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+String::getBytes(unsigned char*, unsigned int)    ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+String::indexOf(String const&) const              ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+String::indexOf(String const&, unsigned int) const ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+String::indexOf(char) const                       ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+String::indexOf(char, unsigned int) const         ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+String::lastIndexOf(String const&) const          ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+String::lastIndexOf(String const&, unsigned int) const ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+String::lastIndexOf(char) const                   ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+String::lastIndexOf(char, unsigned int) const     ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+String::operator!=(String const&) const           ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+String::operator+=(String const&)                 ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+String::operator<(String const&) const            ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+String::operator<=(String const&) const           ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+String::operator=(String const&)                  ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+String::operator==(String const&) const           ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+String::operator>(String const&) const            ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+String::operator>=(String const&) const           ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+String::operator[](unsigned int)                  ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+String::operator[](unsigned int) const            ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+                                                  ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+String::replace(String const&, String const&)     ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+String::replace(char, char)                       ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+String::setCharAt(unsigned int, char)             ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+String::startsWith(String const&) const           ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+String::startsWith(String const&, unsigned int) const ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+String::substring(unsigned int) const             ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+String::substring(unsigned int, unsigned int) const ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+String::toCharArray(char*, unsigned int)          ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+String::toInt()                                   ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+String::toLowerCase() const                       ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+String::toUpperCase() const                       ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+String::trim() const                              ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+String::~String()                                 ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+WindSense::WindSense()                            ./WindSense/WindSense.o
+                                                  ./main.o
+WindSense::WindSense()                            ./WindSense/WindSense.o
+WindSense::attach(HardwareSerial&)                ./WindSense/PublicFunctions.o
+                                                  ./main.o
+WindSense::betterDebug(HardwareSerial&)           ./WindSense/AIRMARSpecific.o
+WindSense::debug(HardwareSerial&)                 ./WindSense/AIRMARSpecific.o
+WindSense::debugDump(HardwareSerial&)             ./WindSense/AIRMARSpecific.o
+WindSense::grabChar(char)                         ./WindSense/WindSense.o
+                                                  ./WindSense/PublicFunctions.o
+                                                  ./WindSense/AIRMARSpecific.o
+WindSense::parseInternalNMEA()                    ./WindSense/ParseToStruct.o
+                                                  ./WindSense/WindSense.o
+WindSense::parseInternalNMEA(char*)               ./WindSense/ParseToStruct.o
+                                                  ./WindSense/AIRMARSpecific.o
+WindSense::pollAllValues()                        ./WindSense/PublicFunctions.o
+                                                  ./main.o
+WindSense::processInternalNMEA()                  ./WindSense/WindSense.o
+                                                  ./WindSense/PublicFunctions.o
+WindSense::resetInternalNMEA()                    ./WindSense/WindSense.o
+                                                  ./WindSense/AIRMARSpecific.o
+WindSense::splitInternalNMEA()                    ./WindSense/WindSense.o
+                                                  ./WindSense/AIRMARSpecific.o
+WindSense::splitNMEA(char*)                       ./WindSense/WindSense.o
+WindSense::stupidDebug()                          ./WindSense/AIRMARSpecific.o
+                                                  ./main.o
+WindSense::updateGPS_GPGLL()                      ./WindSense/ParseToStruct.o
+WindSense::updateSPEED_GPVTG()                    ./WindSense/ParseToStruct.o
+WindSense::updateWIND_WIMWV()                     ./WindSense/ParseToStruct.o
+WindSense::validateInternalNMEA()                 ./WindSense/WindSense.o
+                                                  ./WindSense/AIRMARSpecific.o
+WindSense::validateNMEA(char*)                    ./WindSense/WindSense.o
+__addsf3                                          /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(addsf3.o)
+                                                  ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+__addsf3x                                         /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(addsf3x.o)
+                                                  /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(addsf3.o)
+__bad_interrupt                                   /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+__brkval                                          /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(realloc.o)
+                                                  /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(malloc.o)
+__bss_end                                         /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/avr5/libgcc.a(_clear_bss.o)
+__bss_start                                       /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/avr5/libgcc.a(_clear_bss.o)
+__cmpsf2                                          /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(cmpsf2.o)
+__ctors_end                                       /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/avr5/libgcc.a(_ctors.o)
+__ctors_start                                     /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/avr5/libgcc.a(_ctors.o)
+__ctype_isfalse                                   /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(cty_isfalse.o)
+                                                  /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(isspace.o)
+__ctype_istrue                                    /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(cty_isfalse.o)
+__cxa_pure_virtual                                ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+                                                  ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
+__data_end                                        /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/avr5/libgcc.a(_copy_data.o)
+__data_load_start                                 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/avr5/libgcc.a(_copy_data.o)
+__data_start                                      /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/avr5/libgcc.a(_copy_data.o)
+__divsf3                                          /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(divsf3.o)
+                                                  ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+__divsf3_pse                                      /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(divsf3x.o)
+__divsf3x                                         /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(divsf3x.o)
+                                                  /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(divsf3.o)
+__do_clear_bss                                    /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/avr5/libgcc.a(_clear_bss.o)
+                                                  /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(errno.o)
+                                                  /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(malloc.o)
+                                                  ../../ArduinoCore/Release//libArduinoCore.a(wiring.o)
+                                                  ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+                                                  ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
+                                                  ./main.o
+__do_copy_data                                    /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/avr5/libgcc.a(_copy_data.o)
+                                                  /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(malloc.o)
+                                                  ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+                                                  ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+                                                  ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
+                                                  ./main.o
+                                                  ./WindSense/ParseToStruct.o
+                                                  ./WindSense/AIRMARSpecific.o
+__do_global_ctors                                 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/avr5/libgcc.a(_ctors.o)
+                                                  ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
+                                                  ./main.o
+__epilogue_restores__                             /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/avr5/libgcc.a(_epilogue.o)
+                                                  /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+                                                  /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(sprintf.o)
+                                                  /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strtod.o)
+                                                  /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(realloc.o)
+__eqsf2                                           /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(cmpsf2.o)
+                                                  /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strtod.o)
+__fixsfsi                                         /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fixsfsi.o)
+                                                  ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+__fixunssfsi                                      /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fixunssfsi.o)
+                                                  /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fixsfsi.o)
+                                                  ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+__floatsisf                                       /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(floatsisf.o)
+                                                  ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+__floatunsisf                                     /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(floatsisf.o)
+                                                  /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strtod.o)
+                                                  ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+__flp                                             /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(realloc.o)
+                                                  /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(malloc.o)
+__fp_cmp                                          /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fp_cmp.o)
+                                                  /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(cmpsf2.o)
+__fp_inf                                          /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fp_inf.o)
+                                                  /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(mulsf3x.o)
+                                                  /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(divsf3x.o)
+                                                  /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(addsf3x.o)
+__fp_nan                                          /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fp_nan.o)
+                                                  /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(mulsf3x.o)
+                                                  /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(divsf3x.o)
+                                                  /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(addsf3x.o)
+__fp_pscA                                         /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fp_pscA.o)
+                                                  /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(mulsf3x.o)
+                                                  /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(divsf3x.o)
+                                                  /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(addsf3x.o)
+__fp_pscB                                         /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fp_pscB.o)
+                                                  /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(mulsf3x.o)
+                                                  /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(divsf3x.o)
+                                                  /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(addsf3x.o)
+__fp_round                                        /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fp_round.o)
+                                                  /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(mulsf3.o)
+                                                  /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(divsf3.o)
+                                                  /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(addsf3.o)
+__fp_split3                                       /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fp_split3.o)
+                                                  /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(mulsf3x.o)
+                                                  /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(divsf3x.o)
+                                                  /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(addsf3x.o)
+__fp_splitA                                       /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fp_split3.o)
+                                                  /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fixunssfsi.o)
+__fp_szero                                        /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fp_zero.o)
+                                                  /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(mulsf3x.o)
+                                                  /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fixsfsi.o)
+                                                  /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(divsf3x.o)
+__fp_zero                                         /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fp_zero.o)
+                                                  /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(fixunssfsi.o)
+                                                  /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(addsf3x.o)
+__heap_end                                        /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+                                                  /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(malloc.o)
+__heap_start                                      /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(malloc.o)
+__init                                            /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+__lesf2                                           /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(cmpsf2.o)
+__ltsf2                                           /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(cmpsf2.o)
+                                                  ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+__malloc_heap_end                                 /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(malloc.o)
+                                                  /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(realloc.o)
+__malloc_heap_start                               /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(malloc.o)
+__malloc_margin                                   /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(malloc.o)
+                                                  /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(realloc.o)
+__mulsf3                                          /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(mulsf3.o)
+                                                  /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strtod.o)
+                                                  ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+__mulsf3_pse                                      /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(mulsf3x.o)
+__mulsf3x                                         /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(mulsf3x.o)
+                                                  /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(mulsf3.o)
+__mulsi3                                          /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/avr5/libgcc.a(_mulsi3.o)
+                                                  /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strtol.o)
+__mulsi_const_10                                  /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(mulsi10.o)
+                                                  /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(atol.o)
+__nesf2                                           /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(cmpsf2.o)
+                                                  /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strtod.o)
+__prologue_saves__                                /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/avr5/libgcc.a(_prologue.o)
+                                                  /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+                                                  /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(sprintf.o)
+                                                  /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strtod.o)
+                                                  /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(realloc.o)
+__stack                                           /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+__subsf3                                          /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libm.a(addsf3.o)
+                                                  ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+__tablejump2__                                    /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/avr5/libgcc.a(_tablejump.o)
+__tablejump__                                     /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/avr5/libgcc.a(_tablejump.o)
+                                                  /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/avr5/libgcc.a(_ctors.o)
+__udivmodhi4                                      /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/avr5/libgcc.a(_udivmodhi4.o)
+                                                  /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(itoa.o)
+__udivmodsi4                                      /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/avr5/libgcc.a(_udivmodsi4.o)
+                                                  /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(ultoa.o)
+                                                  /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(ltoa.o)
+                                                  /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strtol.o)
+                                                  ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+                                                  ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
+__ultoa_invert                                    /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(ultoa_invert.o)
+                                                  /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+__vector_1                                        /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+__vector_10                                       /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+__vector_11                                       /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+__vector_12                                       /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+__vector_13                                       /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+__vector_14                                       /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+__vector_15                                       /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+__vector_16                                       ../../ArduinoCore/Release//libArduinoCore.a(wiring.o)
+                                                  /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+__vector_17                                       /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+__vector_18                                       ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
+                                                  /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+__vector_19                                       /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+__vector_2                                        /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+__vector_20                                       /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+__vector_21                                       /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+__vector_22                                       /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+__vector_23                                       /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+__vector_24                                       /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+__vector_25                                       /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+__vector_3                                        /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+__vector_4                                        /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+__vector_5                                        /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+__vector_6                                        /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+__vector_7                                        /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+__vector_8                                        /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+__vector_9                                        /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+__vector_default                                  /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+__vectors                                         /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+_exit                                             /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/avr5/libgcc.a(_exit.o)
+airman                                            ./main.o
+atol                                              /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(atol.o)
+                                                  ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+debugString                                       ./main.o
+delay                                             ../../ArduinoCore/Release//libArduinoCore.a(wiring.o)
+delayMicroseconds                                 ../../ArduinoCore/Release//libArduinoCore.a(wiring.o)
+digitalRead                                       ../../ArduinoCore/Release//libArduinoCore.a(wiring_digital.o)
+digitalWrite                                      ../../ArduinoCore/Release//libArduinoCore.a(wiring_digital.o)
+digital_pin_to_bit_mask_PGM                       ../../ArduinoCore/Release//libArduinoCore.a(pins_arduino.o)
+                                                  ../../ArduinoCore/Release//libArduinoCore.a(wiring_digital.o)
+digital_pin_to_port_PGM                           ../../ArduinoCore/Release//libArduinoCore.a(pins_arduino.o)
+                                                  ../../ArduinoCore/Release//libArduinoCore.a(wiring_digital.o)
+digital_pin_to_timer_PGM                          ../../ArduinoCore/Release//libArduinoCore.a(pins_arduino.o)
+                                                  ../../ArduinoCore/Release//libArduinoCore.a(wiring_digital.o)
+errno                                             /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(errno.o)
+                                                  /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strtol.o)
+                                                  /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strtod.o)
+exit                                              /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/avr5/libgcc.a(_exit.o)
+                                                  /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+fputc                                             /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(fputc.o)
+                                                  /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+free                                              /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(malloc.o)
+                                                  /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(realloc.o)
+                                                  ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+init                                              ../../ArduinoCore/Release//libArduinoCore.a(wiring.o)
+                                                  ./main.o
+isspace                                           /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(isspace.o)
+                                                  /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strtol.o)
+                                                  /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strtod.o)
+                                                  ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+itoa                                              /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(itoa.o)
+                                                  ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+                                                  ./main.o
+loop                                              ./main.o
+ltoa                                              /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(ltoa.o)
+                                                  ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+main                                              ./main.o
+                                                  /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm328p.o
+malloc                                            /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(malloc.o)
+                                                  /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(realloc.o)
+                                                  ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+memcpy                                            /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(memcpy.o)
+                                                  /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(realloc.o)
+micros                                            ../../ArduinoCore/Release//libArduinoCore.a(wiring.o)
+millis                                            ../../ArduinoCore/Release//libArduinoCore.a(wiring.o)
+                                                  ./WindSense/PublicFunctions.o
+                                                  ./WindSense/ParseToStruct.o
+panic                                             ./main.o
+pinMode                                           ../../ArduinoCore/Release//libArduinoCore.a(wiring_digital.o)
+                                                  ./main.o
+port_to_input_PGM                                 ../../ArduinoCore/Release//libArduinoCore.a(pins_arduino.o)
+                                                  ../../ArduinoCore/Release//libArduinoCore.a(wiring_digital.o)
+port_to_mode_PGM                                  ../../ArduinoCore/Release//libArduinoCore.a(pins_arduino.o)
+                                                  ../../ArduinoCore/Release//libArduinoCore.a(wiring_digital.o)
+port_to_output_PGM                                ../../ArduinoCore/Release//libArduinoCore.a(pins_arduino.o)
+                                                  ../../ArduinoCore/Release//libArduinoCore.a(wiring_digital.o)
+realloc                                           /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(realloc.o)
+                                                  ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+rx_buffer                                         ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
+setup                                             ./main.o
+sprintf                                           /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(sprintf.o)
+                                                  ./WindSense/AIRMARSpecific.o
+strcat                                            /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strcat.o)
+                                                  ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+strchr                                            /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strchr.o)
+                                                  ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+strcmp                                            /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strcmp.o)
+                                                  ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+                                                  ./WindSense/ParseToStruct.o
+strcpy                                            /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strcpy.o)
+                                                  ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+strncasecmp_P                                     /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strncasecmp_P.o)
+                                                  /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strtod.o)
+strncmp                                           /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strncmp.o)
+                                                  ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+strncpy                                           /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strncpy.o)
+                                                  ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+strnlen                                           /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strnlen.o)
+                                                  /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+strnlen_P                                         /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strnlen_P.o)
+                                                  /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+strrchr                                           /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strrchr.o)
+                                                  ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+strrev                                            /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strrev.o)
+                                                  /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(ultoa.o)
+                                                  /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(ltoa.o)
+                                                  /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(itoa.o)
+strstr                                            /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strstr.o)
+                                                  ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+strtod                                            /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strtod.o)
+                                                  ./WindSense/ParseToStruct.o
+strtol                                            /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(strtol.o)
+                                                  ./WindSense/WindSense.o
+                                                  ./WindSense/ParseToStruct.o
+timer0_millis                                     ../../ArduinoCore/Release//libArduinoCore.a(wiring.o)
+timer0_overflow_count                             ../../ArduinoCore/Release//libArduinoCore.a(wiring.o)
+tolower                                           /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(tolower.o)
+                                                  ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+toupper                                           /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(toupper.o)
+                                                  ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+ultoa                                             /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(ultoa.o)
+                                                  ../../ArduinoCore/Release//libArduinoCore.a(WString.o)
+vfprintf                                          /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(vfprintf_std.o)
+                                                  /usr/local/CrossPack-AVR-20100115/lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/libc.a(sprintf.o)
+vtable for HardwareSerial                         ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
+vtable for Print                                  ../../ArduinoCore/Release//libArduinoCore.a(Print.o)
+vtable for Stream                                 ../../ArduinoCore/Release//libArduinoCore.a(HardwareSerial.o)
