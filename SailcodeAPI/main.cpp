@@ -7,11 +7,13 @@
  *
  * There should be a library for the Wind Sensor and compass, the Polulu, any
  * ethernet communications and maybe the sailing logic.
+ * 	senSerial->println("$PAMTC,EN,RMC,0,10");
  */
 
 #include <WProgram.h>
 #include <arduino.h>
 #include "WindSense/WindSense.h"
+#include "Debugging/Debugging.h"
 
 /** For now, the only purpose of this file is testing
  *
@@ -22,6 +24,9 @@
  */
 // Variables
 WindSense airman;
+Debugging panic;
+
+char debugString[50] = {'\0'};
 
 int main(void) {
     init();
@@ -39,18 +44,15 @@ void setup() {
     // Pin 13 has an LED connected on most Arduino boards:
 
 	pinMode(13, OUTPUT);
-    Serial.begin(19200);
-    Serial.println("Ready and awaiting input");
-    Serial3.begin(4800);
-
-    airman.senSerial = &Serial3;
+	Serial.begin(19200);
+	airman.attach(Serial);
+	panic.attach(Serial);
+    panic.println("Ready for action");
 }
 
 void loop() {
-
-	//Serial.println("Regular Output");
-	//serialAlias->println("Alias Output");
-	airman.debug(Serial);
-
+	airman.pollAllValues();
+	itoa(airman.stupidDebug(),debugString,10);
+	panic.println(debugString);
 }
 

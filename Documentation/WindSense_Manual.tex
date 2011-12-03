@@ -25,8 +25,43 @@
 \begin{document}
 % If the titlepage is included, uncomment below.
 %\input{title.tex}
+\input{pygment.tex}
+
 
 The WindSense object is meant to emulate polling the AIRMAR wind-sensor and the compass for specific data values. Data is returned in the correct type and allows you to determine how long its been since the last update.
+
+\section{Using the WindSense Class} % (fold)
+\label{sec:Using the WindSense Class}
+\begin{figure}[h]
+	\HRule
+\begin{Verbatim}[commandchars=\\\{\},numbers=left,firstnumber=1,stepnumber=1]
+\PY{n}{Windsense} \PY{n}{airman}\PY{p}{;}
+\PY{n}{Debugging} \PY{n}{panic}\PY{p}{;}
+
+\PY{k+kt}{char} \PY{n}{debugString}\PY{p}{[}\PY{l+m+mi}{50}\PY{p}{]} \PY{o}{=} \PY{p}{\PYZob{}}\PY{l+s+sc}{'\PYZbs{}0'}\PY{p}{\PYZcb{}}\PY{p}{;}
+
+\PY{k+kt}{void} \PY{n}{setup}\PY{p}{(}\PY{p}{)} \PY{p}{\PYZob{}}
+    \PY{n}{Serial}\PY{p}{.}\PY{n}{begin}\PY{p}{(}\PY{l+m+mi}{19200}\PY{p}{)}\PY{p}{;}
+    \PY{n}{airman}\PY{p}{.}\PY{n}{attach}\PY{p}{(}\PY{n}{Serial}\PY{p}{)}\PY{p}{;}
+
+    \PY{n}{panic}\PY{p}{.}\PY{n}{attach}\PY{p}{(}\PY{n}{Serial}\PY{p}{)}\PY{p}{;}
+    \PY{n}{panic}\PY{p}{.}\PY{n}{println}\PY{p}{(}\PY{l+s}{"}\PY{l+s}{Ready for action}\PY{l+s}{"}\PY{p}{)}\PY{p}{;}
+\PY{p}{\PYZcb{}}
+
+\PY{k+kt}{void} \PY{n}{loop}\PY{p}{(}\PY{p}{)} \PY{p}{\PYZob{}}
+    \PY{n}{airman}\PY{p}{.}\PY{n}{pollAllValues}\PY{p}{(}\PY{p}{)}\PY{p}{;}
+    \PY{n}{itoa}\PY{p}{(}\PY{n}{airman}\PY{p}{.}\PY{n}{stupidDebug}\PY{p}{(}\PY{p}{)}\PY{p}{,}\PY{n}{debugString}\PY{p}{,}\PY{l+m+mi}{10}\PY{p}{)}\PY{p}{;}
+    \PY{n}{panic}\PY{p}{.}\PY{n}{println}\PY{p}{(}\PY{n}{debugString}\PY{p}{)}\PY{p}{;}
+\PY{p}{\PYZcb{}}
+\end{Verbatim}
+	\HRule
+	\caption{Example usage}
+	\label{fig:ex1}
+\end{figure}
+
+Example \ref{fig:ex1} shows how to use both the debugging and windsense class in a simple program. To begin, the class needs to be instantiated at the beginning of the program. In this case 
+
+% section Using the WindSense Class (end)
 
 
 \end{document}

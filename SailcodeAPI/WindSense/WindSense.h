@@ -1,84 +1,69 @@
-<<<<<<< HEAD
+/** Defines the Windsense Class
+ *
+ * Made up of multiple files, this class is pretty extensive.
+ *
+ */
+
 #ifndef WindSense_H
 #define WindSense_H
 
 #define MAX_SERIAL_BUFFER 120
+#define MAX_POLL_TIME_MS 2000 //@< Max time to wait for sensor data update
 
 // This brings in the Arduino Standard Functions
 // For the Hardware Serial Functions only
-// and the delay function used during initialisation
+// and the delay function used during initialization
 #include <WProgram.h>
 #include <stdlib.h>   // Parsing Functions
 #include <string.h>   // String Comparison Functions
-//#include <HardwareSerial.h>
-
 
 class WindSense {
-public:
-    WindSense();
-    WindSense(HardwareSerial &inSerial);
-    int grabChar(char input);
+private:
+	int partCount; //!< index for partSentence
+	char partSentence[100]; //!< buffer for incoming NMEA for grabChar function
+	char stringArray[40][15]; //!< Array of strings for splitNMEA
+	int stringArrayIdx; //!< index for the array of strings
 
-    int validateNMEA(char* input);
-    int validateInternalNMEA();
-    int splitNMEA(char* input);
-    int splitInternalNMEA();
-    void resetInternalNMEA();
-
-    // Functions with ParseToStruct
-    int parseInternalNMEA(char* input);
-    int updateGPS_GPGLL();
-	int updateWIND_WIMWV();
-	int updateSPEED_GPVTG();
-
-	//Functions with AIRMARSpecific
-	int debug(HardwareSerial &debugPortIn);
-	int debugDump(HardwareSerial &debugPortIn);
-	int betterDebug(HardwareSerial &debugPortIn);
-
-
-    int partCount;            //!< index for partSentence
-    char partSentence[100];   //!< buffer for incoming NMEA for grabChar function
-    char stringArray[40][15]; //!< Array of strings for splitNMEA
-    int stringArrayIdx;       //!< index for the array of strings
-
-    /** GPS Data Struct
-     * Contains the GPS data from the airmar.
-     * Note Lattitude and longitude will be split into two variables 
+	/** GPS Data Struct
+	 * Contains the GPS data from the airmar.
+	 * Note Lattitude and longitude will be split into two variables
 	 * each otherwise we lose precision
-     */
-    struct GPGLL {
-        int degreeLatitude;
-        int minuteLatitude;
-        char latitudeDirection;
+	 */
+	struct GPGLL {
+		int lastUpdated;
+		int degreeLatitude;
+		int minuteLatitude;
+		char latitudeDirection;
 
-        int degreeLongitude;
-        int minuteLongitude;
-        char longitudeDirection;
+		int degreeLongitude;
+		int minuteLongitude;
+		char longitudeDirection;
 
 		char valid;
-    };
+	};
 
-    struct WIMWV {
-        double windAngle;
-        char reference;
+	struct WIMWV {
+		int lastUpdated;
+		double windAngle;
+		char reference;
 
-        double windSpeed;
-        char windSpeedUnits;
+		double windSpeed;
+		char windSpeedUnits;
 
-        char valid;
-    };
+		char valid;
+	};
 
-    struct GPVTG {
-        double courseoverGround;
-        char   unitCourseMeasurement;
-        double speedoverGround;
-        char   speedUnits;
-    };
+	struct GPVTG {
+		int lastUpdated;
+		double courseoverGround;
+		char unitCourseMeasurement;
+		double speedoverGround;
+		char speedUnits;
+	};
 
-    // Create Instances of the structs so that they can
-    // be updated
-    GPGLL GPS_GPGLL;
+	// Create Instances of the structs so that they can
+	// be updated
+	GPGLL GPS_GPGLL;
 	WIMWV WIND_WIMWV;
 	GPVTG SPEED_GPVTG;
 
@@ -86,96 +71,37 @@ public:
 	// to be used within the class
 	HardwareSerial* senSerial;
 	HardwareSerial* debugPort;
-};
 
-#endif
-=======
-#ifndef WindSense_H
-#define WindSense_H
+	int grabChar(char input);
 
-// This brings in the Arduino Standard Functions
-// For the Hardware Serial Functions only
-// and the delay function used during initialisation
-#include <WProgram.h>
-#include <stdlib.h>   // Parsing Functions
-#include <string.h>   // String Comparison Functions
-//#include <HardwareSerial.h>
+	int validateNMEA(char* input);
+	int validateInternalNMEA();
+	int splitNMEA(char* input);
+	int splitInternalNMEA();
+	void resetInternalNMEA();
 
+	int processInternalNMEA();
 
-class WindSense {
-public:
-    WindSense();
-    WindSense(HardwareSerial &inSerial);
-    int grabChar(char input);
-
-    int validateNMEA(char* input);
-    int validateInternalNMEA();
-    int splitNMEA(char* input);
-    int splitInternalNMEA();
-    void resetInternalNMEA();
-
-    // Functions with ParseToStruct
-    int parseInternalNMEA(char* input);
-    int updateGPS_GPGLL();
+	// Functions with ParseToStruct
+	int parseInternalNMEA();
+	int parseInternalNMEA(char* input);
+	int updateGPS_GPGLL();
 	int updateWIND_WIMWV();
 	int updateSPEED_GPVTG();
 
+public:
+	WindSense();
 	//Functions with AIRMARSpecific
 	int debug(HardwareSerial &debugPortIn);
 	int debugDump(HardwareSerial &debugPortIn);
 	int betterDebug(HardwareSerial &debugPortIn);
 
+	int pollAllValues();
+	int pollValue(char nmea);
+	int attach(HardwareSerial& sensorPort);
 
-    int partCount;            //!< index for partSentence
-    char partSentence[100];   //!< buffer for incoming NMEA for grabChar function
-    char stringArray[40][15]; //!< Array of strings for splitNMEA
-    int stringArrayIdx;       //!< index for the array of strings
+	int stupidDebug();
 
-    /** GPS Data Struct
-     * Contains the GPS data from the airmar.
-     * Note Lattitude and longitude will be split into two variables 
-	 * each otherwise we lose precision
-     */
-    struct GPGLL {
-        int degreeLatitude;
-        int minuteLatitude;
-        char latitudeDirection;
-
-        int degreeLongitude;
-        int minuteLongitude;
-        char longitudeDirection;
-
-		char valid;
-    };
-
-    struct WIMWV {
-        double windAngle;
-        char reference;
-
-        double windSpeed;
-        char windSpeedUnits;
-
-        char valid;
-    };
-
-    struct GPVTG {
-        double courseoverGround;
-        char   unitCourseMeasurement;
-        double speedoverGround;
-        char   speedUnits;
-    };
-
-    // Create Instances of the structs so that they can
-    // be updated
-    GPGLL GPS_GPGLL;
-	WIMWV WIND_WIMWV;
-	GPVTG SPEED_GPVTG;
-
-	// Create an instance of the Hardware Serial
-	// to be used within the class
-	HardwareSerial* senSerial;
-	HardwareSerial* debugPort;
 };
 
 #endif
->>>>>>> 88a386f26258b2a9c5b70d6068c0fe89070e8088

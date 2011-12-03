@@ -18,3 +18,24 @@ int Debugging::takeNote(char* input) {
 	return 0;
 }
 
+int Debugging::attach(HardwareSerial& serialPort) {
+	if (debugOut != NULL) {
+		// The output has already been set
+		return 1;
+	}
+	debugOut = &serialPort;
+	return 0;
+}
+
+int Debugging::println(char* stringIn) {
+	if (debugOut == NULL) {
+		// The output has not been set
+		return 1;
+	}
+
+	debugOut->println(stringIn);
+	return 0;
+}
+
+
+

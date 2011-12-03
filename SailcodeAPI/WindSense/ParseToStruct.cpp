@@ -13,22 +13,27 @@
  */
 #include "WindSense.h"
 
+int WindSense::parseInternalNMEA() {
+	return parseInternalNMEA(stringArray[0]);
+}
+
 int WindSense::parseInternalNMEA(char* input) {
 
 	if (strcmp(input,"GPGLL") == 0) {
 		//	updateGPS_GPGLL
-		updateGPS_GPGLL();
+		return updateGPS_GPGLL();
 	} else if (strcmp(input, "WIMWV") == 0) {
 		// Update Something else
-		updateWIND_WIMWV();
+		return updateWIND_WIMWV();
 	} else if (strcmp(input, "GPVTG") == 0) {
-		updateSPEED_GPVTG();
+		return updateSPEED_GPVTG();
 	} else {
 		// TODO Handle parse without valid
-		// NMEA label
+		// NMEA label not listed
+		return 2;
 	}
 
-	return 1;
+	return 0;
 }
 
 /** Update the GPS Data Struct by parsing
@@ -50,7 +55,7 @@ int WindSense::updateGPS_GPGLL() {
 	 * will definitely crash the for loops
 	 */
 	if (stringArray[6][0] == 'V') {
-		return 0;
+		return 1;
 	}
 
 	// Since there will be parsing, an index will be used
@@ -93,7 +98,8 @@ int WindSense::updateGPS_GPGLL() {
 	GPS_GPGLL.latitudeDirection = stringArray[2][0];
 	GPS_GPGLL.longitudeDirection = stringArray[4][0];
 
-	return 1;
+	GPS_GPGLL.lastUpdated = millis();
+	return 0;
 }
 
 /** Update the Wind Data Struct by Parsing
@@ -105,7 +111,7 @@ int WindSense::updateGPS_GPGLL() {
 int WindSense::updateWIND_WIMWV() {
 	// Check if the AIRMAR says the data is valid
 	if (stringArray[5][0] == 'V') {
-		return 0;
+		return 1;
 	}
 
 	WIND_WIMWV.windAngle      = strtod(stringArray[1],'\0');
@@ -114,7 +120,8 @@ int WindSense::updateWIND_WIMWV() {
 	WIND_WIMWV.windSpeedUnits = stringArray[4][0];
 	WIND_WIMWV.valid          = stringArray[5][0];
 
-	return 1;
+	WIND_WIMWV.lastUpdated = millis();
+	return 0;
 }
 
 /** Update the Speet Data Struct by Parsing
@@ -126,7 +133,7 @@ int WindSense::updateWIND_WIMWV() {
 int WindSense::updateSPEED_GPVTG() {
 	// Check if the AIRMAR says the data is valid
 	if (stringArray[9][0] == 'N') {
-		return 0;
+		return 1;
 	}
 	
 	SPEED_GPVTG.courseoverGround      = strtod(stringArray[1], '\0');
@@ -134,5 +141,6 @@ int WindSense::updateSPEED_GPVTG() {
 	SPEED_GPVTG.speedoverGround       = strtod(stringArray[5], '\0');
 	SPEED_GPVTG.speedUnits            = stringArray[6][0];
 	
-	return 1;
+	SPEED_GPVTG.lastUpdated = millis();
+	return 0;
 }

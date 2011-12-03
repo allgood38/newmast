@@ -18,8 +18,12 @@
 #ifndef DEBUGGING_H_
 #define DEBUGGING_H_
 
+#include <WProgram.h>
 
 class Debugging {
+private:
+	Print* debugOut;
+
 public:
 	Debugging();
 
@@ -32,6 +36,23 @@ public:
 	 * @return [out] 0 if successful
 	 */
 	int takeNote(char* input);
+
+	/** Initialize the class with a Serial Output
+	 *
+	 * Doesn't Initialize the serial port, that needs to be done in
+	 * the setup function.
+	 *
+	 * @param [in] HardwareSerial instance
+	 * @return [out] 0 if successful
+	 */
+	int attach(HardwareSerial& serialPort);
+
+	/** Turn send a sentence to the choosen output
+	 *
+	 * @param [in] Character array (String)
+	 * @return [out] 0 if successful
+	 */
+	int println(char* stringIn);
 };
 
 #endif /* DEBUGGING_H_ */
