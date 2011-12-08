@@ -12,7 +12,7 @@
 \usepackage{color}
 \usepackage[ascii]{inputenc}
 
-% \usepackage{fullpage}
+\usepackage{fullpage}
 
 % The HRule command is required for the title page
 % from the wikibook
@@ -59,7 +59,13 @@ The WindSense object is meant to emulate polling the AIRMAR wind-sensor and the 
 	\label{fig:ex1}
 \end{figure}
 
-Example \ref{fig:ex1} shows how to use both the debugging and windsense class in a simple program. To begin, the class needs to be instantiated at the beginning of the program. In this case 
+Example in Figure \ref{fig:ex1} shows how to use both the debugging and windsense class in a simple program. To begin, the class needs to be instantiated at the beginning of the program. In this case the instance is called \verb:airman:. The other class instantiated is a simple debugging class for printing back to the serial port.
+
+First note the setup loop, the Serial port has already had its baud rate set before it is passed to the airman attach function. The attach function requires that the Serial port it is given is already set-up and ready for use.
+
+Next note that the debugging class is given the same serial port. This is okay, it just means they will be using the same port. A case like this is only good if you are plugging the arduino directly into the computer and feeding it NMEA strings for testing. 
+
+To get information from the wind sensor, you first call a  function to get it to listen to the sensor and update its internal values. Then you can call get functions on airman to retrieve whatever information you need. By default, the pollAllValues() function will wait a maximum of two seconds for valid data to be parsed. Under normal circumstance, it will take much less time, if for some reason the function can't update all the values, it will just update the ones it can and exit with a non-zero status.
 
 % section Using the WindSense Class (end)
 

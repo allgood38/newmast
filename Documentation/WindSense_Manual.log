@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.11.16)  3 DEC 2011 15:41
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.12.4)  8 DEC 2011 09:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -199,6 +199,10 @@ Package: inputenc 2008/03/30 v1.1d Input encoding file
 (/usr/local/texlive/2011/texmf-dist/tex/latex/base/ascii.def
 File: ascii.def 2008/03/30 v1.1d Input encoding file
 ))
+(/usr/local/texlive/2011/texmf-dist/tex/latex/preprint/fullpage.sty
+Package: fullpage 1999/02/23 1.1 (PWD)
+\FP@margin=\skip44
+)
 (./WindSense_Manual.aux)
 \openout1 = `WindSense_Manual.aux'.
 
@@ -267,33 +271,33 @@ LaTeX Info: Redefining \nameref on input line 25.
  (./pygment.tex)
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
 (Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 41.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 67.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 73.
  [1
 
 {/usr/local/texlive/2011/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 67.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 73.
 
 (./WindSense_Manual.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 67.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 67.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 73.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 73.
 Package rerunfilecheck Info: File `WindSense_Manual.out' has not changed.
 (rerunfilecheck)             Checksum: 55B7DCF62BEF0E90C4D8C9ED6353FF4C;60.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 67.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 73.
  ) 
 Here is how much of TeX's memory you used:
- 5442 strings out of 495027
- 81535 string characters out of 3180824
- 159556 words of memory out of 3000000
- 8595 multiletter control sequences out of 15000+200000
+ 5462 strings out of 495027
+ 81907 string characters out of 3180825
+ 161627 words of memory out of 3000000
+ 8611 multiletter control sequences out of 15000+200000
  4581 words of font info for 18 fonts, out of 3000000 for 9000
  36 hyphenation exceptions out of 8191
- 29i,6n,28p,268b,340s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 29i,6n,28p,532b,340s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb
 ></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><
 /usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></us
 r/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on WindSense_Manual.pdf (1 page, 57663 bytes).
+Output written on WindSense_Manual.pdf (1 page, 60480 bytes).
 PDF statistics:
  40 PDF objects out of 1000 (max. 8388607)
  31 compressed objects within 1 object stream
