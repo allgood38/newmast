@@ -8,4 +8,4 @@ makefile
 *.mk
 *.d
 *.swp
-
+*.log
