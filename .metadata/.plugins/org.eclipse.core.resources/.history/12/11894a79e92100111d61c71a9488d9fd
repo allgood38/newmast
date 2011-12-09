@@ -1,0 +1,134 @@
+In archive libSPI.a:
+
+SPI.o:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         00000084  00000000  00000000  00000034  2**0
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+  1 .data         00000000  00000000  00000000  000000b8  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  2 .bss          00000001  00000000  00000000  000000b8  2**0
+                  ALLOC
+  3 .stab         00000684  00000000  00000000  000000b8  2**2
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+  4 .stabstr      00000c44  00000000  00000000  0000073c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <_ZN8SPIClass3endEv>:
+  SPCR |= _BV(MSTR);
+  SPCR |= _BV(SPE);
+}
+
+void SPIClass::end() {
+  SPCR &= ~_BV(SPE);
+   0:	8c b5       	in	r24, 0x2c	; 44
+   2:	8f 7b       	andi	r24, 0xBF	; 191
+   4:	8c bd       	out	0x2c, r24	; 44
+}
+   6:	08 95       	ret
+
+00000008 <_ZN8SPIClass11setBitOrderEh>:
+
+void SPIClass::setBitOrder(uint8_t bitOrder)
+{
+  if(bitOrder == LSBFIRST) {
+   8:	88 23       	and	r24, r24
+   a:	01 f4       	brne	.+0      	; 0xc <_ZN8SPIClass11setBitOrderEh+0x4>
+    SPCR |= _BV(DORD);
+   c:	8c b5       	in	r24, 0x2c	; 44
+   e:	80 62       	ori	r24, 0x20	; 32
+  10:	00 c0       	rjmp	.+0      	; 0x12 <_ZN8SPIClass11setBitOrderEh+0xa>
+  } else {
+    SPCR &= ~(_BV(DORD));
+  12:	8c b5       	in	r24, 0x2c	; 44
+  14:	8f 7d       	andi	r24, 0xDF	; 223
+  16:	8c bd       	out	0x2c, r24	; 44
+  18:	08 95       	ret
+
+0000001a <_ZN8SPIClass11setDataModeEh>:
+  }
+}
+
+void SPIClass::setDataMode(uint8_t mode)
+{
+  SPCR = (SPCR & ~SPI_MODE_MASK) | mode;
+  1a:	9c b5       	in	r25, 0x2c	; 44
+  1c:	93 7f       	andi	r25, 0xF3	; 243
+  1e:	98 2b       	or	r25, r24
+  20:	9c bd       	out	0x2c, r25	; 44
+}
+  22:	08 95       	ret
+
+00000024 <_ZN8SPIClass15setClockDividerEh>:
+
+void SPIClass::setClockDivider(uint8_t rate)
+{
+  SPCR = (SPCR & ~SPI_CLOCK_MASK) | (rate & SPI_CLOCK_MASK);
+  24:	2c b5       	in	r18, 0x2c	; 44
+  26:	38 2f       	mov	r19, r24
+  28:	33 70       	andi	r19, 0x03	; 3
+  2a:	2c 7f       	andi	r18, 0xFC	; 252
+  2c:	32 2b       	or	r19, r18
+  2e:	3c bd       	out	0x2c, r19	; 44
+  SPSR = (SPSR & ~SPI_2XCLOCK_MASK) | ((rate >> 2) & SPI_2XCLOCK_MASK);
+  30:	2d b5       	in	r18, 0x2d	; 45
+  32:	90 e0       	ldi	r25, 0x00	; 0
+  34:	95 95       	asr	r25
+  36:	87 95       	ror	r24
+  38:	95 95       	asr	r25
+  3a:	87 95       	ror	r24
+  3c:	81 70       	andi	r24, 0x01	; 1
+  3e:	2e 7f       	andi	r18, 0xFE	; 254
+  40:	82 2b       	or	r24, r18
+  42:	8d bd       	out	0x2d, r24	; 45
+}
+  44:	08 95       	ret
+
+00000046 <_ZN8SPIClass5beginEv>:
+  // MISO pin automatically overrides to INPUT.
+  // When the SS pin is set as OUTPUT, it can be used as
+  // a general purpose output port (it doesn't influence
+  // SPI operations).
+
+  pinMode(SCK, OUTPUT);
+  46:	8d e0       	ldi	r24, 0x0D	; 13
+  48:	61 e0       	ldi	r22, 0x01	; 1
+  4a:	0e 94 00 00 	call	0	; 0x0 <_ZN8SPIClass3endEv>
+  pinMode(MOSI, OUTPUT);
+  4e:	8b e0       	ldi	r24, 0x0B	; 11
+  50:	61 e0       	ldi	r22, 0x01	; 1
+  52:	0e 94 00 00 	call	0	; 0x0 <_ZN8SPIClass3endEv>
+  pinMode(SS, OUTPUT);
+  56:	8a e0       	ldi	r24, 0x0A	; 10
+  58:	61 e0       	ldi	r22, 0x01	; 1
+  5a:	0e 94 00 00 	call	0	; 0x0 <_ZN8SPIClass3endEv>
+  
+  digitalWrite(SCK, LOW);
+  5e:	8d e0       	ldi	r24, 0x0D	; 13
+  60:	60 e0       	ldi	r22, 0x00	; 0
+  62:	0e 94 00 00 	call	0	; 0x0 <_ZN8SPIClass3endEv>
+  digitalWrite(MOSI, LOW);
+  66:	8b e0       	ldi	r24, 0x0B	; 11
+  68:	60 e0       	ldi	r22, 0x00	; 0
+  6a:	0e 94 00 00 	call	0	; 0x0 <_ZN8SPIClass3endEv>
+  digitalWrite(SS, HIGH);
+  6e:	8a e0       	ldi	r24, 0x0A	; 10
+  70:	61 e0       	ldi	r22, 0x01	; 1
+  72:	0e 94 00 00 	call	0	; 0x0 <_ZN8SPIClass3endEv>
+
+  // Warning: if the SS pin ever becomes a LOW INPUT then SPI 
+  // automatically switches to Slave, so the data direction of 
+  // the SS pin MUST be kept as OUTPUT.
+  SPCR |= _BV(MSTR);
+  76:	8c b5       	in	r24, 0x2c	; 44
+  78:	80 61       	ori	r24, 0x10	; 16
+  7a:	8c bd       	out	0x2c, r24	; 44
+  SPCR |= _BV(SPE);
+  7c:	8c b5       	in	r24, 0x2c	; 44
+  7e:	80 64       	ori	r24, 0x40	; 64
+  80:	8c bd       	out	0x2c, r24	; 44
+}
+  82:	08 95       	ret

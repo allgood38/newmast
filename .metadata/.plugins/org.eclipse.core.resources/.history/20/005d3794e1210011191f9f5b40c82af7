@@ -1,0 +1,48 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+CPP_SRCS += \
+../SdFat/Sd2Card.cpp \
+../SdFat/SdBaseFile.cpp \
+../SdFat/SdFat.cpp \
+../SdFat/SdFatUtil.cpp \
+../SdFat/SdFile.cpp \
+../SdFat/SdStream.cpp \
+../SdFat/SdVolume.cpp \
+../SdFat/istream.cpp \
+../SdFat/ostream.cpp 
+
+OBJS += \
+./SdFat/Sd2Card.o \
+./SdFat/SdBaseFile.o \
+./SdFat/SdFat.o \
+./SdFat/SdFatUtil.o \
+./SdFat/SdFile.o \
+./SdFat/SdStream.o \
+./SdFat/SdVolume.o \
+./SdFat/istream.o \
+./SdFat/ostream.o 
+
+CPP_DEPS += \
+./SdFat/Sd2Card.d \
+./SdFat/SdBaseFile.d \
+./SdFat/SdFat.d \
+./SdFat/SdFatUtil.d \
+./SdFat/SdFile.d \
+./SdFat/SdStream.d \
+./SdFat/SdVolume.d \
+./SdFat/istream.d \
+./SdFat/ostream.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+SdFat/%.o: ../SdFat/%.cpp
+	@echo 'Building file: $<'
+	@echo 'Invoking: AVR C++ Compiler'
+	avr-g++ -I"/Users/allgood38/git/newmast/ArduinoCore" -w -Os -ffunction-sections -fdata-sections -fno-exceptions -DARDUINO=22 -g -mmcu=atmega2560 -DF_CPU=16000000UL -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -c -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

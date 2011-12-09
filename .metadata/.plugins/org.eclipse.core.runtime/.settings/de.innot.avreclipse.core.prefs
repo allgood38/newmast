@@ -1,0 +1,18 @@
+#Thu Dec 08 13:44:28 EST 2011
+avrdude/configs/programmerconfig.1/ppresetline=
+avrdudepropertypage/previewexpanded=false
+avrpaths//systempath/AVRDUDE=/usr/local/CrossPack-AVR-20100115/bin
+avrdude/configs/programmerconfig.1/baudrate=115200
+avrdudepropertypage/weight_preview_expanded=20
+avrdude/configs/programmerconfig.1/ppvccline=
+avrdude/configs/programmerconfig.1/name=ARDUINO MEGA
+avrdudepropertypage/weight_preview_collapsed=50
+avrdudepropertypage/weight_top_expanded=80
+avrdudepropertypage/weight_top_collapsed=950
+avrpaths//systempath/AVRGCC=/usr/local/CrossPack-AVR-20100115/bin
+avrdude/configs/programmerconfig.1/port=/dev/tty.usbmodem411
+avrdude/configs/programmerconfig.1/programmer=stk500v2
+avrdude/configs/programmerconfig.1/description=Default AVRDude Programmer Configuration. Modify as required for your setup.
+eclipse.preferences.version=1
+avrpaths//systempath/MAKE=/usr/bin
+avrdude/configs/programmerconfig.1/postAvrdudeDelayMs=
