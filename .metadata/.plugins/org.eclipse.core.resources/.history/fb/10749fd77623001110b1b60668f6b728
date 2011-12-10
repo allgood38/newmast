@@ -1,0 +1,30 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+CPP_SRCS += \
+../ArduinoLibs/utility/Sd2Card.cpp \
+../ArduinoLibs/utility/SdFile.cpp \
+../ArduinoLibs/utility/SdVolume.cpp 
+
+OBJS += \
+./ArduinoLibs/utility/Sd2Card.o \
+./ArduinoLibs/utility/SdFile.o \
+./ArduinoLibs/utility/SdVolume.o 
+
+CPP_DEPS += \
+./ArduinoLibs/utility/Sd2Card.d \
+./ArduinoLibs/utility/SdFile.d \
+./ArduinoLibs/utility/SdVolume.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+ArduinoLibs/utility/%.o: ../ArduinoLibs/utility/%.cpp
+	@echo 'Building file: $<'
+	@echo 'Invoking: AVR C++ Compiler'
+	avr-g++ -I"/Users/allgood38/git/newmast/ArduinoCore" -I"/Users/allgood38/git/newmast/ArduinoLibs" -w -Os -ffunction-sections -fdata-sections -fno-exceptions -DARDUINO=22 -g -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -c -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

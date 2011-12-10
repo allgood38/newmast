@@ -12,6 +12,10 @@
 
 #include <WProgram.h>
 #include <arduino.h>
+
+#include "ArduinoLibs/Servo.h"
+#include "ArduinoLibs/SD.h"
+
 #include "WindSense/WindSense.h"
 #include "Debugging/Debugging.h"
 

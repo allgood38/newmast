@@ -19,6 +19,7 @@
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="152" y="30"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.cdt.make.editor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.cdt.ui.editor.CEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
@@ -193,50 +194,50 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="File.cpp" tooltip="SD/File.cpp">
-<persistable path="/SD/File.cpp"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.cpp" tooltip="SailcodeAPI/main.cpp">
+<persistable path="/SailcodeAPI/main.cpp"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="SdFat.h" tooltip="SD/utility/SdFat.h">
-<persistable path="/SD/utility/SdFat.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="SD.h" tooltip="SailcodeAPI/ArduinoLibs/SD.h">
+<persistable path="/SailcodeAPI/ArduinoLibs/SD.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="SdFile.cpp" tooltip="SD/utility/SdFile.cpp">
-<persistable path="/SD/utility/SdFile.cpp"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="SdFat.h" tooltip="SailcodeAPI/utility/SdFat.h">
+<persistable path="/SailcodeAPI/utility/SdFat.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Sd2Card.cpp" tooltip="SD/utility/Sd2Card.cpp">
-<persistable path="/SD/utility/Sd2Card.cpp"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.binaryEditor" name="libArduinoLibs.a" tooltip="ArduinoLibs/Release/libArduinoLibs.a">
+<persistable path="/ArduinoLibs/Release/libArduinoLibs.a"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="SD.h" tooltip="SD/SD.h">
-<persistable path="/SD/SD.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Servo.h" tooltip="ArduinoLibs/Servo.h">
+<persistable path="/ArduinoLibs/Servo.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Print.cpp" tooltip="ArduinoCore/Print.cpp">
-<persistable path="/ArduinoCore/Print.cpp"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="SPI.cpp" tooltip="SPI/SPI.cpp">
-<persistable path="/SPI/SPI.cpp"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="SPI.h" tooltip="SPI/SPI.h">
-<persistable path="/SPI/SPI.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Servo.cpp" tooltip="ArduinoLibs/Servo.cpp">
+<persistable path="/ArduinoLibs/Servo.cpp"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="arduino.h" tooltip="SailcodeAPI/arduino.h">
 <persistable path="/SailcodeAPI/arduino.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="wiring_private.h" tooltip="ArduinoCore/wiring_private.h">
-<persistable path="/ArduinoCore/wiring_private.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="SdVolume.cpp" tooltip="ArduinoLibs/utility/SdVolume.cpp">
+<persistable path="/ArduinoLibs/utility/SdVolume.cpp"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="SdFatmainpage.h" tooltip="SDTest/SdFatmainpage.h">
-<persistable path="/SDTest/SdFatmainpage.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="SdInfo.h" tooltip="ArduinoLibs/utility/SdInfo.h">
+<persistable path="/ArduinoLibs/utility/SdInfo.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="SdFat.cpp" tooltip="SDTest/SdFat.cpp">
-<persistable path="/SDTest/SdFat.cpp"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Sd2Card.h" tooltip="ArduinoLibs/utility/Sd2Card.h">
+<persistable path="/ArduinoLibs/utility/Sd2Card.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="SdBaseFile.cpp" tooltip="SDTest/SdBaseFile.cpp">
-<persistable path="/SDTest/SdBaseFile.cpp"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="SdFat.h" tooltip="ArduinoLibs/utility/SdFat.h">
+<persistable path="/ArduinoLibs/utility/SdFat.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="ostream.h" tooltip="SDTest/ostream.h">
-<persistable path="/SDTest/ostream.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="SdFile.cpp" tooltip="ArduinoLibs/utility/SdFile.cpp">
+<persistable path="/ArduinoLibs/utility/SdFile.cpp"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="ostream.cpp" tooltip="SDTest/ostream.cpp">
-<persistable path="/SDTest/ostream.cpp"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="SD.h" tooltip="ArduinoLibs/SD.h">
+<persistable path="/ArduinoLibs/SD.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="File.cpp" tooltip="ArduinoLibs/File.cpp">
+<persistable path="/ArduinoLibs/File.cpp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Sd2Card.cpp" tooltip="ArduinoCore/utility/Sd2Card.cpp">
+<persistable path="/ArduinoCore/utility/Sd2Card.cpp"/>
 </file>
 </mruList>
 </workbench>

@@ -3,4 +3,7 @@
 <project name="SPI">
 <provider id="org.eclipse.cdt.ui.provider1"/>
 </project>
+<project name="ArduinoCore">
+<provider id="org.eclipse.cdt.ui.provider1"/>
+</project>
 </cHelpSettings>

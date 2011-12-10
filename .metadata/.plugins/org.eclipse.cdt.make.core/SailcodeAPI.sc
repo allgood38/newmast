@@ -115,6 +115,7 @@
 <definedSymbol symbol="AVR=1"/>
 <definedSymbol symbol="__AVR_ARCH__=2"/>
 <definedSymbol symbol="__AVR_ARCH__=6"/>
+<definedSymbol symbol="__AVR_ARCH__=5"/>
 <definedSymbol symbol="__AVR_2_BYTE_PC__=1"/>
 <definedSymbol symbol="__AVR_ATmega2560__=1"/>
 <definedSymbol symbol="__AVR_HAVE_RAMPZ__=1"/>
@@ -129,6 +130,7 @@
 <definedSymbol symbol="__AVR_3_BYTE_PC__=1"/>
 <definedSymbol symbol="__AVR_HAVE_EIJMP_EICALL__=1"/>
 <definedSymbol symbol="F_CPU=16000000UL"/>
+<definedSymbol symbol="__AVR_ATmega328P__=1"/>
 </collector>
 </instance>
 <instance id="de.innot.avreclipse.configuration.app.release.1602708466;de.innot.avreclipse.configuration.app.release.1602708466.;de.innot.avreclipse.tool.cppcompiler.app.release.1068200909;de.innot.avreclipse.cppcompiler.input.1469960720">
@@ -248,6 +250,7 @@
 <definedSymbol symbol="AVR=1"/>
 <definedSymbol symbol="__AVR_ARCH__=2"/>
 <definedSymbol symbol="__AVR_ARCH__=6"/>
+<definedSymbol symbol="__AVR_ARCH__=5"/>
 <definedSymbol symbol="__AVR_2_BYTE_PC__=1"/>
 <definedSymbol symbol="__AVR_ATmega2560__=1"/>
 <definedSymbol symbol="__AVR_HAVE_RAMPZ__=1"/>
@@ -262,6 +265,7 @@
 <definedSymbol symbol="__AVR_3_BYTE_PC__=1"/>
 <definedSymbol symbol="__AVR_HAVE_EIJMP_EICALL__=1"/>
 <definedSymbol symbol="F_CPU=16000000UL"/>
+<definedSymbol symbol="__AVR_ATmega328P__=1"/>
 </collector>
 </instance>
 <instance id="de.innot.avreclipse.configuration.app.release.1602708466;de.innot.avreclipse.configuration.app.release.1602708466.;de.innot.avreclipse.tool.compiler.winavr.app.release.894148084;de.innot.avreclipse.compiler.winavr.input.84295540">
@@ -377,6 +381,7 @@
 <definedSymbol symbol="AVR=1"/>
 <definedSymbol symbol="__AVR_ARCH__=2"/>
 <definedSymbol symbol="__AVR_ARCH__=6"/>
+<definedSymbol symbol="__AVR_ARCH__=5"/>
 <definedSymbol symbol="__AVR_2_BYTE_PC__=1"/>
 <definedSymbol symbol="__AVR_ATmega2560__=1"/>
 <definedSymbol symbol="__AVR_HAVE_RAMPZ__=1"/>
@@ -391,6 +396,7 @@
 <definedSymbol symbol="__AVR_3_BYTE_PC__=1"/>
 <definedSymbol symbol="__AVR_HAVE_EIJMP_EICALL__=1"/>
 <definedSymbol symbol="F_CPU=16000000UL"/>
+<definedSymbol symbol="__AVR_ATmega328P__=1"/>
 </collector>
 </instance>
 </scannerInfo>
