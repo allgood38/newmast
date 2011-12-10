@@ -9,3 +9,4 @@ makefile
 *.d
 *.swp
 *.log
+*.a
