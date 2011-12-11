@@ -1,0 +1,27 @@
+#Sat Dec 10 16:14:51 EST 2011
+=\=\=\=\=\=\=
+<<<<<<<=HEAD
+>>>>>>>=88a386f26258b2a9c5b70d6068c0fe89070e8088
+avrtarget/ClockFrequency=16000000
+avrtarget/ExtRAMSize=0
+avrtarget/ExtendedRAM=false
+avrtarget/MCUType=atmega328p
+avrtarget/UseEEPROM=false
+avrtarget/UseExtendedRAMforHeap=true
+avrtarget/avrdude/BitBangDelay=
+avrtarget/avrdude/Bitclock=
+avrtarget/avrdude/EEPROMFile=
+avrtarget/avrdude/EEPROMFromConfig=true
+avrtarget/avrdude/FlashFile=
+avrtarget/avrdude/FlashFromConfig=true
+avrtarget/avrdude/NoChipErase=false
+avrtarget/avrdude/NoSigCheck=false
+avrtarget/avrdude/NoVerify=false
+avrtarget/avrdude/NoWrite=false
+avrtarget/avrdude/OtherOptions=
+avrtarget/avrdude/ProgrammerID=programmerconfig.3
+avrtarget/avrdude/UseCounter=false
+avrtarget/avrdude/WriteEEPROM=false
+avrtarget/avrdude/WriteFlash=true
+avrtarget/perConfig=false
+eclipse.preferences.version=1

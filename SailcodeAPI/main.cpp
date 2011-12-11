@@ -13,8 +13,8 @@
 #include <WProgram.h>
 #include <arduino.h>
 
-#include "ArduinoLibs/Servo.h"
-#include "ArduinoLibs/SD.h"
+#include <Servo/Servo.h>
+#include <SD/SD.h>
 
 #include "WindSense/WindSense.h"
 #include "Debugging/Debugging.h"
@@ -29,6 +29,8 @@
 // Variables
 WindSense airman;
 Debugging panic;
+
+Servo myservo;
 
 char debugString[50] = {'\0'};
 
@@ -47,6 +49,7 @@ void setup() {
 	Serial.begin(19200);
 	airman.attach(Serial);
 
+	myservo.attach(6);
 	panic.attach(Serial);
     panic.println("Ready for action");
 }

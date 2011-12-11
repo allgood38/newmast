@@ -24,6 +24,3 @@ Wil control the position of the rudder. In good conditions it will simply point 
 
 # The WindSense Class
 Just deals with retrieving data from the Wind Sensor, it needs to be told when to update, but has an internal timer to let you know when it thinks its out of date.
-
-## Debugging Class 
-To get the arduino to work, found article here (http://arduinonut.blogspot.com/2008/04/ufat.html)
