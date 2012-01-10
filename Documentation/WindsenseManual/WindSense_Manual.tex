@@ -12,7 +12,7 @@
 \usepackage{color}
 \usepackage[ascii]{inputenc}
 
-\usepackage{fullpage}
+%\usepackage{fullpage}
 
 % The HRule command is required for the title page
 % from the wikibook
@@ -66,6 +66,8 @@ First note the setup loop, the Serial port has already had its baud rate set bef
 Next note that the debugging class is given the same serial port. This is okay, it just means they will be using the same port. A case like this is only good if you are plugging the arduino directly into the computer and feeding it NMEA strings for testing. 
 
 To get information from the wind sensor, you first call a  function to get it to listen to the sensor and update its internal values. Then you can call get functions on airman to retrieve whatever information you need. By default, the pollAllValues() function will wait a maximum of two seconds for valid data to be parsed. Under normal circumstance, it will take much less time, if for some reason the function can't update all the values, it will just update the ones it can and exit with a non-zero status.
+
+In order to retrieve the values, get functions return values from the internal \verb+structs+ within the class. Currently there are no get functions written, as they will be customized to return something meaningful
 
 % section Using the WindSense Class (end)
 
