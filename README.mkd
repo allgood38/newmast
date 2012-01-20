@@ -1,26 +1,46 @@
-# QMAST Sailcode API 
+QMAST Sailcode API
+==================
 
-Currently a class is being written to take care of the Wind Sensor such that anyone who wants to use it doesn't need to worry about any of the internals, they will simply need to instantiate it, tell it to poll the sensor for data and provide it through access methods.  
+Currently a class is being written to take care of the Wind Sensor such
+that anyone who wants to use it doesn't need to worry about any of the
+internals, they will simply need to instantiate it, tell it to poll the
+sensor for data and provide it through access methods.
 
-# WindSense 
+# WindSense
 
-Nearing completion, documentation on its exact usage to follow upon completion. Then a unit test will need to be written.  
+Nearing completion, documentation on its exact usage to follow upon
+completion. Then a unit test will need to be written.
 
-It will need to be instantiated with the memory of a Hardware Serial Instance passed to it, so that it can be assigned to any of the three available.  
+It will need to be instantiated with the memory of a Hardware Serial
+Instance passed to it, so that it can be assigned to any of the three
+available.
 
-This class will also be able to host the functions for the compass, although this will be added on later.  
+This class will also be able to host the functions for the compass,
+although this will be added on later.
 
-Doxygen generated output for the project, however it currently includes all of the depreciated code, will need to be cleaned up some time, however here is the link to it 
+Doxygen generated output for the project, however it currently includes
+all of the depreciated code, will need to be cleaned up some time,
+however here is the link to it
 
-http://allgood38.github.com/newmast/ 
+http://allgood38.github.com/newmast/
 
-CSS Stylesheet used in the home page curtesy of... 
+CSS Stylesheet used in the home page curtesy of...
 http://kev.inburke.com/kevin/markdown-css-help-make-the-web-prettier/
 
 ## Goals and Moving Forward
 
-Right now the wind sensor class is polling data reliably and can be implemented in with everything else really easily. Although no member functions have been written to access the data once polled, thes ecan be written once we know exactly how we are going to use it. I’ve written some adeas for classes to be implemented in the documentation folder under Ramblings.md 
+Right now the wind sensor class is polling data reliably and can be
+implemented in with everything else really easily. Although no member
+functions have been written to access the data once polled, this can be
+written once we know exactly how we are going to use it. I've written
+some ideas for classes to be implemented in the documentation folder
+under Ramblings.md
 
-Now I want to write a way to control the motors and servos easily and then get a couple different modes of logging data added to the debugging class.
+Now I want to write a way to control the motors and servos easily and
+then get a couple different modes of logging data added to the debugging
+class.
 
-To communicate with the boat over the internet, I plan on using a snipped I found that allows the boat to connect to an irc server. We’ll host our own server with a static IP for it connect to, and it will listen for commands or just treat it as any other debugging channel. 
+To communicate with the boat over the internet, I plan on using a
+snipped I found that allows the boat to connect to an irc server. We'll
+host our own server with a static IP for it connect to, and it will
+listen for commands or just treat it as any other debugging channel.
